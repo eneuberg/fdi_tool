@@ -1,0 +1,25 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background-color: #000;
+    color: #fff;
+}
+
+td, th {
+    padding: 8px;
+    border: 1px solid #ddd; /* Light grey border */
+    text-align: left;
+}
+
+/* Zebra-striping for rows */
+tr:nth-child(odd) {
+    background-color: #000;
+    color: #fff; /* Ensuring text is readable on the dark background */
+}
+
+tr:nth-child(even) {
+    background-color: #ccc; /* Grey for even rows */
+}
