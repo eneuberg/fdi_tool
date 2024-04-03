@@ -8,7 +8,7 @@ const sectorSelectionForm = `
         <select id="sectorSelect" name="sector">
             <option value="">Select a Sector</option>
             <option value="agriculture">Agriculture</option>
-            <option value="technology">Technology</option>
+            <option value="mining">Mining</option>
             <!-- Add other sectors as options -->
         </select>
         <button type="submit">Start</button>
@@ -23,6 +23,9 @@ document.getElementById('sectorForm').addEventListener('submit', function(event)
     switch (selectedSector) {
         case 'agriculture':
             currentQuestions = agricultureQuestions;
+            break;
+        case 'mining':
+            currentQuestions = miningQuestions;
             break;
     }
     renderQuestion();
@@ -61,11 +64,23 @@ function evaluateAnswer(answer, formId) {
         case 'operatingSurplus':
             if (answer > 15)
                 opportunities++;
-            else
+            else if (answer < 8)
                 risks++;
             break;
         case 'annualGroundwater':
             if (answer > 0)
+                opportunities++;
+            else
+                risks++;
+            break;
+        case 'profitsReinvestedDevelopment':
+            if (answer > 20)
+                opportunities++;
+            else
+                risks++;
+            break;
+        case 'profitsReinvestedRandD':
+            if (answer > 5)
                 opportunities++;
             else
                 risks++;

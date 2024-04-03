@@ -1,4 +1,4 @@
-const questionOneHTML = `
+const agricultureQuestionOneHTML = `
     <form id="operatingSurplus">
         <p>Operating surplus divided by the land value(%).<br>
         (The measure assumes land values reflect production potential and not other externalities.)  </p>
@@ -7,7 +7,7 @@ const questionOneHTML = `
     </form>
 `;
 
-const questionTwoHTML = `
+const agricultureQuestionTwoHTML = `
     <form>
         <p>Complies with AT LEAST ONE of the following: <br>
 • Access to or availed credit<br>
@@ -18,7 +18,7 @@ const questionTwoHTML = `
     </form>
 `;
 
-const questionThreeHTML = `
+const agricultureQuestionThreeHTML = `
     <form>
         <p>FDI project likely to cause one of the following: <br>
 • Soil erosion   <br>
@@ -30,7 +30,7 @@ const questionThreeHTML = `
     </form>
 `;
 
-const questionFourHTML = `
+const agricultureQuestionFourHTML = `
     <form id="annualGroundwater">
         <p>Annual groundwater abstraction for agriculture by MNE – <br>
         annual groundwater recharge from rainfall = Groundwater balance (m3) (if negative balance add "-")</p>
@@ -39,7 +39,7 @@ const questionFourHTML = `
     </form>
 `;
 
-const questionFiveHTML = `
+const agricultureQuestionFiveHTML = `
     <form>
         <p>MNE has history of adhering to the International Code of Conduct on Pesticide Management.</p>
         <input type="checkbox" name="answer">
@@ -47,7 +47,7 @@ const questionFiveHTML = `
     </form>
 `;
 
-const questionSixHTML = `
+const agricultureQuestionSixHTML = `
     <form>
         <p>Complies with AT LEAST THREE of the following: <br>
 • Leaves at least 10% of the holding area for natural or diverse vegetation.<br>
@@ -69,7 +69,7 @@ In case of a 2-crop rotation, the 2 crops must be from different plant genus, e.
     </form>
 `;
 
-const questionSevenHTML = `
+const agricultureQuestionSevenHTML = `
     <form>
         <p>Project offers paid maternity and paternity leave to its workers</p>
         <input type="checkbox" name="answer">
@@ -77,7 +77,7 @@ const questionSevenHTML = `
     </form>
 `;
 
-const questionEightHTML = `
+const agricultureQuestionEightHTML = `
     <form>
         <p>Project offers paid maternity and paternity leave to its workers (Y/N)</p>
         <input type="checkbox" name="answer">
@@ -85,7 +85,7 @@ const questionEightHTML = `
     </form>
 `;
 
-const questionNineHTML = `
+const agricultureQuestionNineHTML = `
     <form>
         <p>Company has internal mechanisms and legislation in place to ensure flexible working and gender equality? <br>
         (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear)</p>
@@ -94,7 +94,7 @@ const questionNineHTML = `
     </form>
 `;
 
-const questionTenHTML = `
+const agricultureQuestionTenHTML = `
     <form>
         <p>Company business models and orients towards female well-being externally? (publicizes CRS reports; products and services targeting women; external partnerships or charity)</p>
         <input type="checkbox" name="answer">
@@ -102,7 +102,7 @@ const questionTenHTML = `
     </form>
 `;
 
-const questionElevenHTML = `
+const agricultureQuestionElevenHTML = `
     <form>
         <p>Project procures from the local base economy where possible and feasible</p>
         <input type="checkbox" name="answer">
@@ -110,7 +110,7 @@ const questionElevenHTML = `
     </form>
 `;
 
-const questionTwelveHTML = `
+const agricultureQuestionTwelveHTML = `
     <form>
         <p>MSME contributes to local labour force upskilling to ensure local employment opportunities across the value chain (Y/N)</p>
         <input type="checkbox" name="answer">
@@ -118,7 +118,7 @@ const questionTwelveHTML = `
     </form>
 `;
 
-const questionThirteenHTML = `
+const agricultureQuestionThirteenHTML = `
     <form>
         <p>
 MSME making notable advances towards adapting renewable energy or net zero emissions?
@@ -129,17 +129,17 @@ MSME making notable advances towards adapting renewable energy or net zero emiss
 `;
 
 const agricultureQuestions = [
-    questionOneHTML,
-    questionTwoHTML,
-    questionThreeHTML,
-    questionFourHTML,
-    questionFiveHTML,
-    questionSixHTML,
-    questionSevenHTML,
-    questionEightHTML,
-    questionNineHTML,
-    questionTenHTML,
-    questionElevenHTML,
-    questionTwelveHTML,
-    questionThirteenHTML
+    agricultureQuestionOneHTML,
+    agricultureQuestionTwoHTML,
+    agricultureQuestionThreeHTML,
+    agricultureQuestionFourHTML,
+    agricultureQuestionFiveHTML,
+    agricultureQuestionSixHTML,
+    agricultureQuestionSevenHTML,
+    agricultureQuestionEightHTML,
+    agricultureQuestionNineHTML,
+    agricultureQuestionTenHTML,
+    agricultureQuestionElevenHTML,
+    agricultureQuestionTwelveHTML,
+    agricultureQuestionThirteenHTML
 ];
