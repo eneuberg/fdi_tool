@@ -61,7 +61,7 @@
                     ]
                 },
                 {
-                    "indicator": "Does the MNE have a history of adhering to the International Code of Conduct on Pesticide Management? (Y/N)",
+                    "indicator": "Does the MNE have a history of adhering to the International Code of Conduct on Pesticide Management?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
@@ -79,37 +79,37 @@
                     ]
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
+                    "indicator": "Does the MNE measure, publish, and address its gender pay gap?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -130,47 +130,47 @@
                     "rangeOptions": []
                 },
                 {
-                    "indicator": "Are all of the technologies used recognized by sector standards to be environmentally sustainable? (Y/N)",
+                    "indicator": "Are all of the technologies used recognized by sector standards to be environmentally sustainable?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Has IPA legally agreed to take responsibility for proper site clean-up after closure? (Y/N)",
+                    "indicator": "Has IPA legally agreed to take responsibility for proper site clean-up after closure?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
+                    "indicator": "Does the MNE measure, publish, and address its gender pay gap?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -179,7 +179,7 @@
         "Manufacturing": {
             "Manufacturing_direct": [
                 {
-                    "indicator": "Do FDI project proposals contain credible commitments to work safety and allocate a dedicated budget for protective gears? (Y/N)",
+                    "indicator": "Do FDI project proposals contain credible commitments to work safety and allocate a dedicated budget for protective gears?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
@@ -196,37 +196,37 @@
                     "rangeOptions": []
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
+                    "indicator": "Does the MNE measure, publish, and address its gender pay gap?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -235,42 +235,42 @@
         "Food": {
             "Food_direct": [
                 {
-                    "indicator": "Does the proposal give priority to healthy, nutritious, and sustainable diets and products, especially concerning children and other vulnerable groups? (Y/N)",
+                    "indicator": "Does the proposal give priority to healthy, nutritious, and sustainable diets and products, especially concerning children and other vulnerable groups?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
+                    "indicator": "Does the MNE measure, publish, and address its gender pay gap?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -279,57 +279,57 @@
         "Oil Refinery and Chemicals": {
             "Oil Refinery and Chemicals_direct": [
                 {
-                    "indicator": "Does the proposal address the risks and implications of climate change by using methods such as shadow prices on project carbon emissions? (Y/N)",
+                    "indicator": "Does the proposal address the risks and implications of climate change by using methods such as shadow prices on project carbon emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MNE participating in UN-supported national reduce emissions from deforestation and forest degradation (REDD+) programmes? (Y/N)",
+                    "indicator": "Is the MNE participating in UN-supported national reduce emissions from deforestation and forest degradation (REDD+) programmes?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE have measures to reduce the flaring of associated gas, including capture and use for power generation, liquefaction for transport, or re-injection back into the reservoirs? (Y/N)",
+                    "indicator": "Does the MNE have measures to reduce the flaring of associated gas, including capture and use for power generation, liquefaction for transport, or re-injection back into the reservoirs?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE proposal have Carbon Capture and Storage (CCS) measures in place? (Y/N)",
+                    "indicator": "Does the MNE proposal have Carbon Capture and Storage (CCS) measures in place?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
+                    "indicator": "Does the MNE measure, publish, and address its gender pay gap?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -338,37 +338,37 @@
         "Electric Power": {
             "Electric Power_direct": [
                 {
-                    "indicator": "Does the project have in place IEA recommended environmental safety standards and damage control mechanisms? (Y/N)",
+                    "indicator": "Does the project have in place IEA recommended environmental safety standards and damage control mechanisms?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
+                    "indicator": "Does the MNE measure, publish, and address its gender pay gap?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -377,7 +377,7 @@
         "Financial Services": {
             "Financial Services_direct": [
                 {
-                    "indicator": "Does the MNE use Socially Responsible Investment (SRI) screening methods for their investment strategies? (Y/N)",
+                    "indicator": "Does the MNE use Socially Responsible Investment (SRI) screening methods for their investment strategies?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
@@ -388,42 +388,42 @@
                     "rangeOptions": []
                 },
                 {
-                    "indicator": "Does the project perform sustainable credit risk assessment when lending money to its clients? (Y/N)",
+                    "indicator": "Does the project perform sustainable credit risk assessment when lending money to its clients?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
+                    "indicator": "Does the MNE measure, publish, and address its gender pay gap?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -450,37 +450,37 @@
                     "rangeOptions": []
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
+                    "indicator": "Does the MNE measure, publish, and address its gender pay gap?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -489,67 +489,67 @@
         "Information and Communications Technology": {
             "Information and Communications Technology_direct": [
                 {
-                    "indicator": "Does the MNE adhere to OECD Recommendation on Internet Policy Making Principles and have cybersecurity guidelines in place? (Y/N)",
+                    "indicator": "Does the MNE adhere to OECD Recommendation on Internet Policy Making Principles and have cybersecurity guidelines in place?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE have cybersecurity guidelines in place? (Y/N)",
+                    "indicator": "Does the MNE have cybersecurity guidelines in place?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is there radio frequency exposure in the range from 3 kHz to 300 GHz? (Y/N)",
+                    "indicator": "Is there radio frequency exposure in the range from 3 kHz to 300 GHz?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE follow the Step (Solving the E-Waste Problem) initiative? (Y/N)",
+                    "indicator": "Does the MNE follow the Step (Solving the E-Waste Problem) initiative?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE have special programs to raise digital literacy? (Y/N)",
+                    "indicator": "Does the MNE have special programs to raise digital literacy?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Has the MNE adopted the Child Online Protection Guidelines? (Y/N)",
+                    "indicator": "Has the MNE adopted the Child Online Protection Guidelines?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
+                    "indicator": "Does the MNE measure, publish, and address its gender pay gap?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -558,27 +558,27 @@
         "Healthcare": {
             "Pharmaceuticals": [
                 {
-                    "indicator": "Does the project aim to neutralize risks of vaccine production in the local value chains? (Y/N)",
+                    "indicator": "Does the project aim to neutralize risks of vaccine production in the local value chains?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts? (Y/N)",
+                    "indicator": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the project aimed at expanding the local range of services available? (Y/N)",
+                    "indicator": "Is the project aimed at expanding the local range of services available?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights? (Y/N)",
+                    "indicator": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
@@ -588,54 +588,54 @@
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
             ],
             "Medical devices": [
                 {
-                    "indicator": "Does the project aim to neutralize risks in the local value chains? (Y/N)",
+                    "indicator": "Does the project aim to neutralize risks in the local value chains?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights? (Y/N)",
+                    "indicator": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the project aimed at expanding the local range of services available? (Y/N)",
+                    "indicator": "Is the project aimed at expanding the local range of services available?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is there implementation of life cycle assessment (LCA) and circularity principles measuring multiple life cycles? (Y/N)",
+                    "indicator": "Is there implementation of life cycle assessment (LCA) and circularity principles measuring multiple life cycles?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
@@ -645,54 +645,54 @@
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
             ],
             "Biotechnology": [
                 {
-                    "indicator": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts? (Y/N)",
+                    "indicator": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project take part in safety reporting in clinical trials? (Y/N)",
+                    "indicator": "Does the project take part in safety reporting in clinical trials?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the project aimed at expanding the local range of services available? (Y/N)",
+                    "indicator": "Is the project aimed at expanding the local range of services available?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Has the project conducted extensive market research evaluating long-term product market value, regional drug regulations, competitors, etc.? (Y/N)",
+                    "indicator": "Has the project conducted extensive market research evaluating long-term product market value, regional drug regulations, competitors, etc.?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
@@ -702,49 +702,49 @@
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
             ],
             "Healthcare services": [
                 {
-                    "indicator": "Is the project compatible with social objectives like universal access and affordability? (Y/N)",
+                    "indicator": "Is the project compatible with social objectives like universal access and affordability?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the project aimed at expanding the local range of services available? (Y/N)",
+                    "indicator": "Is the project aimed at expanding the local range of services available?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project have in place strategies for reducing and properly managing hazardous waste and plastics? (Y/N)",
+                    "indicator": "Does the project have in place strategies for reducing and properly managing hazardous waste and plastics?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
+                    "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
@@ -754,27 +754,27 @@
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "indicator": "Does the project procure from the local base economy where possible and feasible?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women.",
                     "comment": "",
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions?",
                     "comment": "",
                     "evaluation": "checkbox"
                 }

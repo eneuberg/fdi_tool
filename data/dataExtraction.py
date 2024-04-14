@@ -40,6 +40,7 @@ def process_excel_to_json(excel_file):
             if pd.isnull(row.iloc[i]):  # Stop if the indicator text cell is empty
                 break
             indicator_text = row.iloc[i].strip()
+            indicator_text = re.sub(r'\(y/n\)', '', indicator_text, flags=re.IGNORECASE).strip()
             evaluation = row.iloc[i + 1] if not pd.isnull(row.iloc[i + 1]) else ""
             comment = row.iloc[i + 2] if not pd.isnull(row.iloc[i + 2]) else ""
         
