@@ -38,6 +38,8 @@ def process_excel_to_json(excel_file):
             indicator_text = row.iloc[i]
             evaluation = row.iloc[i + 1]
             comment = row.iloc[i + 2]  # Get the comment from the next column
+            if pd.isna(comment):
+                comment = ""
             print(indicator_text)
             print(evaluation)
             print(comment)

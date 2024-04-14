@@ -4,49 +4,49 @@
             "Agriculture_direct": [
                 {
                     "indicator": "Is the operating surplus divided by the land value expressed as a percentage? (Note: This measure assumes that land values reflect production potential and not other externalities.)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "Which of the following complies?\n\n    ~ Access to or availed credit\n    ~ Access to or availed insurance\n    ~ Share of a single agricultural commodity less than 66% in the total value of production of the holding",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "unknown"
                 },
                 {
                     "indicator": "Is the FDI project likely to cause one of the following:\n\n    ~ Soil erosion\n    ~ Reduction in soil fertility\n    ~ Salinization of irrigated land\n    ~ Waterlogging",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "unknown"
                 },
                 {
                     "indicator": "Annual groundwater abstraction for agriculture by MNE \u2013 annual groundwater recharge from rainfall =Groundwater balance (m3) (if negative ballance add \"-\") Dont know how to rephrase this",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "Does the MNE have a history of adhering to the International Code of Conduct on Pesticide Management? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "With which of the following points does the FDI comply:\n\n    ~ Leaves at least 10% of the holding area for natural or diverse vegetation.\n    ~ Produces agricultural products that are organically certified, or its products are undergoing the certification process.\n    ~ Does not use medically important antimicrobials as growth promoters.\n    ~ At least two of the following contribute to farm production: 1) temporary crops, 2) pasture, 3) permanent crops, 4) trees on farm, 5) livestock or animal products, and 6) aquaculture.\n    ~ Practices crop or crop/pasture rotation involving at least 2 crops or crops and pastures on at least 80% of the farm cultivated area (excluding permanent crops and permanent pastures) over a period of 3 years. In case of a 2-crop rotation, the 2 crops must be from different plant genus, e.g., a grass plus a legume, or a grass plus a tuber etc.\n    ~ Livestock includes locally adapted breeds.",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "unknown"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ]
@@ -55,49 +55,49 @@
             "Mining_direct": [
                 {
                     "indicator": "What percentage of the generated profits is reinvested into further project development?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "What percentage of the generated profits is reinvested into local research and development?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "Are all of the technologies used recognized by sector standards to be environmentally sustainable? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Has IPA legally agreed to take responsibility for proper site clean-up after closure? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ]
@@ -106,49 +106,49 @@
             "Manufacturing_direct": [
                 {
                     "indicator": "Do FDI project proposals contain credible commitments to work safety and allocate a dedicated budget for protective gears? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "What is the projected annual production growth provided in the project business plan? (Please specify in percentage)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "What percentage of workers are fully employed for at least 12 months?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ]
@@ -157,42 +157,42 @@
             "Food_direct": [
                 {
                     "indicator": "Does the proposal give priority to healthy, nutritious, and sustainable diets and products, especially concerning children and other vulnerable groups? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "\nIs the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ]
@@ -201,47 +201,47 @@
             "Oil Refinery and Chemicals_direct": [
                 {
                     "indicator": "Does the proposal address the risks and implications of climate change by using methods such as shadow prices on project carbon emissions? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Is the MNE participating in UN-supported national reduce emissions from deforestation and forest degradation (REDD+) programmes? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE have measures to reduce the flaring of associated gas, including capture and use for power generation, liquefaction for transport, or re-injection back into the reservoirs? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE proposal have Carbon Capture and Storage (CCS) measures in place? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ]
@@ -250,37 +250,37 @@
             "Electric Power_direct": [
                 {
                     "indicator": "Does the project have in place IEA recommended environmental safety standards and damage control mechanisms? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "\nIs the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)\n",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ]
@@ -289,48 +289,48 @@
             "Financial Services_direct": [
                 {
                     "indicator": "Does the MNE use Socially Responsible Investment (SRI) screening methods for their investment strategies? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "What percentage of the portfolio investments consists of green bonds?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "Does the project perform sustainable credit risk assessment when lending money to its clients? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ]
@@ -339,50 +339,50 @@
             "Tourism and hospitality_direct": [
                 {
                     "indicator": "What is the expected number of tourists attracted per 1 million USD of investment?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "What is the estimated expenditure made by tourists for accommodation, food, and any leisure activities during their stay in the foreign-invested tourism facility, measured in $USD per week per tourist?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "What are the environmental damages caused per average tourist in a span of a year, measured in USD?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "range",
                     "rangeOptions": []
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ]
@@ -391,47 +391,47 @@
             "Information and Communications Technology_direct": [
                 {
                     "indicator": "Does the MNE adhere to OECD Recommendation on Internet Policy Making Principles and have cybersecurity guidelines in place? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE have cybersecurity guidelines in place? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Is there radio frequency exposure in the range from 3 kHz to 300 GHz? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE follow the Step (Solving the E-Waste Problem) initiative? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE have special programs to raise digital literacy? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Has the MNE adopted the Child Online Protection Guidelines? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ]
@@ -440,188 +440,188 @@
             "Pharmaceuticals": [
                 {
                     "indicator": "Does the project aim to neutralize risks of vaccine production in the local value chains? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Is the project aimed at expanding the local range of services available? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "unknown"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ],
             "Medical devices": [
                 {
                     "indicator": "Does the project aim to neutralize risks in the local value chains? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Is the project aimed at expanding the local range of services available? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Is there implementation of life cycle assessment (LCA) and circularity principles measuring multiple life cycles? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "unknown"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ],
             "Biotechnology": [
                 {
                     "indicator": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project take part in safety reporting in clinical trials? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Is the project aimed at expanding the local range of services available? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Has the project conducted extensive market research evaluating long-term product market value, regional drug regulations, competitors, etc.? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "unknown"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ],
             "Healthcare services": [
                 {
                     "indicator": "Is the project compatible with social objectives like universal access and affordability? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Is the project aimed at expanding the local range of services available? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project have in place strategies for reducing and properly managing hazardous waste and plastics? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "unknown"
                 },
                 {
                     "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 },
                 {
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
-                    "comment": NaN,
+                    "comment": "",
                     "evaluation": "boolean"
                 }
             ],
