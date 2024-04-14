@@ -6,7 +6,23 @@
                     "indicator": "Is the operating surplus divided by the land value expressed as a percentage? (Note: This measure assumes that land values reflect production potential and not other externalities.)",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 8
+                        },
+                        {
+                            "operator": "between",
+                            "comparator": [
+                                8,
+                                15
+                            ]
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 15
+                        }
+                    ]
                 },
                 {
                     "indicator": "Which of the following complies?",
@@ -33,7 +49,16 @@
                     "indicator": "Annual groundwater abstraction for agriculture by MNE \u2013 annual groundwater recharge from rainfall =Groundwater balance (m3) (if negative ballance add \"-\") Dont know how to rephrase this",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 0
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 0
+                        }
+                    ]
                 },
                 {
                     "indicator": "Does the MNE have a history of adhering to the International Code of Conduct on Pesticide Management? (Y/N)",
@@ -65,6 +90,26 @@
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -118,6 +163,16 @@
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
                 }
             ]
         },
@@ -169,6 +224,11 @@
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
                 }
             ]
         },
@@ -210,7 +270,7 @@
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "\nIs the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -262,6 +322,16 @@
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
                 }
             ]
         },
@@ -298,7 +368,7 @@
                     "evaluation": "checkbox"
                 },
                 {
-                    "indicator": "\nIs the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)\n",
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -349,6 +419,11 @@
                 },
                 {
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -403,6 +478,11 @@
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
                 }
             ]
         },
@@ -450,6 +530,26 @@
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the project procure from the local base economy where possible and feasible? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions? (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -501,6 +601,16 @@
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
                 }
             ],
             "Medical devices": [
@@ -546,6 +656,16 @@
                 },
                 {
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions? (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
                 }
@@ -595,6 +715,16 @@
                     "indicator": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? This includes offering flexible working arrangements or safe transportation to working facilities, balancing the male/female night shift ratio, offering or supporting daycare/childcare, addressing sexual harassment, and providing gender-appropriate work gear. (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions? (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
                 }
             ],
             "Healthcare services": [
@@ -640,6 +770,11 @@
                 },
                 {
                     "indicator": "Does the company's business model and orientation focus on female well-being externally? This includes publicizing Corporate Social Responsibility (CSR) reports, offering products and services targeting women, and engaging in external partnerships or charity initiatives aimed at supporting women. (Y/N)",
+                    "comment": "",
+                    "evaluation": "checkbox"
+                },
+                {
+                    "indicator": "Is the MSME making notable advances towards adapting renewable energy or achieving net-zero emissions? (Y/N)",
                     "comment": "",
                     "evaluation": "checkbox"
                 }

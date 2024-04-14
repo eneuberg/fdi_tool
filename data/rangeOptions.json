@@ -1,0 +1,31 @@
+{
+	"subsectors":	{
+		"Agriculture_direct":	{
+			"0": [
+                {
+                    "operator": "less",
+                    "comparator": 8
+                },
+                {
+                    "operator": "between",
+                    "comparator": [8,15]
+                },
+                {
+                    "operator": "more",
+                    "comparator": 15
+                }
+            ],
+            "3": [
+                {
+                    "operator": "less",
+                    "comparator": 0
+                },
+                {
+                    "operator": "more",
+                    "comparator": 0
+                }
+            ]
+		}
+
+	}
+}
