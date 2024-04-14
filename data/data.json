@@ -121,13 +121,31 @@
                     "indicator": "What percentage of the generated profits is reinvested into further project development?",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 20
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 20
+                        }
+                    ]
                 },
                 {
                     "indicator": "What percentage of the generated profits is reinvested into local research and development?",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 5
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 5
+                        }
+                    ]
                 },
                 {
                     "indicator": "Are all of the technologies used recognized by sector standards to be environmentally sustainable?",
@@ -187,13 +205,31 @@
                     "indicator": "What is the projected annual production growth provided in the project business plan? (Please specify in percentage)",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 10
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 10
+                        }
+                    ]
                 },
                 {
                     "indicator": "What percentage of workers are fully employed for at least 12 months?",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 80
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 80
+                        }
+                    ]
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
@@ -385,7 +421,16 @@
                     "indicator": "What percentage of the portfolio investments consists of green bonds?",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 20
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 20
+                        }
+                    ]
                 },
                 {
                     "indicator": "Does the project perform sustainable credit risk assessment when lending money to its clients?",
@@ -435,19 +480,46 @@
                     "indicator": "What is the expected number of tourists attracted per 1 million USD of investment?",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 100
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 100
+                        }
+                    ]
                 },
                 {
                     "indicator": "What is the estimated expenditure made by tourists for accommodation, food, and any leisure activities during their stay in the foreign-invested tourism facility, measured in $USD per week per tourist?",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 1000
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 1000
+                        }
+                    ]
                 },
                 {
                     "indicator": "What are the environmental damages caused per average tourist in a span of a year, measured in USD?",
                     "comment": "",
                     "evaluation": "range",
-                    "rangeOptions": []
+                    "rangeOptions": [
+                        {
+                            "operator": "less",
+                            "comparator": 100
+                        },
+                        {
+                            "operator": "more",
+                            "comparator": 100
+                        }
+                    ]
                 },
                 {
                     "indicator": "Does the project offer paid maternity and paternity leave to its workers?",
