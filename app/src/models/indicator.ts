@@ -1,4 +1,5 @@
-import {Evaluation, EvaluationCriteria} from "./evaluation";
+import {Evaluation, EvaluationCriteria} from "./evaluation/evaluation";
+import {EvaluationFactory} from "./evaluation/evaluationFactory";
 
 export class Indicator {
     text: string;
@@ -9,7 +10,7 @@ export class Indicator {
     constructor(text: string, comment: string, criteria: EvaluationCriteria) {
         this.text = text;
         this.comment = comment;
-        this.evaluation = new Evaluation(criteria);
+        this.evaluation = EvaluationFactory.createEvaluation(criteria);
         this.response = null;
     }
 
