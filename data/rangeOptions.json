@@ -4,25 +4,25 @@
 			"0": [
                 {
                     "operator": "less",
-                    "comparator": 8
-                },
-                {
-                    "operator": "between",
-                    "comparator": [8,15]
+                    "comparator": 8,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 15
+                    "comparator": 15,
+                    "returnValue": true
                 }
             ],
             "3": [
                 {
                     "operator": "less",
-                    "comparator": 0
+                    "comparator": 0,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 0
+                    "comparator": 0,
+                    "returnValue": true
                 }
             ]
 		},
@@ -30,21 +30,25 @@
             "0": [
                 {
                     "operator": "less",
-                    "comparator": 20
+                    "comparator": 20,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 20
+                    "comparator": 20,
+                    "returnValue": true
                 }
             ],
             "1": [
                 {
                     "operator": "less",
-                    "comparator": 5
+                    "comparator": 5,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 5
+                    "comparator": 5,
+                    "returnValue": true
                 }
             ]
         },
@@ -52,21 +56,25 @@
             "1": [
                 {
                     "operator": "less",
-                    "comparator": 10
+                    "comparator": 10,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 10
+                    "comparator": 10,
+                    "returnValue": true
                 }
             ],
             "2": [
                 {
                     "operator": "less",
-                    "comparator": 80
+                    "comparator": 80,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 80
+                    "comparator": 80,
+                    "returnValue": true
                 }
             ]
         },
@@ -74,11 +82,13 @@
             "1": [
                 {
                     "operator": "less",
-                    "comparator": 20
+                    "comparator": 20,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 20
+                    "comparator": 20,
+                    "returnValue": true
                 }
             ]
         },
@@ -86,31 +96,37 @@
             "0": [
                 {
                     "operator": "less",
-                    "comparator": 100
+                    "comparator": 100,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 100
+                    "comparator": 100,
+                    "returnValue": true
                 }
             ],
             "1": [
                 {
                     "operator": "less",
-                    "comparator": 1000
+                    "comparator": 1000,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 1000
+                    "comparator": 1000,
+                    "returnValue": true
                 }
             ],
             "2": [
                 {
                     "operator": "less",
-                    "comparator": 100
+                    "comparator": 100,
+                    "returnValue": false
                 },
                 {
                     "operator": "more",
-                    "comparator": 100
+                    "comparator": 100,
+                    "returnValue": true
                 }
             ]
         }
