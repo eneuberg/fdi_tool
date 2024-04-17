@@ -49,7 +49,10 @@ def process_excel_to_json(excel_file):
                     }
                 }
             elif "multi checkbox" in evaluation.lower():
-                options = [line.strip()[2:] for line in indicator_text.split('\n') if line.strip().startswith('~')]
+                lines = indicator_text.split('\n')
+                main_indicator = lines[0].strip()
+                options = [line.strip()[2:] for line in lines[1:] if line.strip().startswith('~')]
+                indicator["text"] = main_indicator
                 indicator["evaluation"] = {
                     "type": "multicheckbox",
                     "options": options
