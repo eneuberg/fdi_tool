@@ -78,7 +78,7 @@ fetch('../data/data.json')
             }
         }
 
-        // Sector selection form HTML
+        // Subsector selection form HTML
         const sectorSelectionForm = `
             <form id="sectorForm">
                 <select id="sectorSelect" name="sector">
