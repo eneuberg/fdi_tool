@@ -18,14 +18,26 @@ export class Indicator {
         this.response = response;
     }
 
-    evaluateStoredResponse(): boolean {
+    evaluateStoredResponse(): boolean | null {
         if (this.response === null) {
             throw new Error("No response stored for evaluation.");
         }
-        return <boolean>this.evaluation.evaluate(this.response);
+        return this.evaluation.evaluate(this.response);
     }
 
     resetResponse(): void {
         this.response = null;
+    }
+
+    isCompleted(): boolean {
+        return this.response !== null;
+    }
+
+    renderIndicator(): string {
+        return `
+            <p>${this.text}</p>
+            <p>${this.comment}</p>
+            ${this.evaluation.render()}
+        `;
     }
 }
