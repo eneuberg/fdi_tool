@@ -45,13 +45,19 @@ export class Subsector {
 
     renderSubsector(): string {
         const nameHTML = !this.isRealSubsector ? `<h2>Subsector: ${this.name}</h2>` : '';
+
+        const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : -1;
+        const progressBarHTML = `<progress value="${currentIndex + 1}" max="${this.indicators.length}"></progress>`;
+
         return `
-            ${nameHTML}
-            <form id="indicatorForm">
-                ${this.currentIndicator?.renderIndicator()}
-                <button id="next" type="submit">Next</button>
-                <button id="previous" type="submit">Previous</button>
-            </form>
-        `;
+        ${nameHTML}
+        ${progressBarHTML}
+        <form id="indicatorForm">
+            ${this.currentIndicator?.renderIndicator()}
+            <button id="next" type="submit">Next</button>
+            <button id="previous" type="submit">Previous</button>
+        </form>
+    `;
     }
+
 }
