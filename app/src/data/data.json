@@ -23,7 +23,7 @@
                         }
                     },
                     {
-                        "text": "Which of the following complies?\n\n    ~ Access to or availed credit\n    ~ Access to or availed insurance\n    ~ Share of a single agricultural commodity less than 66% in the total value of production of the holding",
+                        "text": "Which of the following complies?",
                         "comment": "",
                         "evaluation": {
                             "type": "multicheckbox",
@@ -35,7 +35,7 @@
                         }
                     },
                     {
-                        "text": "Is the FDI project likely to cause one of the following:\n\n    ~ Soil erosion\n    ~ Reduction in soil fertility\n    ~ Salinization of irrigated land\n    ~ Waterlogging",
+                        "text": "Is the FDI project likely to cause one of the following:",
                         "comment": "",
                         "evaluation": {
                             "type": "multicheckbox",
@@ -74,7 +74,7 @@
                         }
                     },
                     {
-                        "text": "With which of the following points does the FDI comply:\n\n    ~ Leaves at least 10% of the holding area for natural or diverse vegetation.\n    ~ Produces agricultural products that are organically certified, or its products are undergoing the certification process.\n    ~ Does not use medically important antimicrobials as growth promoters.\n    ~ At least two of the following contribute to farm production: 1) temporary crops, 2) pasture, 3) permanent crops, 4) trees on farm, 5) livestock or animal products, and 6) aquaculture.\n    ~ Practices crop or crop/pasture rotation involving at least 2 crops or crops and pastures on at least 80% of the farm cultivated area (excluding permanent crops and permanent pastures) over a period of 3 years. In case of a 2-crop rotation, the 2 crops must be from different plant genus, e.g., a grass plus a legume, or a grass plus a tuber etc.\n    ~ Livestock includes locally adapted breeds.",
+                        "text": "With which of the following points does the FDI comply:",
                         "comment": "",
                         "evaluation": {
                             "type": "multicheckbox",
