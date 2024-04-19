@@ -21,8 +21,9 @@ export class RangeEvaluation extends Evaluation {
         return null; // Return null if no ranges match
     }
 
-    render(): string {
-        // Assuming rendering a number input for range evaluation
-        return `<input type="number" name="rangeInput" />`;
+
+    render(response: number | null): string {
+        return `<input type="number" name="rangeInput" ${response !== null ? `value="${response}"` : ''} />`;
     }
+
 }

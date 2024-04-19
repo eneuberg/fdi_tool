@@ -44,20 +44,22 @@ export class Subsector {
     }
 
     renderSubsector(): string {
-        const nameHTML = !this.isRealSubsector ? `<h2>Subsector: ${this.name}</h2>` : '';
+        const nameHTML = this.isRealSubsector ? `<h2>Subsector: ${this.name}</h2>` : '';
 
-        const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : -1;
-        const progressBarHTML = `<progress value="${currentIndex + 1}" max="${this.indicators.length}"></progress>`;
+        const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : 0;
+        const progressValue = currentIndex / (this.indicators.length - 1); // Adjusted formula
+        const progressBarHTML = `<progress value="${progressValue}" max="1"></progress>`;
+
 
         return `
-        ${nameHTML}
-        ${progressBarHTML}
-        <form id="indicatorForm">
-            ${this.currentIndicator?.renderIndicator()}
-            <button id="next" type="submit">Next</button>
-            <button id="previous" type="submit">Previous</button>
-        </form>
-    `;
+            ${nameHTML}
+            ${progressBarHTML}
+            <form id="indicatorForm">
+                ${this.currentIndicator?.renderIndicator()}
+                <button id="previousButton" name="action" value="previous" type="submit">Previous</button>
+                <button id="nextButton" name="action" value="next" type="submit">Next</button>
+            </form>
+        `;
     }
 
 }

@@ -35,9 +35,11 @@ export class Indicator {
 
     renderIndicator(): string {
         return `
-            <p>${this.text}</p>
-            <p>${this.comment}</p>
-            ${this.evaluation.render()}
+            <div id="indicator">
+                <p>${this.text}</p>
+                <p>${this.comment}</p>
+                ${this.evaluation.render(this.response)}
+            </div>
         `;
     }
 }

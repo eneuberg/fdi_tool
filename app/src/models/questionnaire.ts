@@ -38,10 +38,12 @@ export class Questionnaire {
     }
 
     storeResponse(response: any): void {
+        console.log(response);
         this.currentSector?.currentSubsector?.currentIndicator?.storeResponse(response);
     }
 
     renderQuestionnaire(): string {
+        //console.log(this.currentSector?.currentSubsector?.currentIndicator?.response);
         if (this.completed) {
             return this.renderResults();
         }

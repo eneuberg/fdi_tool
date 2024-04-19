@@ -5,7 +5,6 @@
     "strict": true,
     "jsx": "preserve",
     "outDir": "./dist",
-    "importHelpers": true,
     "moduleResolution": "node",
     "experimentalDecorators": true,
     "esModuleInterop": true,

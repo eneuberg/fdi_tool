@@ -13,61 +13,72 @@ export class EventManager {
 
     static setup(questionnaire: Questionnaire) {
         EventManager.questionnaire = questionnaire;
+        EventManager.addGlobalEventListener();
     }
 
-    static addNextButtonEventListener() {
-        function handleNextButton(event: Event) {
+    static addGlobalEventListener() {
+        const questionnaireElement = document.getElementById('questionnaire');
+        if (!questionnaireElement) throw new Error("Questionnaire element not found");
+
+        // TODO: change event type; fired for <input>
+        questionnaireElement.addEventListener('change', (event) => {
+            const target = event.target as HTMLElement;
+            const select = target as HTMLSelectElement;
+            switch (target.id) {
+                case 'sectorSelect': {
+                    EventManager.questionnaire.selectSector(select.value);
+                    renderQuestionnaire();
+                    break;
+                }
+                case 'subsectorSelect': {
+                    EventManager.questionnaire.selectSubsector(select.value);
+                    renderQuestionnaire();
+                    break;
+                }
+            }
+        });
+
+        questionnaireElement.addEventListener('submit', (event) => {
             event.preventDefault();
-            //EventManager.questionnaire.storeResponse(event.target ? event.target.form);
-            EventManager.questionnaire.nextIndicator();
+            const form = event.target as HTMLFormElement;
+            const submitter = event.submitter as HTMLButtonElement;
+            const formData = new FormData(form, submitter)
+
+            const firstChild = form.querySelector('input') as HTMLInputElement;
+            switch (firstChild.name) {
+                case 'multiCheckbox': {
+                    const allCheckboxes = form.querySelectorAll<HTMLInputElement>('input[type="checkbox"]');
+                    const checkedStates = Array.from(allCheckboxes).map(checkbox => checkbox.checked);
+                    this.questionnaire.storeResponse(checkedStates);
+                    break;
+                }
+                case 'singleCheckbox': {
+                    const checkboxData = formData.get('singleCheckbox');
+                    this.questionnaire.storeResponse(checkboxData);
+                    break;
+                }
+                case 'rangeInput': {
+                    const rangeData = formData.get('rangeInput');
+                    this.questionnaire.storeResponse(rangeData);
+                    break;
+                }
+            }
+
+            const response = formData.get('action');
+            switch (response) {
+                case 'next':
+                    EventManager.questionnaire.nextIndicator();
+                    break;
+                case 'previous':
+                    EventManager.questionnaire.previousIndicator();
+                    break;
+                default:
+                    console.error('Unexpected action');
+            }
+
+
+
             renderQuestionnaire();
-        }
-
-        const nextButton = document.getElementById('nextButton');
-        if (!nextButton)
-            throw new Error("Next button not found");
-        //nextButton.removeEventListener('submit', handleNextButton)
-        nextButton.addEventListener('submit', handleNextButton);
-    }
-
-
-    static addPrevButtonEventListener() {
-        function handlePreviousButton(event: Event) {
-            event.preventDefault();
-            EventManager.questionnaire.previousIndicator();
-            renderQuestionnaire();
-        }
-
-        const previousButton = document.getElementById('previousButton');
-        if (!previousButton)
-            throw new Error("Previous button not found");
-        //previousButton.removeEventListener('submit', handlePreviousButton)
-        previousButton.addEventListener('submit', handlePreviousButton);
-    }
-
-    addSectorSelectionEventListeners() {
-        function handleSectorSelect(event: Event) {
-            EventManager.questionnaire.selectSector((event.target as HTMLSelectElement).value);
-            renderQuestionnaire();
-        }
-
-        const sectorSelect = document.getElementById('sector-select');
-        if (!sectorSelect)
-            throw new Error("Sector select element not found");
-        //sectorSelect.removeEventListener('change', handleSectorSelect);
-        sectorSelect.addEventListener('change', handleSectorSelect);
-    }
-
-    addSubsectorSelectionEventListeners() {
-        function handleSectorSelect(event: Event) {
-            EventManager.questionnaire.selectSubsector((event.target as HTMLSelectElement).value);
-            renderQuestionnaire();
-        }
-
-        const sectorSelect = document.getElementById('sector-select');
-        if (!sectorSelect)
-            throw new Error("Subsector select element not found");
-        //sectorSelect.removeEventListener('change', handleSectorSelect);
-        sectorSelect.addEventListener('change', handleSectorSelect);
+        });
     }
 }

@@ -23,5 +23,5 @@ export type EvaluationCriteria = MultiCheckboxCriteria | RangeCriteria | Checkbo
 
 export abstract class Evaluation {
     abstract evaluate(response: any): boolean | null;
-    abstract render(): string;
+    abstract render(response: any): string;
 }
