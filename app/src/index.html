@@ -1,13 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>FDI Tool</title>
     <link rel="stylesheet" href="css/styles.css">
+    <script type="module" src="main.ts"></script>
     <base href=".">
 </head>
+
+<video autoplay muted loop id="background-video">
+    <source src="Galaxy.mp4" type="video/mp4">
+</video>
+
 <body>
-    <div id="questionnaire"></div>
-    <script type="module" src="main.ts"></script>
+    <div class="container">
+        <div class="header">
+            <h1>The FDI Tool </h1>
+            <p> Here will be some explanatory Text </p>
+        </div>
+        <div class="questionContainer" id="questionnaire">
+        </div>
+    </div>
 </body>
+
 </html>

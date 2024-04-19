@@ -1,0 +1,62 @@
+* {
+
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 70vh;
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    /* Elemente vertikal anordnen */
+    justify-content: center;
+    /* Elemente vertikal zentrieren */
+    align-items: center;
+    /* Elemente horizontal zentrieren */
+    width: 600px;
+    /* Breite des Containers */
+    padding: 20px;
+    background: transparent;
+    border: 2px solid rgb(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    color: #fff;
+    border-radius: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+}
+
+p {
+    font-size: 20px;
+    color: white;
+}
+
+.questionContainer {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Stilisiere das Hintergrundvideo, um es über das gesamte Fenster zu legen */
+#background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
