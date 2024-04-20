@@ -35,8 +35,8 @@ export class Indicator {
 
     renderIndicator(): string {
         return `
-            <div id="indicator">
-                <p>${this.text}</p>
+            <div class="indicator" id="indicator">
+                <p id="question">${this.text}</p>
                 <p>${this.comment}</p>
                 ${this.evaluation.render(this.response)}
             </div>

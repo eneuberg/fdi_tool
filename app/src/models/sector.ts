@@ -40,7 +40,7 @@ export class Sector {
 
     renderSector(): string {
         return `
-            <h2>Sector: ${this.name}</h2>
+            
             ${this.renderSubsectorSelection()}
             ${this.currentSubsector ? this.currentSubsector.renderSubsector() : ''}
         `;

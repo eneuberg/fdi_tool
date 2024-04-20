@@ -677,7 +677,7 @@ class Questionnaire {
         `;
     }
     renderIncompleteQuestionnaire() {
-        let sectorOptions = '<option value="">Choose a sector</option>';
+        let sectorOptions = '<option id="placeholder-chooseSector" value="">Choose a sector</option>';
         this.sectors.forEach((sector)=>{
             const selected = this.currentSector && this.currentSector.name === sector.name ? " selected" : "";
             sectorOptions += `<option value="${sector.name}"${selected}>${sector.name}</option>`;
@@ -752,8 +752,8 @@ class Indicator {
     }
     renderIndicator() {
         return `
-            <div id="indicator">
-                <p>${this.text}</p>
+            <div class="indicator" id="indicator">
+                <p id="question">${this.text}</p>
                 <p>${this.comment}</p>
                 ${this.evaluation.render(this.response)}
             </div>
@@ -796,7 +796,10 @@ class CheckboxEvaluation extends (0, _evaluation.Evaluation) {
         return response; // Assuming a single checkbox returns true if checked
     }
     render(response) {
-        return `<input type="checkbox" name="singleCheckbox" ${response ? "checked" : ""} />`;
+        return `
+        <input class="checkbox" type="checkbox" name="singleCheckbox" ${response ? "checked" : ""}/>
+        
+         `;
     }
 }
 
@@ -844,7 +847,7 @@ class RangeEvaluation extends (0, _evaluation.Evaluation) {
         return null; // Return null if no ranges match
     }
     render(response) {
-        return `<input type="number" name="rangeInput" ${response !== null ? `value="${response}"` : ""} />`;
+        return `<input type="number" placeholder="Percentage" maxlength="3" name="rangeInput"  ${response !== null ? `value="${response}"` : ""}/>`;
     }
 }
 
@@ -889,18 +892,20 @@ class Subsector {
         }
     }
     renderSubsector() {
-        const nameHTML = this.isRealSubsector ? `<h2>Subsector: ${this.name}</h2>` : "";
+        const nameHTML = this.isRealSubsector ? `<h2> ${this.name}</h2>` : "";
         const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : 0;
         const progressValue = currentIndex / (this.indicators.length - 1); // Adjusted formula
-        const progressBarHTML = `<progress value="${progressValue}" max="1"></progress>`;
+        const progressBarHTML = `<progress class="progressBar" value="${progressValue}" max="1"></progress>`;
         return `
-            ${nameHTML}
-            ${progressBarHTML}
-            <form id="indicatorForm">
+            ${nameHTML} 
+            <form class= "indicatorForm" id="indicatorForm">
                 ${this.currentIndicator?.renderIndicator()}
-                <button id="previousButton" name="action" value="previous" type="submit">Previous</button>
-                <button id="nextButton" name="action" value="next" type="submit">Next</button>
+                <div class="next-back-button">
+                    <button id="previousButton" name="action" value="previous" type="submit">Previous</button>
+                    <button id="nextButton" name="action" value="next" type="submit">Next</button>
+                </div>
             </form>
+            ${progressBarHTML}
         `;
     }
 }
@@ -942,7 +947,7 @@ class Sector {
     }
     renderSector() {
         return `
-            <h2>Sector: ${this.name}</h2>
+            
             ${this.renderSubsectorSelection()}
             ${this.currentSubsector ? this.currentSubsector.renderSubsector() : ""}
         `;

@@ -1,4 +1,4 @@
-import {Indicator} from "./indicator";
+import { Indicator } from "./indicator";
 
 export class Subsector {
     name: string;
@@ -44,21 +44,23 @@ export class Subsector {
     }
 
     renderSubsector(): string {
-        const nameHTML = this.isRealSubsector ? `<h2>Subsector: ${this.name}</h2>` : '';
+        const nameHTML = this.isRealSubsector ? `<h2> ${this.name}</h2>` : '';
 
         const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : 0;
         const progressValue = currentIndex / (this.indicators.length - 1); // Adjusted formula
-        const progressBarHTML = `<progress value="${progressValue}" max="1"></progress>`;
+        const progressBarHTML = `<progress class="progressBar" value="${progressValue}" max="1"></progress>`;
 
 
         return `
-            ${nameHTML}
-            ${progressBarHTML}
-            <form id="indicatorForm">
+            ${nameHTML} 
+            <form class= "indicatorForm" id="indicatorForm">
                 ${this.currentIndicator?.renderIndicator()}
-                <button id="previousButton" name="action" value="previous" type="submit">Previous</button>
-                <button id="nextButton" name="action" value="next" type="submit">Next</button>
+                <div class="next-back-button">
+                    <button id="previousButton" name="action" value="previous" type="submit">Previous</button>
+                    <button id="nextButton" name="action" value="next" type="submit">Next</button>
+                </div>
             </form>
+            ${progressBarHTML}
         `;
     }
 

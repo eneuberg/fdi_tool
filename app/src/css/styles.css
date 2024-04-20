@@ -33,12 +33,12 @@ body {
 
 h1 {
     font-size: 50px;
-    color: white;
+    color: rgb(242, 0, 255);
 }
 
 p {
     font-size: 20px;
-    color: white;
+    color: whitesmoke;
 }
 
 .questionContainer {
@@ -50,6 +50,8 @@ p {
     justify-content: center;
     align-items: center;
 }
+
+
 
 /* Stilisiere das Hintergrundvideo, um es über das gesamte Fenster zu legen */
 #background-video {

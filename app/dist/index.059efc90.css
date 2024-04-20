@@ -1,0 +1,41 @@
+.checkbox {
+  appearance: none;
+  background-color: #0000;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  outline: none;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox:checked {
+  background-color: #0033ca;
+}
+
+.checkbox-container {
+  align-items: center;
+  display: flex;
+}
+
+.checkbox-text {
+  color: #fff;
+  vertical-align: middle;
+  font-size: 16px;
+}
+
+input[type="number"] {
+  color: #fff;
+  background: none;
+  border: 2px solid #faffff33;
+  border-radius: 20px;
+  width: 150px;
+  height: 40px;
+  font-size: medium;
+  font-weight: 100;
+}
+
+input::placeholder {
+  color: #fff;
+  text-indent: 10px;
+}
+/*# sourceMappingURL=index.059efc90.css.map */

@@ -10,6 +10,9 @@ export class CheckboxEvaluation extends Evaluation {
     }
 
     render(response: boolean | null): string {
-        return `<input type="checkbox" name="singleCheckbox" ${response ? 'checked' : ''} />`;
+        return `
+        <input class="checkbox" type="checkbox" name="singleCheckbox" ${response ? 'checked' : ''}/>
+        
+         `;
     }
 }

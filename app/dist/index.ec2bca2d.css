@@ -1,0 +1,41 @@
+.questionContainer {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  height: auto;
+  margin: 10px;
+  display: flex;
+}
+
+.questionContainer #sectorSelect {
+  color: #fff;
+  background: none;
+  border: 2px solid #faffff33;
+  border-radius: 40px;
+  outline: none;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  font-size: medium;
+  font-weight: 100;
+  display: block;
+}
+
+.questionContainer #evaluation-text {
+  color: #fff;
+  background: none;
+  border: 2px solid #faffff33;
+  border-radius: 40px;
+  outline: none;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% - 40px);
+  height: 50px;
+  margin-bottom: 10px;
+  padding: 0 45px 0 20px;
+  font-size: medium;
+  font-weight: 100;
+  display: flex;
+}
+/*# sourceMappingURL=index.ec2bca2d.css.map */

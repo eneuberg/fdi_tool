@@ -77,7 +77,7 @@ export class Questionnaire {
 
 
     private renderIncompleteQuestionnaire(): string {
-        let sectorOptions = '<option value="">Choose a sector</option>';
+        let sectorOptions = '<option id="placeholder-chooseSector" value="">Choose a sector</option>';
         this.sectors.forEach(sector => {
             const selected = this.currentSector && this.currentSector.name === sector.name ? ' selected' : '';
             sectorOptions += `<option value="${sector.name}"${selected}>${sector.name}</option>`;
