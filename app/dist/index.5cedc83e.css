@@ -1,13 +1,17 @@
-.indicatorForm .next-back-button {
-  justify-content: center;
+.indicator {
   align-items: center;
+}
+
+.next-back-button {
+  align-items: center;
+  margin-top: 20px;
   display: flex;
 }
 
 .questionContainer button {
   cursor: pointer;
-  color: #fff;
-  background-color: #0000004d;
+  color: #000;
+  background-color: #ffffff4d;
   border: 50px;
   border-radius: 80px;
   outline: none;
@@ -17,8 +21,13 @@
   height: 45px;
   margin: 5px;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 200;
   display: flex;
   box-shadow: 0 0 10px #0000001a;
+}
+
+.questionContainer button:hover {
+  color: #333;
+  background-color: #ffffff80;
 }
 /*# sourceMappingURL=index.5cedc83e.css.map */

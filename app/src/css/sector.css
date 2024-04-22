@@ -1,9 +1,16 @@
-
+#indicatorForm{
+  margin-left: 30px;
+  margin-right: 30px;
+  width: 700px;
+  
+}
 
 #question {
-    margin: 40xp;
-  }
+  margin-top: 20px;
+  justify-content: flex-end;
+}
 
-  input { 
-    margin: 30px;
-  }
+input {
+  margin: 30px;
+  justify-content: flex-end;
+}

@@ -798,6 +798,7 @@ class CheckboxEvaluation extends (0, _evaluation.Evaluation) {
     render(response) {
         return `
         <input class="checkbox" type="checkbox" name="singleCheckbox" ${response ? "checked" : ""}/>
+        <span class="label-text">Agree, otherwise click next</span>
         
          `;
     }
@@ -825,7 +826,9 @@ class MultiCheckboxEvaluation extends (0, _evaluation.Evaluation) {
         return response.some((value)=>value === true);
     }
     render(response) {
-        return this.options.map((option, index)=>`<label><input type="checkbox" name="multiCheckbox" value="${option}" ${response && response[index] ? "checked" : ""} /> ${option}</label>`).join("<br />");
+        return this.options.map((option, index)=>`<label><input class="checkbox" type="checkbox" name="multiCheckbox" value="${option}" ${response && response[index] ? "checked" : ""} />
+            <span class="label-text">${option}</span>
+            </label>`).join("<br />");
     }
 }
 
@@ -899,7 +902,7 @@ class Subsector {
         return `
             ${nameHTML} 
             <form class= "indicatorForm" id="indicatorForm">
-                ${this.currentIndicator?.renderIndicator()}
+            ${nameHTML} ${this.currentIndicator?.renderIndicator()}
                 <div class="next-back-button">
                     <button id="previousButton" name="action" value="previous" type="submit">Previous</button>
                     <button id="nextButton" name="action" value="next" type="submit">Next</button>
