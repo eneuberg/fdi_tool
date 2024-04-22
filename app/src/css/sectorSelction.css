@@ -1,0 +1,43 @@
+/* Stilisiere den Container für die Frage */
+.questionContainer {
+    width: calc(100% - 40px);
+    height: auto;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Stilisiere das Dropdown-Menü für Sektorauswahl */
+.questionContainer #sectorSelect {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(250, 255, 255, .2);
+    border-radius: 40px;
+    color: #fff;
+    font-weight: 100;
+    font-size: medium;
+    padding: 10px;
+    outline: none;
+    display: block;
+}
+
+/* Stilisiere das Eingabefeld */
+.questionContainer #evaluation-text {
+    width: calc(100% - 40px);
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(250, 255, 255, .2);
+    border-radius: 40px;
+    margin-bottom: 10px;
+    color: #fff;
+  
+   
+    
+    
+    
+}
+

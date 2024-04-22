@@ -1,0 +1,26 @@
+.progressBar {
+  appearance: none;
+  background-color: #111;
+  border-radius: 1.5em;
+  justify-content: center;
+  align-items: center;
+  width: 500px;
+  height: 3em;
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+
+.progressBar:before {
+  content: "";
+  background-color: #00eaff;
+  border-radius: 1.5em;
+  width: 0%;
+  height: 100%;
+  transition: width .5s ease-in-out;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=index.6fa92c8a.css.map */

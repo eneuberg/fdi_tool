@@ -1,0 +1,1 @@
+{"mappings":"AAEA;;;;AAIE","sources":["src/css/sector.css"],"sourcesContent":["\n\n#question {\n    margin: 40xp;\n  }\n\n  input { \n    margin: 30px;\n  }"],"names":[],"version":3,"file":"index.31a0971c.css.map","sourceRoot":"/__parcel_source_root/"}
