@@ -8,8 +8,8 @@ export class MultiCheckboxEvaluation extends Evaluation {
         this.options = options;
     }
 
-    evaluate(response: boolean[]): boolean {
-        return response.some(value => value);
+    evaluate(response: boolean): boolean {
+        return response;
     }
 
     render(response: boolean | null): string {
