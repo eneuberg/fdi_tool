@@ -1,4 +1,4 @@
 .idea
-**/node_modules/
-**/.parcel_cache/
+/app/node_modules/
 /app/dist/*
+/app/.parcel-cache/
