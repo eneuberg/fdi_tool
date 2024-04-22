@@ -14,9 +14,11 @@ export class MultiCheckboxEvaluation extends Evaluation {
 
     render(response: boolean[] | null): string {
         return this.options.map((option, index) =>
-            `<label><input type="checkbox" name="multiCheckbox" value="${option}" ${
+            `<label><input class="checkbox" type="checkbox" name="multiCheckbox" value="${option}" ${
                 response && response[index] ? 'checked' : ''
-            } /> ${option}</label>`
+            } />
+            <span class="label-text">${option}</span>
+            </label>`
         ).join('<br />');
     }
 }

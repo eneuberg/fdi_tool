@@ -45,7 +45,6 @@ export class Subsector {
 
     renderSubsector(): string {
         const nameHTML = this.isRealSubsector ? `<h2> ${this.name}</h2>` : '';
-
         const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : 0;
         const progressValue = currentIndex / (this.indicators.length - 1); // Adjusted formula
         const progressBarHTML = `<progress class="progressBar" value="${progressValue}" max="1"></progress>`;
@@ -54,7 +53,7 @@ export class Subsector {
         return `
             ${nameHTML} 
             <form class= "indicatorForm" id="indicatorForm">
-                ${this.currentIndicator?.renderIndicator()}
+            ${nameHTML} ${this.currentIndicator?.renderIndicator()}
                 <div class="next-back-button">
                     <button id="previousButton" name="action" value="previous" type="submit">Previous</button>
                     <button id="nextButton" name="action" value="next" type="submit">Next</button>

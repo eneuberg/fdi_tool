@@ -1,21 +1,19 @@
 /* Stilisiere den Container für die Frage */
 .questionContainer {
-    width: calc(100% - 40px);
-    height: auto;
-    margin: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: flex-end;
 }
 
 /* Stilisiere das Dropdown-Menü für Sektorauswahl */
-.questionContainer #sectorSelect {
+#sectorSelect {
     width: 100%;
     height: 50px;
     background: transparent;
-    border: 2px solid rgba(250, 255, 255, .2);
+    border: 2px solid rgba(0, 0, 0, 0.2);
     border-radius: 40px;
-    color: #fff;
+    color: black;
     font-weight: 100;
     font-size: medium;
     padding: 10px;
@@ -24,7 +22,7 @@
 }
 
 /* Stilisiere das Eingabefeld */
-.questionContainer #evaluation-text {
+#evaluation-text {
     width: calc(100% - 40px);
     height: 50px;
     background: transparent;
@@ -33,11 +31,20 @@
     border: 2px solid rgba(250, 255, 255, .2);
     border-radius: 40px;
     margin-bottom: 10px;
-    color: #fff;
-  
-   
-    
-    
-    
+    justify-content: flex-end;
 }
 
+#subsectorSelect{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 40px;
+    color: black;
+    font-weight: 100;
+    font-size: medium;
+    padding: 10px;
+    outline: none;
+    display: block; 
+    margin-top: 20px;
+}

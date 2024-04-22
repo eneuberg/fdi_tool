@@ -12,6 +12,7 @@ export class CheckboxEvaluation extends Evaluation {
     render(response: boolean | null): string {
         return `
         <input class="checkbox" type="checkbox" name="singleCheckbox" ${response ? 'checked' : ''}/>
+        <span class="label-text">Agree, otherwise click next</span>
         
          `;
     }
