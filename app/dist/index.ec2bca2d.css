@@ -1,6 +1,5 @@
 .questionContainer {
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   width: calc(100% - 40px);
   height: auto;
@@ -28,14 +27,8 @@
   border: 2px solid #faffff33;
   border-radius: 40px;
   outline: none;
-  justify-content: center;
-  align-items: center;
   width: calc(100% - 40px);
   height: 50px;
   margin-bottom: 10px;
-  padding: 0 45px 0 20px;
-  font-size: medium;
-  font-weight: 100;
-  display: flex;
 }
 /*# sourceMappingURL=index.ec2bca2d.css.map */
