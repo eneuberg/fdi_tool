@@ -42,19 +42,21 @@ export class EventManager {
             event.preventDefault();
             const form = event.target as HTMLFormElement;
             const submitter = event.submitter as HTMLButtonElement;
-            const formData = new FormData(form, submitter)
+            const formData = new FormData(form, submitter);
 
             const firstChild = form.querySelector('input') as HTMLInputElement;
             switch (firstChild.name) {
-                case 'multiCheckbox': {
-                    const allCheckboxes = form.querySelectorAll<HTMLInputElement>('input[type="checkbox"]');
-                    const checkedStates = Array.from(allCheckboxes).map(checkbox => checkbox.checked);
-                    this.questionnaire.storeResponse(checkedStates);
+                case 'multiCheckbox' : {
+                    const checkboxData = formData.get('multiCheckbox');
+                    //console.log(checkboxData);
+                    let booleanData = checkboxData === 'yes' ? true : checkboxData === 'no' ? false : null;
+                    this.questionnaire.storeResponse(booleanData);
                     break;
                 }
                 case 'singleCheckbox': {
                     const checkboxData = formData.get('singleCheckbox');
-                    this.questionnaire.storeResponse(checkboxData);
+                    let booleanData = checkboxData === 'yes' ? true : checkboxData === 'no' ? false : null;
+                    this.questionnaire.storeResponse(booleanData);
                     break;
                 }
                 case 'rangeInput': {

@@ -9,16 +9,26 @@ export class MultiCheckboxEvaluation extends Evaluation {
     }
 
     evaluate(response: boolean[]): boolean {
-        return response.some(value => value === true);
+        return response.some(value => value);
     }
 
-    render(response: boolean[] | null): string {
-        return this.options.map((option, index) =>
-            `<label><input class="checkbox" type="checkbox" name="multiCheckbox" value="${option}" ${
-                response && response[index] ? 'checked' : ''
-            } />
-            <span class="label-text">${option}</span>
-            </label>`
-        ).join('<br />');
+    render(response: boolean | null): string {
+        // Map each option into a <p> element.
+        const optionsHtml = this.options.map(option =>
+            `<p class="option-item">${option}</p>`
+        ).join('');
+
+        const yesChecked = response === true ? 'checked' : '';
+        const noChecked = response === false ? 'checked' : '';
+
+        const checkboxesHtml = `
+        <label><input type="radio" name="multiCheckbox" value="no" ${noChecked}> No</label>
+        <label><input type="radio" name="multiCheckbox" value="yes" ${yesChecked}> Yes</label>
+    `;
+
+        // Return the combined HTML string
+        return `${optionsHtml}<div class="checkbox-container">${checkboxesHtml}</div>`;
     }
+
+
 }

@@ -10,10 +10,16 @@ export class CheckboxEvaluation extends Evaluation {
     }
 
     render(response: boolean | null): string {
-        return `
-        <input class="checkbox" type="checkbox" name="singleCheckbox" ${response ? 'checked' : ''}/>
-        <span class="label-text">Agree, otherwise click next</span>
-        
-         `;
+
+        const yesChecked = response === true ? 'checked' : '';
+        const noChecked = response === false ? 'checked' : '';
+
+        const checkboxesHtml = `
+        <label><input type="radio" name="singleCheckbox" value="no" ${noChecked}> No</label>
+        <label><input type="radio" name="singleCheckbox" value="yes" ${yesChecked}> Yes</label>
+        `;
+
+        // Return the combined HTML string
+        return `<div class="checkbox-container">${checkboxesHtml}</div>`;
     }
 }
