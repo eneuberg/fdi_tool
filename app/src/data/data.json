@@ -8,18 +8,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 8,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 15,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 8,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 15,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -52,18 +55,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 0,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 0,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "absoluteCanBeNegative",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 0,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 0,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -148,18 +154,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 20,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 20,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 20,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 20,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -167,18 +176,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 5,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 5,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 5,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 5,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -262,18 +274,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 10,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 10,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 10,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 10,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -281,18 +296,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 80,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 80,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 80,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 80,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -562,18 +580,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 20,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 20,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 20,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 20,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -643,18 +664,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 100,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 100,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "absoluteOnlyPositive",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 100,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 100,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -662,18 +686,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 1000,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 1000,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "absoluteOnlyPositive",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 1000,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 1000,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -681,18 +708,21 @@
                         "comment": "",
                         "evaluation": {
                             "type": "range",
-                            "ranges": [
-                                {
-                                    "operator": "less",
-                                    "comparator": 100,
-                                    "returnValue": false
-                                },
-                                {
-                                    "operator": "more",
-                                    "comparator": 100,
-                                    "returnValue": true
-                                }
-                            ]
+                            "rangeOptions": {
+                                "rangeType": "absoluteOnlyPositive",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 100,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 100,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
