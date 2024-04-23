@@ -11,7 +11,7 @@ export class EvaluationFactory {
             case 'multicheckbox':
                 return new MultiCheckboxEvaluation(criteria.options);
             case 'range':
-                return new RangeEvaluation(criteria.ranges);
+                return new RangeEvaluation(criteria.rangeOptions);
             default:
                 throw new Error("Unsupported evaluation type");
         }

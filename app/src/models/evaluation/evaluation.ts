@@ -5,7 +5,7 @@ interface MultiCheckboxCriteria {
 
 interface RangeCriteria {
     type: 'range';
-    ranges: Range[];
+    rangeOptions: RangeOptions;
 }
 
 interface CheckboxCriteria {
@@ -16,6 +16,11 @@ export interface Range {
     operator: 'more' | 'less';
     comparator: number;
     returnValue: boolean;
+}
+
+export interface RangeOptions {
+    rangeType: "percentage" | "absoluteCanBeNegative" | "absoluteOnlyPositive";
+    ranges: Range[];
 }
 
 export type EvaluationCriteria = MultiCheckboxCriteria | RangeCriteria | CheckboxCriteria;
