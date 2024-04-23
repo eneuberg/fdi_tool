@@ -16,7 +16,7 @@ body {
 
 .container {
     /* Elemente horizontal rechts ausrichten */
-    width: 800px;
+    width: 700px;
     height: auto;
     padding: 30px;
     background: transparent;
@@ -46,5 +46,14 @@ p {
     left: 0;
     min-width: 100%;
     min-height: 100%;
-    z-index: -1;
+    z-index: -1; /* Video im Hintergrund */
+}
+
+#background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 0; /* Foto im Vordergrund */
 }

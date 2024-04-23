@@ -51,7 +51,6 @@ export class Subsector {
 
 
         return `
-        
             <form class= "indicatorForm" id="indicatorForm" >
              ${this.currentIndicator?.renderIndicator()}
                 <div class="next-back-button">
