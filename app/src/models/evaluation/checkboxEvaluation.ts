@@ -20,6 +20,6 @@ export class CheckboxEvaluation extends Evaluation {
         `;
 
         // Return the combined HTML string
-        return `<div class="checkbox-container">${checkboxesHtml}</div>`;
+        return `<div class="input-container">${checkboxesHtml}</div>`;
     }
 }

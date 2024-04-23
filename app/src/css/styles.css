@@ -29,16 +29,6 @@ body {
 
 }
 
-
-p {
-    font-size: 20px;
-    color: rgb(39, 39, 39);
-    line-height: 1.5;
-    font-weight: 500;
-}
-
-
-
 /* Stilisiere das Hintergrundvideo, um es über das gesamte Fenster zu legen */
 #background-video {
     position: fixed;

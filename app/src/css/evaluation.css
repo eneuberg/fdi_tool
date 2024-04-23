@@ -13,7 +13,6 @@
   /* Ausrichtung auf der vertikalen Mittellinie */
 }
 
-
 .checkbox:checked {
   background-color: rgb(106, 106, 106);
 
@@ -22,7 +21,7 @@
 
 
 .number {
-  width: 300px;
+  width: 150px;
   height: 40px;
   background: transparent;
   border: 2px solid rgba(0, 0, 0, 0.2);
@@ -36,4 +35,5 @@ input::placeholder {
   color: #050505;
   text-indent: 10px;
   /* Verschiebt den Text 10 Pixel nach rechts */
+ align-content: center;
 }

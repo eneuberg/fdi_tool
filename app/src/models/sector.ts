@@ -45,7 +45,7 @@ export class Sector {
         }else{
             return `
             <div class="select-Container">
-                <span class="subsector-Name" >${currentSubsectorName}</span>
+                <span class="subsector-Name">${currentSubsectorName}</span>
                 <select id="subsectorSelect">
                     ${subsectorOptions}
                 </select>

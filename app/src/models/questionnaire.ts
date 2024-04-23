@@ -65,13 +65,15 @@ export class Questionnaire {
         const score = evaluations.length > 0 ? Math.round((opportunities / risks) / (risks + opportunities) * 100) / 100 : 0;
 
         return `
-            <h1>Results</h1>
-            ${sectorNameElement}
-            ${subsectorNameElement}
-            <p>Indicators: ${evaluations.length}</p>
-            <p>Opportunities: ${opportunities}</p>
-            <p>Risks: ${risks}</p>
-            <p>Score: ${score.toFixed(2)}</p>
+            <h1 id="result">YOUR RESLUT FOR </h1>
+            <span class="sector-Name-result"> ${sectorNameElement} </span>
+            <span class="subsector-Name-reslut"> ${subsectorNameElement}  </span>
+            <p id="indicators">Indicators: ${evaluations.length}</p>
+            <p id="opportunities">Opportunities: ${opportunities}</p>
+            <p id="risk">Risks: ${risks}</p>
+            <p id="score">Score: ${score.toFixed(2)}</p>
+            <a href="index.html" class="back-to-home">Zurück zur Startseite</a>
+
         `;
     }
 

@@ -37,7 +37,6 @@ export class Indicator {
         return `
             <div class="indicator" id="indicator">
                 <p id="question">${this.text}</p>
-                <p>${this.comment}</p>
                 ${this.evaluation.render(this.response)}
             </div>
         `;

@@ -27,7 +27,7 @@ export class MultiCheckboxEvaluation extends Evaluation {
     `;
 
         // Return the combined HTML string
-        return `${optionsHtml}<div class="checkbox-container" >${checkboxesHtml} </div>`;
+        return `${optionsHtml}<div class="input-container" >${checkboxesHtml} </div>`;
     }
 
 

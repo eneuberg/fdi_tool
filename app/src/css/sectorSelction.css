@@ -47,7 +47,7 @@
     padding: 10px;
     outline: none;
     display: block;
-    margin-top: 20px;
+    margin-top: 10px;
     justify-content: center;
 }
 
@@ -66,36 +66,20 @@
     align-items: center;
     /* Zentriert Elemente vertikal */
     color: rgb(35, 35, 35);
-    font-size: 35px;
+    font-size: 50px;
     font-weight: 400;
     margin-bottom: 10px;
 }
 
-.subsector-Name {
-    display: flex;
-    justify-content: center;
-    /* Zentriert Elemente horizontal */
-    align-items: center;
-    /* Zentriert Elemente vertikal */
-    font-size: 20px;
-    font-weight: 300;
-    color: rgb(67, 67, 67);
-    margin-bottom: 10px;
-}
 
 .subsector-Name {
     display: flex;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 300;
-    color: rgb(67, 67, 67);
+    color: rgb(39, 39, 39);
     margin-bottom: 10px;
     margin-top: 20px;
 }
 
 
 
-
-.select-Container>*:last-child {
-    margin-right: auto;
-    /* Entfernt den Abstand für das letzte Element */
-}
