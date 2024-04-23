@@ -26,7 +26,7 @@ export class Sector {
 
     private renderSubsectorSelection(): string {
         if (this.currentSubsector?.isRealSubsector === false) return '';
-        let subsectorOptions = '<option value="">Choose a Subsector</option>';
+        let subsectorOptions = '<option value="" selected disabled>Choose a Subsector</option>';
         this.subsectors.forEach(subsector => {
             const selected = this.currentSubsector && this.currentSubsector.name === subsector.name ? ' selected' : '';
             subsectorOptions += `<option value="${subsector.name}"${selected}>${subsector.name}</option>`;
@@ -45,7 +45,7 @@ export class Sector {
         }else{
             return `
             <div class="select-Container">
-                <span class="subsector-Name">${currentSubsectorName}</span>
+                <!--<span class="subsector-Name">${currentSubsectorName}</span>-->
                 <select id="subsectorSelect">
                     ${subsectorOptions}
                 </select>
