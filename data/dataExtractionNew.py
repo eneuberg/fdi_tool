@@ -42,11 +42,7 @@ def process_excel_to_json(excel_file):
             if isinstance(evaluation, (int, float)):
                 indicator["evaluation"] = {
                     "type": "range",
-                    "ranges": {
-                        "operator": "more",
-                        "comparator": evaluation,
-                        "returnValue": True
-                    }
+                    "rangeOptions": {}
                 }
             elif "multi checkbox" in evaluation.lower():
                 lines = indicator_text.split('\n')
@@ -68,18 +64,25 @@ def process_excel_to_json(excel_file):
 
 def integrate_range_options(data_json, range_options):
     for subsector, indicators in range_options['subsectors'].items():
+        subsector_found = False
+
         for sector, content in data_json['sectors'].items():
             if subsector in content:
+                subsector_found = True
+
                 for index, options in indicators.items():
                     index = int(index)
+
                     if index < len(content[subsector]["indicators"]):
-                        content[subsector]["indicators"][index]["evaluation"]["ranges"] = options
+                        content[subsector]["indicators"][index]["evaluation"]["rangeOptions"] = options
                     else:
-                        print(f"Warning: No indicator at index {index} in subsector {subsector}")
-            else:
-                print(f"Warning: Subsector {subsector} not found in sector {sector}")
+                        print(f"Error: No indicator at index {index} in subsector {subsector} within sector {sector}")
+
+        if not subsector_found:
+            print(f"Warning: Subsector {subsector} not found in any sector")
 
     return data_json
+
 
 def process_and_save_json():
     excel_path = 'data.xlsx'
