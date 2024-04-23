@@ -14,21 +14,17 @@ body {
 
 }
 
-.container {
-    /* Elemente horizontal rechts ausrichten */
-    width: 700px;
-    height: auto;
+.questionContainer {
+    position: fixed;
+    top: 10%;
     padding: 30px;
-    background: transparent;
-    border: 2px solid rgb(255, 255, 255, 0);
+    border: 2px solid rgba(255, 255, 255, 0);
     backdrop-filter: blur(40px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     color: #fff;
     border-radius: 10px;
     background-color: rgba(255, 255, 255, 0.1);
-
 }
-
 /* Stilisiere das Hintergrundvideo, um es über das gesamte Fenster zu legen */
 #background-video {
     position: fixed;
