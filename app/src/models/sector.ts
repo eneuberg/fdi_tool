@@ -1,4 +1,4 @@
-import {Subsector} from "./subsector";
+import { Subsector } from "./subsector";
 
 export class Sector {
     name: string;
@@ -31,11 +31,30 @@ export class Sector {
             const selected = this.currentSubsector && this.currentSubsector.name === subsector.name ? ' selected' : '';
             subsectorOptions += `<option value="${subsector.name}"${selected}>${subsector.name}</option>`;
         });
-        return `
+
+        const currentSubsectorName = this.currentSubsector ? this.currentSubsector.name : '';
+        const currentSubsectorExists = !!this.currentSubsector; // Hier wird der boolesche Wert erstellt
+
+        if (!currentSubsectorExists) {
+
+            return `
             <select id="subsectorSelect">
             ${subsectorOptions}
             </select>
         `;
+        }else{
+            return `
+            <div class="select-Container">
+                <span class="subsector-Name" >${currentSubsectorName}</span>
+                <select id="subsectorSelect">
+                    ${subsectorOptions}
+                </select>
+            </div>
+        
+        `;
+            
+
+        }
     }
 
     renderSector(): string {

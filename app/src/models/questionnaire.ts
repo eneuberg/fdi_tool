@@ -95,7 +95,7 @@ export class Questionnaire {
         } else {
             return `
             <div class="select-Container">
-                <span>${currentSectorName}</span>
+                <span class="sector-Name" >${currentSectorName}</span>
                 <select id="sectorSelect">
                     ${sectorOptions}
                 </select>
