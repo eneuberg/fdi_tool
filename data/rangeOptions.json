@@ -1,0 +1,118 @@
+{
+	"subsectors":	{
+		"Agriculture_direct":	{
+			"0": [
+                {
+                    "operator": "less",
+                    "comparator": 8
+                },
+                {
+                    "operator": "between",
+                    "comparator": [8,15]
+                },
+                {
+                    "operator": "more",
+                    "comparator": 15
+                }
+            ],
+            "3": [
+                {
+                    "operator": "less",
+                    "comparator": 0
+                },
+                {
+                    "operator": "more",
+                    "comparator": 0
+                }
+            ]
+		},
+        "Mining_direct":    {
+            "0": [
+                {
+                    "operator": "less",
+                    "comparator": 20
+                },
+                {
+                    "operator": "more",
+                    "comparator": 20
+                }
+            ],
+            "1": [
+                {
+                    "operator": "less",
+                    "comparator": 5
+                },
+                {
+                    "operator": "more",
+                    "comparator": 5
+                }
+            ]
+        },
+        "Manufacturing_direct": {
+            "1": [
+                {
+                    "operator": "less",
+                    "comparator": 10
+                },
+                {
+                    "operator": "more",
+                    "comparator": 10
+                }
+            ],
+            "2": [
+                {
+                    "operator": "less",
+                    "comparator": 80
+                },
+                {
+                    "operator": "more",
+                    "comparator": 80
+                }
+            ]
+        },
+        "Financial Services_direct":    {
+            "1": [
+                {
+                    "operator": "less",
+                    "comparator": 20
+                },
+                {
+                    "operator": "more",
+                    "comparator": 20
+                }
+            ]
+        },
+        "Tourism and hospitality_direct":   {
+            "0": [
+                {
+                    "operator": "less",
+                    "comparator": 100
+                },
+                {
+                    "operator": "more",
+                    "comparator": 100
+                }
+            ],
+            "1": [
+                {
+                    "operator": "less",
+                    "comparator": 1000
+                },
+                {
+                    "operator": "more",
+                    "comparator": 1000
+                }
+            ],
+            "2": [
+                {
+                    "operator": "less",
+                    "comparator": 100
+                },
+                {
+                    "operator": "more",
+                    "comparator": 100
+                }
+            ]
+        }
+	}
+}
