@@ -48,3 +48,19 @@
     display: block; 
     margin-top: 20px;
 }
+
+.select-Container {
+    display: flex;
+    align-items: center; /* Zentriert die Elemente vertikal */
+  }
+
+  .select-Container > * {
+    margin-right: 100px; /* Fügt einen Abstand von 10 Pixeln zwischen den Elementen hinzu */
+    font-size: 50px;
+    color: rgb(35, 35, 35);
+    
+  }
+  
+  .select-Container > *:last-child {
+    margin-right: 0; /* Entfernt den Abstand für das letzte Element */
+  }

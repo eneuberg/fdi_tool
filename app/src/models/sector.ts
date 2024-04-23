@@ -33,7 +33,7 @@ export class Sector {
         });
         return `
             <select id="subsectorSelect">
-                ${subsectorOptions}
+            ${subsectorOptions}
             </select>
         `;
     }

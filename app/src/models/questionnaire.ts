@@ -1,4 +1,4 @@
-import {Sector} from "./sector";
+import { Sector } from "./sector";
 
 export class Questionnaire {
     sectors: Sector[];
@@ -47,7 +47,7 @@ export class Questionnaire {
         if (this.completed) {
             return this.renderResults();
         }
-        else    {
+        else {
             return this.renderIncompleteQuestionnaire();
         }
     }
@@ -83,11 +83,25 @@ export class Questionnaire {
             sectorOptions += `<option value="${sector.name}"${selected}>${sector.name}</option>`;
         });
 
-        return `
+        const currentSectorName = this.currentSector ? this.currentSector.name : '';
+        const currentSectorExists = !!this.currentSector; // Hier wird der boolesche Wert erstellt
+
+        if (!currentSectorExists) {
+            return `
             <select id="sectorSelect">
                 ${sectorOptions}
             </select>
+            `;
+        } else {
+            return `
+            <div class="select-Container">
+                <span>${currentSectorName}</span>
+                <select id="sectorSelect">
+                    ${sectorOptions}
+                </select>
+            </div>
             ${this.currentSector ? this.currentSector.renderSector() : ''}
         `;
+        }
     }
 }
