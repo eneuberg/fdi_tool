@@ -23,7 +23,8 @@ export class RangeEvaluation extends Evaluation {
 
 
     render(response: number | null): string {
-        return `<input type="number" placeholder="Percentage" maxlength="3" name="rangeInput"  ${response !== null ? `value="${response}"` : ''}/>`;
+        return `
+        <input type="number" placeholder="Percentage"  name="rangeInput" min="0" max="100" required ${response !== null ? `value="${response}"` : ''} />`;
     }
 
 }

@@ -22,12 +22,12 @@ export class MultiCheckboxEvaluation extends Evaluation {
         const noChecked = response === false ? 'checked' : '';
 
         const checkboxesHtml = `
-        <label><input type="radio" name="multiCheckbox" value="no" ${noChecked}> No</label>
-        <label><input type="radio" name="multiCheckbox" value="yes" ${yesChecked}> Yes</label>
+        <label><input class="checkbox" type="radio" name="multiCheckbox" value="no" ${noChecked} required> No</label>
+        <label><input class="checkbox" type="radio" name="multiCheckbox" value="yes" ${yesChecked}required> Yes</label>
     `;
 
         // Return the combined HTML string
-        return `${optionsHtml}<div class="checkbox-container">${checkboxesHtml}</div>`;
+        return `${optionsHtml}<div class="checkbox-container" >${checkboxesHtml} </div>`;
     }
 
 

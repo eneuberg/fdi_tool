@@ -52,7 +52,7 @@ export class Subsector {
 
         return `
             ${nameHTML} 
-            <form class= "indicatorForm" id="indicatorForm">
+            <form class= "indicatorForm" id="indicatorForm" >
             ${nameHTML} ${this.currentIndicator?.renderIndicator()}
                 <div class="next-back-button">
                     <button id="previousButton" name="action" value="previous" type="submit">Previous</button>

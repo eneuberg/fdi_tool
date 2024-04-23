@@ -15,8 +15,8 @@ export class CheckboxEvaluation extends Evaluation {
         const noChecked = response === false ? 'checked' : '';
 
         const checkboxesHtml = `
-        <label><input type="radio" name="singleCheckbox" value="no" ${noChecked}> No</label>
-        <label><input type="radio" name="singleCheckbox" value="yes" ${yesChecked}> Yes</label>
+        <label><input class="checkbox" type="radio" name="singleCheckbox" value="no" ${noChecked} required> No</label>
+        <label><input class="checkbox" type="radio" name="singleCheckbox" value="yes" ${yesChecked} required> Yes</label>
         `;
 
         // Return the combined HTML string

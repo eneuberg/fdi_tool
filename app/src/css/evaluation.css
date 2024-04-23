@@ -10,23 +10,23 @@
   outline: none;
   margin: 10px; /* Entfernen des margin-bottom: auto; */
   vertical-align: middle; /* Ausrichtung auf der vertikalen Mittellinie */
-  
 }
+  
 
 .checkbox:checked {
   background-color: rgb(106, 106, 106);
  
 }
 
-.label-text {
+label {
   font-size: 20px;
   color: rgb(39, 39, 39);
-  margin-left: 8px; /* Abstand zwischen Checkbox und Text */
+ margin-left: 8px; /* Abstand zwischen Checkbox und Text */
   vertical-align: middle; /* Ausrichtung auf der vertikalen Mittellinie */
   font-weight: 200;
-  
-  
+
 }
+
 
 input[type="number"] {
     justify-content: flex-end;
