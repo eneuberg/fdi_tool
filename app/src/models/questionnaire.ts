@@ -62,16 +62,17 @@ export class Questionnaire {
 
         let sectorNameElement = sectorName ? `<h1>${sectorName}</h1>` : '';
         let subsectorNameElement = subsectorName ? `<h2>${subsectorName}</h2>` : '';
-        const score = evaluations.length > 0 ? Math.round((opportunities / risks) / (risks + opportunities) * 100) / 100 : 0;
+        const score = opportunities === 0 && risks === 0 ? 0 : risks ? (opportunities / risks) / (risks + opportunities) : 1;
+
 
         return `
-            <h1 id="result">YOUR RESLUT FOR </h1>
+            <h1 id="result">YOUR RESULT FOR </h1>
             <span class="sector-Name-result"> ${sectorNameElement} </span>
             <span class="subsector-Name-reslut"> ${subsectorNameElement}  </span>
             <p id="indicators">Indicators: ${evaluations.length}</p>
             <p id="opportunities">Opportunities: ${opportunities}</p>
             <p id="risk">Risks: ${risks}</p>
-            <p id="score">Score: ${score.toFixed(2)}</p>
+            <p id="score">Score: ${(score * 100).toFixed(0)}%</p>
             <a href="index.html" class="back-to-home">Zurück zur Startseite</a>
 
         `;
