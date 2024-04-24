@@ -969,22 +969,21 @@ class Subsector {
         return `
       
         <div class="row">
-          <div class="col">
+          <div class="col-12">
             <form class="indicatorForm" id="indicatorForm">
-              ${this.currentIndicator?.renderIndicator()}
-              <div class="next-back-button row">
-                <div class="col-6">
-                  <button id="previousButton" name="action" value="previous" type="submit" class="btn btn-secondary w-100">Previous</button>
-                </div>
-                <div class="col-6">
-                  <button id="nextButton" name="action" value="next" type="submit" class="btn btn-primary w-100">Next</button>
-                </div>
-              </div>
+                ${this.currentIndicator?.renderIndicator()}
+                  <div class="next-back-button row">
+                    <div class="col-12 col-md-6">
+                      <button id="previousButton" name="action" value="previous" type="submit" class="btn btn-secondary w-100 mb-3">Previous</button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <button id="nextButton" name="action" value="next" type="submit" class="btn btn-primary w-100">Next</button>
+                    </div>
+                  </div>
             </form>
-            
-          </div>
-          ${progressBarHTML}
         </div>
+  ${progressBarHTML}
+</div>
        
    
         `;
@@ -1029,11 +1028,10 @@ class Sector {
         `;
         else return `
             <div class="select-Container">
-                <!--<span class="subsector-Name">${currentSubsectorName}</span>-->
-                <select id="subsectorSelect" class="form-select mt-2" aria-label="Default select example">
+                 <select id="subsectorSelect" class="form-select form-select-lg mt-2" aria-label="Default select example">
                     ${subsectorOptions}
                 </select>
-            </div>
+<              /div>
         
         `;
     }

@@ -45,11 +45,10 @@ export class Sector {
         }else{
             return `
             <div class="select-Container">
-                <!--<span class="subsector-Name">${currentSubsectorName}</span>-->
-                <select id="subsectorSelect" class="form-select mt-2" aria-label="Default select example">
+                 <select id="subsectorSelect" class="form-select form-select-lg mt-2" aria-label="Default select example">
                     ${subsectorOptions}
                 </select>
-            </div>
+<              /div>
         
         `;
             
