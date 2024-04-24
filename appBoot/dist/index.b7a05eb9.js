@@ -669,14 +669,28 @@ class Questionnaire {
         let subsectorNameElement = subsectorName ? `<h2>${subsectorName}</h2>` : "";
         const score = opportunities === 0 && risks === 0 ? 0 : risks ? opportunities / risks / (risks + opportunities) : 1;
         return `
-            <h1 id="result">YOUR RESULT FOR </h1>
-            <span class="sector-Name-result"> ${sectorNameElement} </span>
-            <span class="subsector-Name-reslut"> ${subsectorNameElement}  </span>
-            <p id="indicators">Indicators: ${evaluations.length}</p>
-            <p id="opportunities">Opportunities: ${opportunities}</p>
-            <p id="risk">Risks: ${risks}</p>
-            <p id="score">Score: ${(score * 100).toFixed(0)}%</p>
-            <a href="index.html" class="back-to-home">Zur\xfcck zur Startseite</a>
+        <div class="container text-center">
+            <h1 id="result">YOUR RESULT FOR</h1>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <span class="sector-Name-result">${sectorNameElement}</span>
+                        <span class="subsector-Name-reslut">${subsectorNameElement}</span>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p id="indicators">Indicators: ${evaluations.length}</p>
+                        <p id="opportunities">Opportunities: ${opportunities}</p>
+                        <p id="risk">Risks: ${risks}</p>
+                        <p id="score">Score: ${(score * 100).toFixed(0)}%</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a href="index.html" class="back-to-home btn btn-primary">Zur\xfcck zur Startseite</a>
+                    </div>
+                </div>
+        </div>
 
         `;
     }
@@ -690,14 +704,14 @@ class Questionnaire {
         const currentSectorName = this.currentSector ? this.currentSector.name : "";
         const currentSectorExists = !!this.currentSector; // Hier wird der boolesche Wert erstellt
         if (!currentSectorExists) return `
-            <select id="sectorSelect">
+            <select id="sectorSelect" class="form-select" aria-label="Default select example">
                 ${sectorOptions}
             </select>
             `;
         else return `
             <div class="select-Container">
                 <!--<span class="sector-Name" >${currentSectorName}</span>-->
-                <select id="sectorSelect">
+                <select id="sectorSelect" class="form-select" aria-label="Default select example">
                     ${sectorOptions}
                 </select>
             </div>
@@ -767,10 +781,10 @@ class Indicator {
     }
     renderIndicator() {
         return `
-            <div class="indicator" id="indicator">
-                <p id="question">${this.text}</p>
-                ${this.evaluation.render(this.response)}
-            </div>
+        <div class="indicator flex-column align-items-center" id="indicator">
+        <p id="question" class="text-start fw-bold ps-3 mt-3">${this.text}</p>
+        ${this.evaluation.render(this.response)}
+      </div>
         `;
     }
 }
@@ -813,11 +827,11 @@ class CheckboxEvaluation extends (0, _evaluation.Evaluation) {
         const yesChecked = response === true ? "checked" : "";
         const noChecked = response === false ? "checked" : "";
         const checkboxesHtml = `
-        <label><input class="checkbox" type="radio" name="singleCheckbox" value="no" ${noChecked} required> No</label>
-        <label><input class="checkbox" type="radio" name="singleCheckbox" value="yes" ${yesChecked} required> Yes</label>
+        <label><input class="checkbox form-check-input mx-1" type="radio" name="singleCheckbox" value="no" ${noChecked} required> No</label>
+        <label><input class="checkbox form-check-input mx-1" type="radio" name="singleCheckbox" value="yes" ${yesChecked} required> Yes</label>
         `;
         // Return the combined HTML string
-        return `<div class="input-container">${checkboxesHtml}</div>`;
+        return `<div class="input-container d-flex justify-content-center mb-4">${checkboxesHtml}</div>`;
     }
 }
 
@@ -844,15 +858,20 @@ class MultiCheckboxEvaluation extends (0, _evaluation.Evaluation) {
     }
     render(response) {
         // Map each option into a <p> element.
-        const optionsHtml = this.options.map((option)=>`<p class="option-item">${option}</p>`).join("");
+        const optionsHtml = this.options.map((option)=>`<p class="option-item text-start ps-4 mt-3">${option}</p>`).join("");
         const yesChecked = response === true ? "checked" : "";
         const noChecked = response === false ? "checked" : "";
         const checkboxesHtml = `
-        <label><input class="checkbox" type="radio" name="multiCheckbox" value="no" ${noChecked} required> No</label>
-        <label><input class="checkbox" type="radio" name="multiCheckbox" value="yes" ${yesChecked}required> Yes</label>
+        <label>
+            <input class="form-check-input mx-1" type="radio" name="multiCheckbox" value="no" ${noChecked} required> No
+        </label>
+        <label>
+            <input class="form-check-input mx-1" type="radio" name="multiCheckbox" value="yes" ${yesChecked} required> Yes
+        </label>
+       
     `;
         // Return the combined HTML string
-        return `${optionsHtml}<div class="input-container" >${checkboxesHtml} </div>`;
+        return `${optionsHtml}<div class="input-container d-flex justify-content-center mb-4" >${checkboxesHtml} </div>`;
     }
 }
 
@@ -894,8 +913,10 @@ class RangeEvaluation extends (0, _evaluation.Evaluation) {
                 break;
         }
         return `
-        <div class="input-container">
-            <input class="number" type="number" placeholder="${placeholder}" name="rangeInput" min="${min}" max="${max}" required ${response !== null ? `value="${response}"` : ""} />
+        <div class="input-container d-flex justify-content-center mb-4">
+            <div class="col-6">
+                <input class="number form-control" type="number" placeholder="${placeholder}" name="rangeInput" min="${min}" max="${max}" required ${response !== null ? `value="${response}"` : ""} />
+            </div>
         </div>`;
     }
 }
@@ -944,7 +965,7 @@ class Subsector {
         const nameHTML = this.isRealSubsector ? `<h2> ${this.name}</h2>` : "";
         const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : 0;
         const progressValue = currentIndex / (this.indicators.length - 1); // Adjusted formula
-        const progressBarHTML = `<progress class="progressBar" value="${progressValue}" max="1"></progress>`;
+        const progressBarHTML = `<progress class="progressBar mt-4" value="${progressValue}" max="1"></progress>`;
         return `
         
        
@@ -961,6 +982,7 @@ class Subsector {
                 </div>
               </div>
             </form>
+            
           </div>
           ${progressBarHTML}
         </div>
@@ -1002,14 +1024,16 @@ class Sector {
         const currentSubsectorName = this.currentSubsector ? this.currentSubsector.name : "";
         const currentSubsectorExists = !!this.currentSubsector; // Hier wird der boolesche Wert erstellt
         if (!currentSubsectorExists) return `
-            <select id="subsectorSelect">
-            ${subsectorOptions}
+           
+
+            <select id="subsectorSelect" class="form-select mt-3" aria-label="Default select example">
+            $${subsectorOptions}
             </select>
         `;
         else return `
             <div class="select-Container">
                 <!--<span class="subsector-Name">${currentSubsectorName}</span>-->
-                <select id="subsectorSelect">
+                <select id="subsectorSelect" class="form-select mt-2" aria-label="Default select example">
                     ${subsectorOptions}
                 </select>
             </div>

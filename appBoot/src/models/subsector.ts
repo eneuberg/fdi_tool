@@ -47,7 +47,7 @@ export class Subsector {
         const nameHTML = this.isRealSubsector ? `<h2> ${this.name}</h2>` : '';
         const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : 0;
         const progressValue = currentIndex / (this.indicators.length - 1); // Adjusted formula
-        const progressBarHTML = `<progress class="progressBar" value="${progressValue}" max="1"></progress>`;
+        const progressBarHTML = `<progress class="progressBar mt-4" value="${progressValue}" max="1"></progress>`;
 
 
         return `
@@ -66,6 +66,7 @@ export class Subsector {
                 </div>
               </div>
             </form>
+            
           </div>
           ${progressBarHTML}
         </div>
