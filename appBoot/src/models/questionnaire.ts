@@ -84,7 +84,7 @@ export class Questionnaire {
                 </div>
                 <div class="row justify-content-center">
                     <div class="col-auto">
-                        <a href="index.html" class="back-to-home btn btn-primary">Zurück zur Startseite</a>
+                        <a href="index.html" class="back-to-home ">Start again</a>
                     </div>
                 </div>
         </div>

@@ -5,23 +5,45 @@
 }
 
 
+.containerBig{
+    background-color: rgba(255, 255, 255, 0.2)
+
+}
 
 
-/* Stilisiere das Hintergrundvideo, um es über das gesamte Fenster zu legen */
-#background-video {
+.video-background {
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: -1; /* Video im Hintergrund */
-}
-
-#background-image {
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  .video-background video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  .video-overlay {
     position: fixed;
     top: 0;
     left: 0;
-    min-width: 100%;
-    min-height: 100%;
-    z-index: 0; /* Foto im Vordergrund */
-}
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-overlay img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+  }
