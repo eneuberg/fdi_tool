@@ -1,74 +1,22 @@
-.questionContainer {
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  display: flex;
-}
-
-#sectorSelect {
+#sectorSelect, #subsectorSelect {
   color: #000;
   background: none;
   border: 2px solid #0003;
   border-radius: 40px;
-  outline: none;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
   padding: 10px;
   font-size: medium;
   font-weight: 100;
-  display: block;
-}
-
-#evaluation-text {
-  background: none;
-  border: 2px solid #faffff33;
-  border-radius: 40px;
-  outline: none;
-  justify-content: flex-end;
-  width: calc(100% - 40px);
-  height: 50px;
-  margin-bottom: 10px;
-}
-
-#subsectorSelect {
-  color: #000;
-  background: none;
-  border: 2px solid #0003;
-  border-radius: 40px;
-  outline: none;
-  justify-content: center;
-  width: 100%;
-  height: 50px;
-  margin-top: 10px;
-  padding: 10px;
-  font-size: medium;
-  font-weight: 100;
-  display: block;
-}
-
-.select-Container {
-  flex-direction: column;
-  align-items: center;
-  display: flex;
 }
 
 .sector-Name {
   color: #232323;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
   font-size: 50px;
   font-weight: 400;
-  display: flex;
 }
 
 .subsector-Name {
   color: #272727;
-  margin-top: 20px;
-  margin-bottom: 10px;
   font-size: 30px;
   font-weight: 300;
-  display: flex;
 }
 /*# sourceMappingURL=index.ec2bca2d.css.map */

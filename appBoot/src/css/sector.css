@@ -1,12 +1,6 @@
-#indicatorForm {
-  margin-left: 3rem; /* 48px */
-  margin-right: 2rem; /* 32px */
-  width: 43.75rem; /* 700px */
-}
 
 #indicatorForm #question {
-  margin-top: 1.25rem; /* 20px */
-  text-align: justify;
+
   font-size: 1.25rem; /* 20px */
   color: #272727;
   line-height: 1.5;
@@ -14,9 +8,7 @@
 }
 
 .input-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  
   color: #000;
 }
 

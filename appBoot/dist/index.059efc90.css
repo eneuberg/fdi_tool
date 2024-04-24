@@ -1,34 +1,10 @@
-.checkbox {
-  appearance: none;
-  vertical-align: middle;
-  background-color: #0000;
-  border: 2px solid #00000080;
-  border-radius: 50%;
-  outline: none;
-  width: 20px;
-  height: 20px;
-  margin: 10px;
-}
-
-.checkbox:checked {
-  background-color: #6a6a6a;
-}
-
 .number {
   text-align: center;
   background: none;
   border: 2px solid #0003;
-  border-radius: 20px;
   width: 300px;
   height: 40px;
-  margin-right: 30px;
   font-size: medium;
   font-weight: 100;
-}
-
-input::placeholder {
-  color: #050505;
-  text-indent: 10px;
-  align-content: center;
 }
 /*# sourceMappingURL=index.059efc90.css.map */

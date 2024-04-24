@@ -782,9 +782,9 @@ class Indicator {
     renderIndicator() {
         return `
         <div class="indicator flex-column align-items-center" id="indicator">
-        <p id="question" class="text-start fw-bold ps-3 mt-3">${this.text}</p>
-        ${this.evaluation.render(this.response)}
-      </div>
+            <p id="question" class="text-start fw-bold ps-3 mt-3">${this.text}</p>
+                ${this.evaluation.render(this.response)}
+        </div>
         `;
     }
 }
@@ -915,7 +915,7 @@ class RangeEvaluation extends (0, _evaluation.Evaluation) {
         return `
         <div class="input-container d-flex justify-content-center mb-4">
             <div class="col-6">
-                <input class="number form-control" type="number" placeholder="${placeholder}" name="rangeInput" min="${min}" max="${max}" required ${response !== null ? `value="${response}"` : ""} />
+                <input class="number form-control " type="number" placeholder="${placeholder}" name="rangeInput" min="${min}" max="${max}" required ${response !== null ? `value="${response}"` : ""} />
             </div>
         </div>`;
     }
@@ -965,10 +965,9 @@ class Subsector {
         const nameHTML = this.isRealSubsector ? `<h2> ${this.name}</h2>` : "";
         const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : 0;
         const progressValue = currentIndex / (this.indicators.length - 1); // Adjusted formula
-        const progressBarHTML = `<progress class="progressBar mt-4" value="${progressValue}" max="1"></progress>`;
+        const progressBarHTML = ` <progress class="progressBar mt-4" value="${progressValue}" max="1"></progress>`;
         return `
-        
-       
+      
         <div class="row">
           <div class="col">
             <form class="indicatorForm" id="indicatorForm">
@@ -1024,10 +1023,8 @@ class Sector {
         const currentSubsectorName = this.currentSubsector ? this.currentSubsector.name : "";
         const currentSubsectorExists = !!this.currentSubsector; // Hier wird der boolesche Wert erstellt
         if (!currentSubsectorExists) return `
-           
-
             <select id="subsectorSelect" class="form-select mt-3" aria-label="Default select example">
-            $${subsectorOptions}
+                ${subsectorOptions}
             </select>
         `;
         else return `

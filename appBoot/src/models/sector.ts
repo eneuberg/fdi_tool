@@ -38,10 +38,8 @@ export class Sector {
         if (!currentSubsectorExists) {
 
             return `
-           
-
             <select id="subsectorSelect" class="form-select mt-3" aria-label="Default select example">
-            $${subsectorOptions}
+                ${subsectorOptions}
             </select>
         `;
         }else{

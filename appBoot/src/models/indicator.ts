@@ -36,9 +36,9 @@ export class Indicator {
     renderIndicator(): string {
         return `
         <div class="indicator flex-column align-items-center" id="indicator">
-        <p id="question" class="text-start fw-bold ps-3 mt-3">${this.text}</p>
-        ${this.evaluation.render(this.response)}
-      </div>
+            <p id="question" class="text-start fw-bold ps-3 mt-3">${this.text}</p>
+                ${this.evaluation.render(this.response)}
+        </div>
         `;
     }
 }
