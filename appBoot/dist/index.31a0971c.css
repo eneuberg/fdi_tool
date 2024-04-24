@@ -1,0 +1,29 @@
+#indicatorForm {
+  width: 43.75rem;
+  margin-left: 3rem;
+  margin-right: 2rem;
+}
+
+#indicatorForm #question {
+  text-align: justify;
+  color: #272727;
+  margin-top: 1.25rem;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.input-container {
+  color: #000;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.option-item {
+  color: #272727;
+  font-size: 1.25rem;
+  font-weight: 350;
+  line-height: 1.3;
+}
+/*# sourceMappingURL=index.31a0971c.css.map */
