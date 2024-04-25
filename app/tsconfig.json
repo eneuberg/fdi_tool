@@ -15,6 +15,9 @@
     "lib": ["esnext", "dom", "dom.iterable", "scripthost"],
     "resolveJsonModule": true,
   },
-  "include": ["src/**/*"],
+  "include": [
+    "src/**/*",
+    "declarations.d.ts"
+  ],
   "exclude": ["node_modules"]
 }

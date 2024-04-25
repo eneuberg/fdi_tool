@@ -1,0 +1,30 @@
+/* Comment container */
+.comment {
+    position: relative;
+    display: inline-block;
+    cursor: help; /* Help cursor on hover */
+}
+
+/* Comment text with Bootstrap integration */
+.commentText {
+    visibility: hidden;
+    width: auto; /* Width can adjust to content size */
+    border-radius: .25rem; /* Bootstrap default border radius */
+
+    /* Positioning the comment */
+    position: absolute;
+    z-index: 1050; /* Bootstrap's z-index for dropdowns for layering context */
+    top: 100%; /* Position below the element */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Precise centering */
+
+    /* Fade-in effect */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Show comment on hover */
+.comment:hover .commentText {
+    visibility: visible;
+    opacity: 1;
+}

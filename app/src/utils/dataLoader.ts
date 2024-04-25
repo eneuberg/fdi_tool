@@ -10,7 +10,7 @@ export function initializeQuestionnaire(jsonData: any): Questionnaire {
         const subsectors = Object.keys(jsonData.sectors[sectorName]).map(subsectorName => {
             const subsectorData = jsonData.sectors[sectorName][subsectorName];
             const indicators = subsectorData.indicators.map((indicator: any) => {
-                return new Indicator(indicator.text, indicator.comment, indicator.evaluation);
+                return new Indicator(indicator.text, indicator.comment, indicator.dimension, indicator.evaluation);
             });
             return new Subsector(subsectorName, indicators);
         });
