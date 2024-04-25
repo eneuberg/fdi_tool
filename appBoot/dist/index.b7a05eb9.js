@@ -1031,7 +1031,7 @@ class Sector {
                  <select id="subsectorSelect" class="form-select form-select-lg mt-2" aria-label="Default select example">
                     ${subsectorOptions}
                 </select>
-<              /div>
+             </div>
         
         `;
     }
