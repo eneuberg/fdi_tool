@@ -2,12 +2,23 @@ import pandas as pd
 import json
 import re
 
+import pandas as pd
+import re
+
 def process_excel_to_json(excel_file):
     df = pd.read_excel(excel_file)
     sectors_json = {"sectors": {}}
     current_sector = None
 
+    # Retrieve dimensions from the second row, adjusting indices as required
+    dimensions = df.iloc[0]
+
+    current_dimension = "unknown"  # Initialize the current dimension
+
     for _, row in df.iterrows():
+        if df.index.get_loc(row.name) < 1: 
+            continue
+
         sector = row.iloc[0]
         subsector = row.iloc[1]
         if pd.notnull(sector):
@@ -27,27 +38,33 @@ def process_excel_to_json(excel_file):
                     target[direct_key] = {"indicators": []}
                 target = target[direct_key]["indicators"]
 
-        for i in range(2, min(len(row), 41), 3):
+        for i in range(2, min(len(row), 56), 3):
             if pd.isnull(row.iloc[i]):
-                break
+                continue
+
             indicator_text = row.iloc[i].strip()
             indicator_text = re.sub(r'\(y/n\)', '', indicator_text, flags=re.IGNORECASE).strip()
             evaluation = row.iloc[i + 1] if not pd.isnull(row.iloc[i + 1]) else ""
             comment = row.iloc[i + 2] if not pd.isnull(row.iloc[i + 2]) else ""
+            if not pd.isnull(dimensions.iloc[i]):
+                current_dimension = dimensions.iloc[i].strip().lower()
 
             if not indicator_text:
                 continue
 
-            indicator = {"text": indicator_text, "comment": comment}
+            indicator = {
+                "text": indicator_text,
+                "comment": comment,
+                "dimension": current_dimension  # Include dimension information
+            }
+
             if isinstance(evaluation, (int, float)):
-                indicator["evaluation"] = {
-                    "type": "range",
-                    "rangeOptions": {}
-                }
+                indicator["evaluation"] = {"type": "range", "rangeOptions": {}}
             elif "multi checkbox" in evaluation.lower():
                 lines = indicator_text.split('\n')
                 main_indicator = lines[0].strip()
-                options = [line.strip()[2:] for line in lines[1:] if line.strip().startswith('~')]
+                # Updated to strip whitespace after the tilde symbol
+                options = [line.strip()[1:].strip() for line in lines[1:] if line.strip().startswith('~')]
                 indicator["text"] = main_indicator
                 indicator["evaluation"] = {
                     "type": "multicheckbox",
@@ -61,6 +78,7 @@ def process_excel_to_json(excel_file):
             target.append(indicator)
 
     return sectors_json
+
 
 def integrate_range_options(data_json, range_options):
     for subsector, indicators in range_options['subsectors'].items():
