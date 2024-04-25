@@ -12,12 +12,35 @@
     box-shadow: 0 0 10px rgb(0, 0, 0, .1);
     cursor: pointer;
     font-size: 16px;
+    color: rgb(0, 0, 0);
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+.container .navbar-nav {
+
+    width: 20%;
+    height: 45px;
+    background-color: rgb(20, 94, 255);
+    border: 50px;
+    outline: none;
+    border-radius: 80px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
     color: black;
     font-weight: 200;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 5px;
+    
+}
+.navbar-nav:hover {
+    background-color: rgba(31, 240, 255, 0.781);
+    color: #333;
 }
 
 
