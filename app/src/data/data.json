@@ -109,10 +109,10 @@
                             "type": "multicheckbox",
                             "options": [
                                 "Leaves at least 10% of the holding area for natural or diverse vegetation.",
-                                "Farm produces agricultural products that are organically certified, or its",
+                                "Farm produces agricultural products that are organically certified, or its products are undergoing the certification process.",
                                 "Farm does not use medically important antimicrobials as growth promoters.",
-                                "At least two of the following contribute to farm production: 1) temporary crops,",
-                                "Practices crop or crop/pasture rotation involving at least 2 crops or crops and",
+                                "At least two of the following contribute to farm production: 1) temporary crops, 2) pasture, 3) permanent crops, 4) trees on farm, 5) livestock or animal products, and 6) aquaculture.",
+                                "Practices crop or crop/pasture rotation involving at least 2 crops or crops and pastures on at least 80% of the farm cultivated area (excluding permanent crops and permanent pastures) over a period of 3 years. In case of a 2-crop rotation, the 2 crops must be from different plant genus, e.g., a grass plus a legume, or a grass plus a tuber etc.",
                                 "Livestock includes locally adapted breeds."
                             ]
                         }

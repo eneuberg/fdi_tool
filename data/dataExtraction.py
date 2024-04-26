@@ -63,13 +63,29 @@ def process_excel_to_json(excel_file):
             elif "multi checkbox" in evaluation.lower():
                 lines = indicator_text.split('\n')
                 main_indicator = lines[0].strip()
-                # Updated to strip whitespace after the tilde symbol
-                options = [line.strip()[1:].strip() for line in lines[1:] if line.strip().startswith('~')]
+                
+                options = []
+                current_option = ""
+                
+                # Iterate through each line after the main indicator
+                for line in lines[1:]:
+                    line = line.strip()
+                    if line.startswith('~'):  # Start of a new option
+                        if current_option:  # Save the previous option if it exists
+                            options.append(current_option.strip())
+                        current_option = line[1:].strip()  # Start new option
+                    else:
+                        current_option += " " + line  # Continue appending to the current option
+                
+                if current_option:  # Don't forget to add the last option
+                    options.append(current_option.strip())
+                
                 indicator["text"] = main_indicator
                 indicator["evaluation"] = {
                     "type": "multicheckbox",
                     "options": options
                 }
+
             elif "y" in evaluation.lower() or "n" in evaluation.lower():
                 indicator["evaluation"] = {"type": "checkbox"}
             else:
