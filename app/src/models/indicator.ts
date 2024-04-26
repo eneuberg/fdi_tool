@@ -43,9 +43,9 @@ export class Indicator {
 
     renderIndicator(): string {
         const commentHtml = this.comment ? `
-            <span class="comment wd-75">
+            <span class="comment">
                 <img src="${tooltipIcon}" alt="(?)" width="24" height="24">
-                <span class="commentText bg-dark text-white p-2 text-center">${this.comment}</span>
+                <span class="commentText bg-dark text-white p-3 text-center">${this.comment}</span>
             </span>
             ` : '';
         return `
