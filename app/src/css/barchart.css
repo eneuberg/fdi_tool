@@ -1,0 +1,15 @@
+.chart {
+    display: flex;
+    height: 20px; /* Adjust as needed */
+    background-color: #eee;
+}
+.bar {
+    height: 100%;
+    color: white;
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+.opp { background-color: green; }
+.risk { background-color: red; }
+.remaining { background-color: white; color: black; } /* Adjust text color for visibility */
