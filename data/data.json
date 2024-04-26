@@ -52,22 +52,7 @@
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
-                            "type": "checkbox",
-                            "rangeOptions": {
-                                "rangeType": "absoluteCanBeNegative",
-                                "ranges": [
-                                    {
-                                        "operator": "less",
-                                        "comparator": 0,
-                                        "returnValue": false
-                                    },
-                                    {
-                                        "operator": "more",
-                                        "comparator": 0,
-                                        "returnValue": true
-                                    }
-                                ]
-                            }
+                            "type": "checkbox"
                         }
                     },
                     {
@@ -90,7 +75,21 @@
                         "dimension": "environmental",
                         "evaluation": {
                             "type": "range",
-                            "rangeOptions": {}
+                            "rangeOptions": {
+                                "rangeType": "absoluteCanBeNegative",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 0,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 0,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
