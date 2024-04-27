@@ -57,18 +57,28 @@ export class Subsector {
         const nameHTML = this.isRealSubsector ? `<h2> ${this.name}</h2>` : '';
         const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : 0;
         const progressValue = currentIndex / (this.indicators.length - 1); // Adjusted formula
-        const progressBarHTML = `<progress class="progressBar" value="${progressValue}" max="1"></progress>`;
-
+        const progressBarHTML = ` <progress class="progressBar mt-4" value="${progressValue}" max="1"></progress>`;
 
         return `
-            <form class= "indicatorForm" id="indicatorForm" >
-             ${this.currentIndicator?.renderIndicator()}
-                <div class="next-back-button">
-                    <button id="previousButton" name="action" value="previous" type="submit">Previous</button>
-                    <button id="nextButton" name="action" value="next" type="submit">Next</button>
-                </div>
+      
+        <div class="row">
+          <div class="col-12">
+            <form class="indicatorForm" id="indicatorForm">
+                ${this.currentIndicator?.renderIndicator()}
+                  <div class="next-back-button row">
+                    <div class="col-12 col-md-6">
+                      <button id="previousButton" name="action" value="previous" type="submit" class="btn btn-secondary w-100 mb-3">Previous</button>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <button id="nextButton" name="action" value="next" type="submit" class="btn btn-primary w-100">Next</button>
+                    </div>
+                  </div>
             </form>
-            ${progressBarHTML}
+        </div>
+  ${progressBarHTML}
+</div>
+       
+   
         `;
     }
 
