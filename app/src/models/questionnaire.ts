@@ -5,11 +5,13 @@ export class Questionnaire {
     sectors: Sector[];
     currentSector: Sector | null;
     completed: boolean;
+    result: Result | null;
 
     constructor(sectors: Sector[]) {
         this.sectors = sectors;
         this.currentSector = null;
         this.completed = false;
+        this.result = null;
     }
 
     selectSector(sectorId: string): void {
@@ -54,10 +56,11 @@ export class Questionnaire {
     }
 
     private renderResults(): string {
-        const result = new Result(this.currentSector?.currentSubsector?.name || '',
+        const result = new Result(this.currentSector?.currentSubsector?.isRealSubsector ? this.currentSector?.currentSubsector?.name : '',
             this.currentSector?.name || '',
             this.currentSector?.currentSubsector?.evaluateIndicators() || []);
-        return result.render();
+        this.result = result;
+        return result.renderCanvas();
     }
 
     private renderIncompleteQuestionnaire(): string {

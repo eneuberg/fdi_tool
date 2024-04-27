@@ -6,6 +6,10 @@ function renderQuestionnaire() {
         throw new Error("Questionnaire element not found");
 
     questionnaireElement.innerHTML = EventManager.questionnaire.renderQuestionnaire();
+    const chartCanvas = document.getElementById('chart') as HTMLCanvasElement;
+    if (chartCanvas) {
+        EventManager.questionnaire.result?.render(chartCanvas.getContext('2d'));
+    }
 }
 
 export class EventManager {

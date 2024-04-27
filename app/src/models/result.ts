@@ -1,3 +1,5 @@
+import Chart from "chart.js/auto";
+
 export class Result {
     subsectorName: string;
     sectorName: string;
@@ -8,8 +10,14 @@ export class Result {
         this.sectorName = sectorName;
         this.evaluations = evaluations;
     }
-
-    render(): string {
+    renderCanvas(): string {
+        return `
+        <div class="result">
+            <canvas id="chart"></canvas>
+        </div>
+        `;
+    }
+    render(canvas: HTMLCanvasElement) {
         const sectorName = this.sectorName;
         const subsectorName = this.subsectorName;
         const evaluations = this.evaluations;
@@ -27,20 +35,34 @@ export class Result {
         const riskPercent = (risks / evaluations.length) * 100;
         const remainingPercent = (remaining / evaluations.length) * 100;
 
-        return `
-        <h1 id="result">YOUR RESULT FOR </h1>
-        <span class="sector-name-result">${sectorNameElement}</span>
-        <span class="subsector-name-result">${subsectorNameElement}</span>
-        <div class="chart">
-            <div class="bar opp" style="width: ${oppPercent}%;">${opportunities}</div>
-            <div class="bar risk" style="width: ${riskPercent}%;">${risks}</div>
-            <div class="bar remaining" style="width: ${remainingPercent}%;">${remaining}</div>
-        </div>
-        <p id="indicators">Indicators: ${evaluations.length}</p>
-        <p id="opportunities">Opportunities: ${opportunities}</p>
-        <p id="risk">Risks: ${risks}</p>
-        <p id="score">Score: ${(score * 100).toFixed(0)}%</p>
-        <a href="index.html" class="back-to-home">Zurück zur Startseite</a>
-    `;
+        const indicatorChart = new Chart(canvas, {
+            type: 'bar',
+            data: {
+                labels: ['Indicators'],
+                datasets: [{
+                    label: 'Opportunities',
+                    data: [opportunities],
+                    backgroundColor: 'green',
+                }, {
+                    label: 'Risks',
+                    data: [risks],
+                    backgroundColor: 'red',
+                }, {
+                    label: 'Remaining',
+                    data: [remaining],
+                    backgroundColor: 'grey',
+                }]
+            },
+            options: {
+                scales: {
+                    x: { // Horizontal axis
+                        stacked: true
+                    },
+                    y: { // Vertical axis
+                        stacked: true,
+                    }
+                }
+            }
+        });
     }
 }
