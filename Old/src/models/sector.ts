@@ -38,17 +38,18 @@ export class Sector {
         if (!currentSubsectorExists) {
 
             return `
-            <select id="subsectorSelect" class="form-select mt-3" aria-label="Default select example">
-                ${subsectorOptions}
+            <select id="subsectorSelect">
+            ${subsectorOptions}
             </select>
         `;
         }else{
             return `
             <div class="select-Container">
-                 <select id="subsectorSelect" class="form-select form-select-lg mt-2" aria-label="Default select example">
+                <!--<span class="subsector-Name">${currentSubsectorName}</span>-->
+                <select id="subsectorSelect">
                     ${subsectorOptions}
                 </select>
-             </div>
+            </div>
         
         `;
             

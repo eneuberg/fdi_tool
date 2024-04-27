@@ -66,14 +66,28 @@ export class Questionnaire {
 
 
         return `
-            <h1 id="result">YOUR RESULT FOR </h1>
-            <span class="sector-Name-result"> ${sectorNameElement} </span>
-            <span class="subsector-Name-reslut"> ${subsectorNameElement}  </span>
-            <p id="indicators">Indicators: ${evaluations.length}</p>
-            <p id="opportunities">Opportunities: ${opportunities}</p>
-            <p id="risk">Risks: ${risks}</p>
-            <p id="score">Score: ${(score * 100).toFixed(0)}%</p>
-            <a href="index.html" class="back-to-home">Zurück zur Startseite</a>
+        <div class="container text-center">
+            <h1 id="result">YOUR RESULT FOR</h1>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <span class="sector-Name-result">${sectorNameElement}</span>
+                        <span class="subsector-Name-reslut">${subsectorNameElement}</span>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <p id="indicators">Indicators: ${evaluations.length}</p>
+                        <p id="opportunities">Opportunities: ${opportunities}</p>
+                        <p id="risk">Risks: ${risks}</p>
+                        <p id="score">Score: ${(score * 100).toFixed(0)}%</p>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto">
+                        <a href="index.html" class="back-to-home ">Start again</a>
+                    </div>
+                </div>
+        </div>
 
         `;
     }
@@ -92,7 +106,7 @@ export class Questionnaire {
 
         if (!currentSectorExists) {
             return `
-            <select id="sectorSelect">
+            <select id="sectorSelect" class="form-select" aria-label="Default select example">
                 ${sectorOptions}
             </select>
             `;
@@ -100,7 +114,7 @@ export class Questionnaire {
             return `
             <div class="select-Container">
                 <!--<span class="sector-Name" >${currentSectorName}</span>-->
-                <select id="sectorSelect">
+                <select id="sectorSelect" class="form-select" aria-label="Default select example">
                     ${sectorOptions}
                 </select>
             </div>

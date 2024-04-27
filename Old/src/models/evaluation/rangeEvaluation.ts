@@ -45,10 +45,8 @@ export class RangeEvaluation extends Evaluation {
         }
 
         return `
-        <div class="input-container d-flex justify-content-center mb-4">
-            <div class="col-6">
-                <input class="number form-control " type="number" placeholder="${placeholder}" name="rangeInput" min="${min}" max="${max}" required ${response !== null ? `value="${response}"` : ''} />
-            </div>
+        <div class="input-container">
+            <input class="number" type="number" placeholder="${placeholder}" name="rangeInput" min="${min}" max="${max}" required ${response !== null ? `value="${response}"` : ''} />
         </div>`;
     }
 
