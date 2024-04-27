@@ -4,7 +4,7 @@
             "Agriculture_direct": {
                 "indicators": [
                     {
-                        "text": "Enter the operating surplus divided by the land value as a percentage (%).",
+                        "text": "Enter the operating surplus divided by the land value as a percentage %).",
                         "comment": "Note: The measure assumes land values reflect production potential and not other externalities.         ",
                         "dimension": "economic",
                         "evaluation": {
@@ -27,7 +27,7 @@
                         }
                     },
                     {
-                        "text": "Complies with at least one of the following::",
+                        "text": "Complies with at least one of the following:",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -40,7 +40,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the project procure from the local base economy where possible and feasible? Y/N)",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -48,7 +48,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? Y/N)",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -134,7 +134,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
-                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -142,7 +142,7 @@
                     },
                     {
                         "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -266,7 +266,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
-                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -274,7 +274,7 @@
                     },
                     {
                         "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -366,7 +366,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
-                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -374,7 +374,7 @@
                     },
                     {
                         "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -436,7 +436,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
-                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -460,7 +460,7 @@
                     },
                     {
                         "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -546,7 +546,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
-                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -554,7 +554,7 @@
                     },
                     {
                         "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -592,7 +592,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
-                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -600,7 +600,7 @@
                     },
                     {
                         "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -718,7 +718,7 @@
                     },
                     {
                         "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -842,7 +842,7 @@
                     },
                     {
                         "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -912,7 +912,7 @@
                     },
                     {
                         "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -936,7 +936,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
-                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -997,7 +997,7 @@
                         }
                     },
                     {
-                        "text": "Project procures from the local base economy where possible and feasible",
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1005,7 +1005,7 @@
                         }
                     },
                     {
-                        "text": "MSME making notable advances towards adapting renewable energy or net zero emissions?",
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1013,7 +1013,7 @@
                         }
                     },
                     {
-                        "text": "The project has in place environmental quality norms and follows specific guidance documents to reduce environmental impacts",
+                        "text": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1021,7 +1021,7 @@
                         }
                     },
                     {
-                        "text": "Project offers paid maternity and paternity leave to its workers",
+                        "text": "Does the project offer paid maternity and paternity leave to its workers? Y/N)",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1029,7 +1029,7 @@
                         }
                     },
                     {
-                        "text": "MNE measures, publishes and addresses its gender pay gap. If identified, MSME introduces measures to address gender imbalances in workforce, especially in managerial positions. I.e. training programmes",
+                        "text": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1037,23 +1037,23 @@
                         }
                     },
                     {
-                        "text": "Company has internal mechanisms and legislation in place to ensure flexible working and gender equality? (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear)",
-                        "comment": "",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? Y/N)",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Company business models and orients towards female well-being externally? (publicizes CRS reports; products and services targeting women; external partnerships or charity)",
-                        "comment": "",
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Compliance with ILO standards and national legislation to ensure\nthe protection of the minimum standards for labour rights",
+                        "text": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights?",
                         "comment": "",
                         "dimension": "governance",
                         "evaluation": {
@@ -1065,7 +1065,7 @@
             "Medical devices": {
                 "indicators": [
                     {
-                        "text": "Project aims to neutralize risks in the local value chains",
+                        "text": "Does the project aim to neutralize risks of vaccine production in the local value chains?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1073,7 +1073,7 @@
                         }
                     },
                     {
-                        "text": "Project aimed at expanding local range of services available",
+                        "text": "Is the project aimed at expanding the local range of services available?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1081,7 +1081,7 @@
                         }
                     },
                     {
-                        "text": "MSME contributes to local labour force upskilling to ensure local employment opportunities across the value chain",
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1089,7 +1089,7 @@
                         }
                     },
                     {
-                        "text": "Project procures from the local base economy where possible and feasible",
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1097,7 +1097,7 @@
                         }
                     },
                     {
-                        "text": "Implementation of life cycle assessment (LCA) and circularity principles measuring multiple life cycles",
+                        "text": "Is there implementation of life cycle assessment (LCA) and circularity principles measuring multiple life cycles?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1105,7 +1105,7 @@
                         }
                     },
                     {
-                        "text": "MSME making notable advances towards adapting renewable energy or net zero emissions?",
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1113,7 +1113,7 @@
                         }
                     },
                     {
-                        "text": "Project offers paid maternity and paternity leave to its workers",
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1121,7 +1121,7 @@
                         }
                     },
                     {
-                        "text": "MNE measures, publishes and addresses its gender pay gap. If identified, MSME introduces measures to address gender imbalances in workforce, especially in managerial positions. I.e. training programmes",
+                        "text": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1129,23 +1129,23 @@
                         }
                     },
                     {
-                        "text": "Company has internal mechanisms and legislation in place to ensure flexible working and gender equality? (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear)",
-                        "comment": "",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Company business models and orients towards female well-being externally? (publicizes CRS reports; products and services targeting women; external partnerships or charity)",
-                        "comment": "",
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Compliance with ILO standards and national legislation to ensure the protection of the minimum standards for labour rights",
+                        "text": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights?",
                         "comment": "",
                         "dimension": "governance",
                         "evaluation": {
@@ -1157,7 +1157,7 @@
             "Biotechnology": {
                 "indicators": [
                     {
-                        "text": "The project takes part in safety reporting in clinical trials",
+                        "text": "The project tDoes the project take part in safety reporting in clinical trials? akes part in safety reporting in clinical trials",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1165,7 +1165,7 @@
                         }
                     },
                     {
-                        "text": "Project aimed at expanding local range of services available",
+                        "text": "Is the project aimed at expanding the local range of services available?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1173,7 +1173,7 @@
                         }
                     },
                     {
-                        "text": "Project has done extensive market research evaluating long-term product market value, regional drug regulations, competitors, etc.",
+                        "text": "Has the project conducted extensive market research evaluating long-term product market value, regional drug regulations, competitors, etc.?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1181,7 +1181,7 @@
                         }
                     },
                     {
-                        "text": "MSME contributes to local labour force upskilling to ensure local employment opportunities across the value chain",
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1189,7 +1189,7 @@
                         }
                     },
                     {
-                        "text": "Project procures from the local base economy where possible and feasible",
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1197,7 +1197,7 @@
                         }
                     },
                     {
-                        "text": "MSME making notable advances towards adapting renewable energy or net zero emissions?",
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1205,7 +1205,7 @@
                         }
                     },
                     {
-                        "text": "The project has in place environmental quality norms and follows specific guidance documents to reduce environmental impacts",
+                        "text": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1213,7 +1213,7 @@
                         }
                     },
                     {
-                        "text": "Project offers paid maternity and paternity leave to its workers",
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1221,7 +1221,7 @@
                         }
                     },
                     {
-                        "text": "MNE measures, publishes and addresses its gender pay gap. If identified, MSME introduces measures to address gender imbalances in workforce, especially in managerial positions. I.e. training programmes",
+                        "text": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1229,16 +1229,16 @@
                         }
                     },
                     {
-                        "text": "Company has internal mechanisms and legislation in place to ensure flexible working and gender equality? (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear)",
-                        "comment": "",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Company business models and orients towards female well-being externally? (publicizes CRS reports; products and services targeting women; external partnerships or charity)",
-                        "comment": "",
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -1249,7 +1249,7 @@
             "Healthcare services": {
                 "indicators": [
                     {
-                        "text": "Project compatible with social objectives like universal access and affordability",
+                        "text": "Is the project compatible with social objectives like universal access and affordability?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1257,7 +1257,7 @@
                         }
                     },
                     {
-                        "text": "Project aimed at expanding local range of services available",
+                        "text": "Is the project aimed at expanding the local range of services available?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1265,7 +1265,7 @@
                         }
                     },
                     {
-                        "text": "Project procures from the local base economy where possible and feasible",
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1273,7 +1273,7 @@
                         }
                     },
                     {
-                        "text": "MSME contributes to local labour force upskilling to ensure local employment opportunities across the value chain",
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1281,7 +1281,7 @@
                         }
                     },
                     {
-                        "text": "Project has in place strategies for reducing and properly managing hazardous waste and plastics",
+                        "text": "Does the project have in place strategies for reducing and properly managing hazardous waste and plastics?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1289,7 +1289,7 @@
                         }
                     },
                     {
-                        "text": "MSME making notable advances towards adapting renewable energy or net zero emissions?",
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1305,23 +1305,23 @@
                         }
                     },
                     {
-                        "text": "Company business models and orients towards female well-being externally? (publicizes CRS reports; products and services targeting women; external partnerships or charity)",
-                        "comment": "",
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Company has internal mechanisms and legislation in place to ensure flexible working and gender equality? (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear)",
-                        "comment": "",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Project offers paid maternity and paternity leave to its workers",
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
