@@ -40,7 +40,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible? Y/N)",
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -48,7 +48,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain? Y/N)",
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1021,7 +1021,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers? Y/N)",
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1037,7 +1037,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality? Y/N)",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
