@@ -1,4 +1,10 @@
 import { Indicator } from "./indicator";
+import { Dimension} from "./indicator";
+
+export interface EvaluationDimension {
+    dimension: Dimension;
+    evaluationResult: boolean | null;
+}
 
 export class Subsector {
     name: string;
@@ -21,9 +27,13 @@ export class Subsector {
         this.currentIndicator = this.indicators[0];
     }
 
-    evaluateIndicators(): (boolean | null)[] {
-        return this.indicators.map(indicator => indicator.evaluateStoredResponse());
+    evaluateIndicators(): EvaluationDimension[] {
+        return this.indicators.map(indicator => ({
+            evaluationResult: indicator.evaluateStoredResponse(),
+            dimension: indicator.dimension
+        }));
     }
+
 
     isCompleted(): boolean {
         return this.indicators.every(indicator => indicator.isCompleted());

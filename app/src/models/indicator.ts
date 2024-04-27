@@ -2,7 +2,7 @@ import {Evaluation, EvaluationCriteria} from "./evaluation/evaluation";
 import {EvaluationFactory} from "./evaluation/evaluationFactory";
 import tooltipIcon from '../resources/tooltip.svg';
 
-type Dimension = "economic" | "social" | "environmental" | "governance";
+export type Dimension = "economic" | "social" | "environmental" | "governance";
 
 export class Indicator {
     text: string;
