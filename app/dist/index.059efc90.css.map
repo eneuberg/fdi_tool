@@ -1,1 +1,0 @@
-{"mappings":"AAEA","sources":["src/css/evaluation.css"],"sourcesContent":["\n\n.number {\n  width: 300px;\n  height: 40px;\n  background: transparent;\n  border: 2px solid rgba(0, 0, 0, 0.2);\n  font-weight: 100;\n  font-size: medium;\n  text-align: center;\n}\n"],"names":[],"version":3,"file":"index.059efc90.css.map","sourceRoot":"/__parcel_source_root/"}
