@@ -1,0 +1,42 @@
+body {
+
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+}
+.sticky-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar {
+    transition: background-color 0.5s ease;
+}
+.transparent-header {
+    background-color: transparent !important;
+}
+.parallax-bg {
+    background-image: url('assets/Background2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.parallax-bg2 {
+    background-image: url('assets/Background2.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.custom-img{
+    width: 20%;
+    height: auto;
+
+}
