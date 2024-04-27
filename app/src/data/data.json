@@ -4,7 +4,7 @@
             "Agriculture_direct": {
                 "indicators": [
                     {
-                        "text": "Enter the operating surplus divided by the land value as a percentage %).",
+                        "text": "Enter the operating surplus divided by the land value as a percentage.",
                         "comment": "Note: The measure assumes land values reflect production potential and not other externalities.         ",
                         "dimension": "economic",
                         "evaluation": {
@@ -641,22 +641,7 @@
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
-                            "type": "checkbox",
-                            "rangeOptions": {
-                                "rangeType": "percentage",
-                                "ranges": [
-                                    {
-                                        "operator": "less",
-                                        "comparator": 20,
-                                        "returnValue": false
-                                    },
-                                    {
-                                        "operator": "more",
-                                        "comparator": 20,
-                                        "returnValue": true
-                                    }
-                                ]
-                            }
+                            "type": "checkbox"
                         }
                     },
                     {
@@ -673,7 +658,21 @@
                         "dimension": "environmental",
                         "evaluation": {
                             "type": "range",
-                            "rangeOptions": {}
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 20,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 20,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {
@@ -781,22 +780,7 @@
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
-                            "type": "checkbox",
-                            "rangeOptions": {
-                                "rangeType": "absoluteOnlyPositive",
-                                "ranges": [
-                                    {
-                                        "operator": "less",
-                                        "comparator": 100,
-                                        "returnValue": false
-                                    },
-                                    {
-                                        "operator": "more",
-                                        "comparator": 100,
-                                        "returnValue": true
-                                    }
-                                ]
-                            }
+                            "type": "checkbox"
                         }
                     },
                     {
@@ -813,7 +797,21 @@
                         "dimension": "environmental",
                         "evaluation": {
                             "type": "range",
-                            "rangeOptions": {}
+                            "rangeOptions": {
+                                "rangeType": "absoluteOnlyPositive",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 100,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 100,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
                         }
                     },
                     {

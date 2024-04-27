@@ -108,7 +108,12 @@ def integrate_range_options(data_json, range_options):
                     index = int(index)
 
                     if index < len(content[subsector]["indicators"]):
-                        content[subsector]["indicators"][index]["evaluation"]["rangeOptions"] = options
+                        indicator = content[subsector]["indicators"][index]
+                        if "evaluation" in indicator and indicator["evaluation"].get("type") == "range":
+                            indicator["evaluation"]["rangeOptions"] = options
+                        else:
+                            error_msg = f"Error: RangeOption insertion: Evaluation type is not 'range' for index {index} in subsector {subsector}, sector {sector}"
+                            raise ValueError(error_msg)
                     else:
                         print(f"Error: No indicator at index {index} in subsector {subsector} within sector {sector}")
 
