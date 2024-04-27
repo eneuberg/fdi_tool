@@ -23,20 +23,27 @@ export class Result {
         const score = opportunities === 0 && risks === 0 ? 0 : risks ? (opportunities / risks) / (risks + opportunities) : 1;
 
         return `
-        <div class="result">
-            <h2>Results</h2>
-            ${sectorNameElement}
-            ${subsectorNameElement}
-            <canvas id="chart"></canvas>
-            <span class="score">Overall Score: ${score.toFixed(2)}</span>
-            <a href="index.html" class="back-to-home">Restart</a>
-        </div>
+            <div class="result">
+                <h2>Results</h2>
+                ${sectorNameElement}
+                ${subsectorNameElement}
+                <div class="container mt-10 mb-2">
+                    <div class="row">
+                        <div class="col-12"> <!-- Adjusted to 6 columns for medium devices -->
+                            <canvas id="detailedChart"></canvas>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-link"> <!-- Bootstrap class to center the link -->
+                    <a href="index.html" class="back-to-home">Restart</a>
+                 </div>
+            </div>
         `;
     }
-    render(canvas: HTMLCanvasElement) {
+    render(detailedCanvas: HTMLCanvasElement): void {
         const evaluations = this.evaluations;
-
         const dimensions = ['economic', 'social', 'environmental', 'governance'];
+
         const results = dimensions.map(dimension => {
             const filtered = evaluations.filter(e => e.dimension === dimension);
             const opportunities = filtered.filter(e => e.evaluationResult === true).length;
@@ -46,24 +53,31 @@ export class Result {
             return { dimension, opportunities, risks, neutral, score };
         });
 
-        new Chart(canvas, {
+// Aggregate totals across all dimensions
+        const totalOpportunities = results.reduce((total, r) => total + r.opportunities, 0);
+        const totalRisks = results.reduce((total, r) => total + r.risks, 0);
+        const totalNeutral = results.reduce((total, r) => total + r.neutral, 0);
+// Calculate a weighted overall score using the formula or a simple average as a placeholder
+        const overallScore = results.reduce((total, r) => total + r.score, 0) / results.length;
+
+        new Chart(detailedCanvas, {
             type: 'bar',
             data: {
-                labels: results.map(r => `${r.dimension} (Score: ${r.score.toFixed(2)})`), // Updated labels to include scores
+                labels: ['Overall (Score: ' + overallScore.toFixed(2) + ')'].concat(results.map(r => `${r.dimension} (Score: ${r.score.toFixed(2)})`)),
                 datasets: [
                     {
                         label: 'Opportunities',
-                        data: results.map(r => r.opportunities),
+                        data: [totalOpportunities].concat(results.map(r => r.opportunities)),
                         backgroundColor: 'green',
                     },
                     {
                         label: 'Risks',
-                        data: results.map(r => r.risks),
+                        data: [totalRisks].concat(results.map(r => r.risks)),
                         backgroundColor: 'red',
                     },
                     {
                         label: 'Neutral',
-                        data: results.map(r => r.neutral),
+                        data: [totalNeutral].concat(results.map(r => r.neutral)),
                         backgroundColor: 'grey',
                     }
                 ]
@@ -74,7 +88,7 @@ export class Result {
                     y: { stacked: true }
                 },
                 plugins: {
-                    tooltip: {  // Correctly use 'tooltip' under 'plugins'
+                    tooltip: {
                         mode: 'index',
                         intersect: false,
                         callbacks: {
@@ -93,5 +107,7 @@ export class Result {
                 }
             }
         });
+
+
     }
 }

@@ -6,9 +6,14 @@ function renderQuestionnaire() {
         throw new Error("Questionnaire element not found");
 
     questionnaireElement.innerHTML = EventManager.questionnaire.renderQuestionnaire();
-    const chartCanvas = document.getElementById('chart') as HTMLCanvasElement;
-    if (chartCanvas) {
-        EventManager.questionnaire.result?.render(chartCanvas.getContext('2d'));
+    const detailedCanvas = document.getElementById('detailedChart') as HTMLCanvasElement;
+    const detailedContext = detailedCanvas.getContext('2d');
+
+    if (detailedContext) {
+        // Ensure both contexts are not null before calling the render method
+        EventManager.questionnaire.result?.render(detailedCanvas);
+    } else {
+        console.error("Failed to get canvas context");
     }
 }
 
