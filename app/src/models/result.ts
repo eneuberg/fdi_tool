@@ -14,13 +14,12 @@ export class Result {
     renderCanvas(): string {
         const sectorName = this.sectorName;
         const subsectorName = this.subsectorName;
-        let sectorNameElement = sectorName ? `<h3>${sectorName}</h3>` : '';
-        let subsectorNameElement = subsectorName ? `<h4>${subsectorName}</h4>` : '';
+        let sectorNameElement = sectorName ? `<h3>Sector: ${sectorName}</h3>` : '';
+        let subsectorNameElement = subsectorName ? `<h4>Subsector: ${subsectorName}</h4>` : '';
 
         const evaluations = this.evaluations;
         let opportunities = evaluations.filter(evaluation => evaluation.evaluationResult).length;
         let risks = evaluations.length - opportunities;
-        let remaining = evaluations.length - (opportunities + risks); // Calculate remaining indicators
         const score = opportunities === 0 && risks === 0 ? 0 : risks ? (opportunities / risks) / (risks + opportunities) : 1;
 
         return `
@@ -42,9 +41,9 @@ export class Result {
             const filtered = evaluations.filter(e => e.dimension === dimension);
             const opportunities = filtered.filter(e => e.evaluationResult === true).length;
             const risks = filtered.filter(e => e.evaluationResult === false).length;
-            const remaining = filtered.filter(e => e.evaluationResult === null).length;
+            const neutral = filtered.filter(e => e.evaluationResult === null).length;
             const score = opportunities === 0 && risks === 0 ? 0 : risks ? (opportunities / risks) / (risks + opportunities) : 1;
-            return { dimension, opportunities, risks, remaining, score };
+            return { dimension, opportunities, risks, neutral, score };
         });
 
         new Chart(canvas, {
@@ -63,8 +62,8 @@ export class Result {
                         backgroundColor: 'red',
                     },
                     {
-                        label: 'Remaining',
-                        data: results.map(r => r.remaining),
+                        label: 'Neutral',
+                        data: results.map(r => r.neutral),
                         backgroundColor: 'grey',
                     }
                 ]
