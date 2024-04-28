@@ -14,8 +14,8 @@ export class Result {
     renderCanvas(): string {
         const sectorName = this.sectorName;
         const subsectorName = this.subsectorName;
-        let sectorNameElement = sectorName ? `<h3>Sector: ${sectorName}</h3>` : '';
-        let subsectorNameElement = subsectorName ? `<h4>Subsector: ${subsectorName}</h4>` : '';
+        let sectorNameElement = sectorName ? `<h3 class="text-center">Sector: ${sectorName}</h3>` : '';
+        let subsectorNameElement = subsectorName ? `<h4 class="text-center">Subsector: ${subsectorName}</h4>` : '';
 
         const evaluations = this.evaluations;
         let opportunities = evaluations.filter(evaluation => evaluation.evaluationResult).length;
@@ -23,8 +23,8 @@ export class Result {
         const score = opportunities === 0 && risks === 0 ? 0 : risks ? (opportunities / risks) / (risks + opportunities) : 1;
 
         return `
-            <div class="result">
-                <h2>Results</h2>
+            <div class="result text-center">
+                <h2 class=" font-weight-bold">Results</h2>
                 ${sectorNameElement}
                 ${subsectorNameElement}
                 <div class="container mt-10 mb-2">
@@ -34,7 +34,7 @@ export class Result {
                         </div>
                     </div>
                 </div>
-                <div class="center-link"> <!-- Bootstrap class to center the link -->
+                <div class="d-flex justify-content-center"> <!-- Bootstrap class to center the link -->
                     <a href="index.html" class="back-to-home">Restart</a>
                  </div>
             </div>
