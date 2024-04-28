@@ -23,7 +23,7 @@
 
     width: 20%;
     height: 45px;
-    background-color: rgb(25, 205, 255);
+    background-color: rgb(50, 108, 128);
     border: 50px;
     outline: none;
     border-radius: 80px;
@@ -39,7 +39,7 @@
     
 }
 .navbar-nav:hover {
-    background-color: rgba(255, 255, 255, 0.78);
+    background-color: rgba(255, 255, 255, 0.28);
 }
 
 
