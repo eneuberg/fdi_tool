@@ -30,7 +30,7 @@ export class Result {
                 <div class="container mt-10 mb-2">
                     <div class="row">
                         <div class="col-12"> <!-- Adjusted to 6 columns for medium devices -->
-                            <canvas id="detailedChart"></canvas>
+                            <canvas id="detailedChart" class="chart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -50,6 +50,7 @@ export class Result {
             const risks = filtered.filter(e => e.evaluationResult === false).length;
             const neutral = filtered.filter(e => e.evaluationResult === null).length;
             const score = opportunities === 0 && risks === 0 ? 0 : risks ? (opportunities / risks) / (risks + opportunities) : 1;
+            dimension = dimension.charAt(0).toUpperCase() + dimension.slice(1);
             return { dimension, opportunities, risks, neutral, score };
         });
 
@@ -63,7 +64,7 @@ export class Result {
         new Chart(detailedCanvas, {
             type: 'bar',
             data: {
-                labels: ['Overall (Score: ' + overallScore.toFixed(2) + ')'].concat(results.map(r => `${r.dimension} (Score: ${r.score.toFixed(2)})`)),
+                labels: [['Overall', overallScore.toFixed(2)]].concat(results.map(r => [r.dimension, r.score.toFixed(2)])),
                 datasets: [
                     {
                         label: 'Opportunities',
@@ -84,10 +85,20 @@ export class Result {
             },
             options: {
                 scales: {
-                    x: { stacked: true },
+                    x: {
+                        stacked: true,
+                        ticks: {
+                            autoSkip: false,  // Turn off auto-skip
+                            maxRotation: 50,  // Optional: Adjust label rotation if needed
+                            minRotation: 50,   // Optional: Adjust label rotation if needed
+                        }
+                    },
                     y: { stacked: true }
                 },
                 plugins: {
+                    legend: {
+                        display: false
+                    },
                     tooltip: {
                         mode: 'index',
                         intersect: false,
