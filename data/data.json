@@ -4,7 +4,7 @@
             "Agriculture_direct": {
                 "indicators": [
                     {
-                        "text": "Enter the operating surplus divided by the land value as a percentage %).",
+                        "text": "Enter the operating surplus divided by the land value as a percentage (%).",
                         "comment": "Note: The measure assumes land values reflect production potential and not other externalities.         ",
                         "dimension": "economic",
                         "evaluation": {
@@ -70,7 +70,7 @@
                         }
                     },
                     {
-                        "text": "Enter the annual groundwater abstraction for agriculture by MNE subtracted by annual groundwater recharge from rainfalll",
+                        "text": "Enter the annual groundwater abstraction for agriculture by MNE subtracted by annual groundwater recharge from rainfall",
                         "comment": "=Groundwater balance (m3) (if negative ballance add \"-\")",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1155,7 +1155,7 @@
             "Biotechnology": {
                 "indicators": [
                     {
-                        "text": "Does the project take part in safety reporting in clinical trials? akes part in safety reporting in clinical trials",
+                        "text": "Does the project take part in safety reporting in clinical trials?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
