@@ -70,7 +70,7 @@
                         }
                     },
                     {
-                        "text": "Enter the annual groundwater abstraction for agriculture by MNE subtracted by annual groundwater recharge from rainfall",
+                        "text": "Enter the annual groundwater abstraction for agriculture by MNE subtracted by annual groundwater recharge from rainfalll",
                         "comment": "=Groundwater balance (m3) (if negative ballance add \"-\")",
                         "dimension": "environmental",
                         "evaluation": {
@@ -443,7 +443,7 @@
                         }
                     },
                     {
-                        "text": "Does the proposal give priority to healthy, nutritious, and sustainable diets and products, especially concerning children and other vulnerable groups?",
+                        "text": "Does the proposal give priority to healthy, nutritious and sustainable diets and products, especially concerning children and other vulnerable groups?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -885,7 +885,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE follow the Step (Solving the E-Waste Problem) initiative?",
+                        "text": "Does the MNE follow the Step (Solving the E-Waste Problem) initiative?)",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
