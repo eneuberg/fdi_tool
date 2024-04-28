@@ -4,7 +4,7 @@
             "Agriculture_direct": {
                 "indicators": [
                     {
-                        "text": "Enter the operating surplus divided by the land value as a percentage.",
+                        "text": "Enter the operating surplus divided by the land value as a percentage %).",
                         "comment": "Note: The measure assumes land values reflect production potential and not other externalities.         ",
                         "dimension": "economic",
                         "evaluation": {
@@ -35,7 +35,7 @@
                             "options": [
                                 "Access to or availed credit",
                                 "Access to or availed insurance",
-                                "Share of a single agricultural commodity less than 66% in the total value of production of the holding"
+                                "Share of a single agricultural commodity is less than 66% in the total value of production of the holding"
                             ]
                         }
                     },
@@ -56,7 +56,7 @@
                         }
                     },
                     {
-                        "text": "Does an FDI project likely to cause one of the following ?",
+                        "text": "Is an FDI project likely to cause one of the following ?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -70,7 +70,7 @@
                         }
                     },
                     {
-                        "text": "Annual groundwater abstraction for agriculture by MNE subtracted by annual groundwater recharge from rainfalll",
+                        "text": "Enter the annual groundwater abstraction for agriculture by MNE subtracted by annual groundwater recharge from rainfalll",
                         "comment": "=Groundwater balance (m3) (if negative ballance add \"-\")",
                         "dimension": "environmental",
                         "evaluation": {
@@ -125,7 +125,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -233,7 +233,7 @@
                         }
                     },
                     {
-                        "text": "Has IPA legally agreed to take responsibility for proper site clean-up after closure?",
+                        "text": "Has the IPA legally agreed to take responsibility for proper site clean-up after closure?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -257,7 +257,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -357,7 +357,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -427,7 +427,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -537,7 +537,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -607,7 +607,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -684,7 +684,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -753,7 +753,7 @@
                         }
                     },
                     {
-                        "text": "Enter the estimated expenditure made by tourists for accommodation, food, and any leisure activities during their stay in the foreign-invested tourism facility in ($USD) per week per tourist?",
+                        "text": "Enter the estimated expenditure made by tourists for accommodation, food and any leisure activities during their stay in the foreign-invested tourism facility in ($USD) per week per tourist?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -823,7 +823,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -925,7 +925,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1027,7 +1027,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1119,7 +1119,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1155,7 +1155,7 @@
             "Biotechnology": {
                 "indicators": [
                     {
-                        "text": "The project tDoes the project take part in safety reporting in clinical trials? akes part in safety reporting in clinical trials",
+                        "text": "Does the project take part in safety reporting in clinical trials? akes part in safety reporting in clinical trials",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1219,7 +1219,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1295,7 +1295,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish, and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
+                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
