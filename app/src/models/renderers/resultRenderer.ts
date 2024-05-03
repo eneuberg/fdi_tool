@@ -11,7 +11,13 @@ export class ResultRenderer {
         this.subsectorName = subsectorName;
         this.sectorName = sectorName;
         this.evaluations = evaluations;
+        //this.manager =
     }
+
+    protected attachEventListeners() {
+
+    }
+
     renderCanvas(): void {
         const sectorName = this.sectorName;
         const subsectorName = this.subsectorName;
