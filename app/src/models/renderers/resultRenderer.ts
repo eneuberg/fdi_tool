@@ -165,7 +165,11 @@ export class ResultRenderer extends Renderer {
     }
 
     render(): void {
-        this.renderCanvas();
-        this.renderCharts();
+        Renderer.playAnimationOnElementWithId('questionnaireContainer', 'fade-out')
+            .then(() => {
+                this.renderCanvas();
+                this.renderCharts();
+                Renderer.playAnimationOnElementWithId('questionnaireContainer', 'fade-in');
+            });
     }
 }

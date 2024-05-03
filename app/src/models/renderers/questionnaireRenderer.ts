@@ -55,5 +55,6 @@ export class questionnaireRenderer extends Renderer {
 
         Renderer.attachHTMLToElementWithId('sectorSelectContainer', sectorSelectHTML);
         this.attachEventListeners();
+        Renderer.playAnimationOnElementWithId('questionnaireContainer', 'fade-in');
     }
 }
