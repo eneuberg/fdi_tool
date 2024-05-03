@@ -30,10 +30,10 @@ export class ResultRenderer extends Renderer {
                 <div class="container mt-10 mb-2">
                     <div class="row">
                         <div class="col-12">
-                            <canvas id="summaryChart" class="chart"></canvas>
+                            <canvas class="pd-xxl-3" id="summaryChart" class="chart"></canvas>
                         </div>
                         <div class="col-12"> <!-- Adjusted to 6 columns for medium devices -->
-                            <canvas id="detailedChart" class="chart"></canvas>
+                            <canvas class="pd-xxl-3" id="detailedChart" class="chart"></canvas>
                         </div>
                     </div>
                 </div>
@@ -95,7 +95,13 @@ export class ResultRenderer extends Renderer {
             options: {
                 scales: {
                     x: { stacked: true },
-                    y: { stacked: true }
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: true,
+                            text: '# Indicators'
+                        }
+                    }
                 },
                 plugins: {
                     legend: {
@@ -137,7 +143,13 @@ export class ResultRenderer extends Renderer {
             options: {
                 scales: {
                     x: { stacked: true },
-                    y: { stacked: true }
+                    y: {
+                        stacked: true,
+                        title: {
+                            display: true,
+                            text: '# Indicators'
+                        }
+                    }
                 },
                 plugins: {
                     legend: {
