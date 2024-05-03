@@ -1,3 +1,6 @@
+import {Renderer} from "./renderer";
+import {SectorManager} from "../managers/sectorManager";
+
 export class SectorRenderer extends Renderer {
     manager: SectorManager;
 
@@ -6,23 +9,51 @@ export class SectorRenderer extends Renderer {
         this.manager = manager;
     }
 
-    render(): void {
-        const subsectorsHTML = this.manager.subsectors.map(subsector => subsector.renderSubsector()).join('');
-        const sectorHTML = `
-            <h1> ${this.manager.name}</h1>
-            ${subsectorsHTML}
-        `;
-        Renderer.attachHTMLToElementWithId('questionnaire', sectorHTML);
+    private buildSubsectorSelection(): string {
+        let subsectorOptions = '<option value="" selected disabled>Choose a Subsector</option>';
+        this.manager.subsectors.forEach(subsector => {
+            const selected = this.manager.currentSubsector && this.manager.currentSubsector.name === subsector.name ? ' selected' : '';
+            subsectorOptions += `<option value="${subsector.name}"${selected}>${subsector.name}</option>`;
+        });
+
+        const currentSubsectorName = this.manager.currentSubsector ? this.manager.currentSubsector.name : '';
+        const currentSubsectorExists = !!this.manager.currentSubsector; // Hier wird der boolesche Wert erstellt
+
+        if (!currentSubsectorExists) {
+
+            return `
+                <select id="subsectorSelect" class="form-select mt-3" aria-label="Default select example">
+                    ${subsectorOptions}
+                </select>
+            `;
+        }
+        else {
+            return `
+                <div class="select-Container">
+                     <select id="subsectorSelect" class="form-select form-select-lg mt-2" aria-label="Default select example">
+                        ${subsectorOptions}
+                    </select>
+                </div>
+            `;
+        }
     }
 
-    attachEventListeners(): void {
-        this.manager.subsectors.forEach(subsector => {
-            const subsectorElement = document.getElementById(subsector.name);
-            if (!subsectorElement) throw new Error(`Element with id ${subsector.name} not found`);
-            subsectorElement.addEventListener('click', () => {
-                this.manager.currentSubsector = subsector;
-                this.render();
-            });
-        });
+    render(): void {
+        let subsectorSelectHTML = this.manager.currentSubsector?.isRealSubsector === false ? '' : this.buildSubsectorSelection();
+        Renderer.attachHTMLToElementWithId('subsectorSelectContainer', subsectorSelectHTML);
+        this.attachEventListeners();
+    }
+
+    protected attachEventListeners(): void {
+        const subsectorSelect = document.getElementById('sectorSelect') as HTMLSelectElement;
+        if (!subsectorSelect)
+            throw new Error("Sector select element not found");
+        const handleChange = () => {
+            Renderer.questionnaire.selectSubsector(subsectorSelect.value);
+            this.manager.currentSubsector?.renderSubsector();
+        }
+
+        subsectorSelect.removeEventListener('change', handleChange);
+        subsectorSelect.addEventListener('change', handleChange);
     }
 }

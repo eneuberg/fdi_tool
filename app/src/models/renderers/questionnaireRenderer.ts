@@ -10,14 +10,18 @@ export class questionnaireRenderer extends Renderer {
         this.manager = manager;
     }
 
-    attachEventListeners() {
+    protected attachEventListeners() {
         const sectorSelect = document.getElementById('sectorSelect') as HTMLSelectElement;
         if (!sectorSelect)
-            throw new Error("SectorManager select element not found");
-        sectorSelect.addEventListener('change', () => {
+            throw new Error("Sector select element not found");
+
+        const handleChange = () => {
             Renderer.questionnaire.selectSector(sectorSelect.value);
-            this.manager.render();
-        });
+            this.manager.currentSector?.render();
+        }
+
+        sectorSelect.removeEventListener('change', handleChange);
+        sectorSelect.addEventListener('change', handleChange);
     }
 
     render() {

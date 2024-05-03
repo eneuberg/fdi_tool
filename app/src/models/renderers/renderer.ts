@@ -3,7 +3,6 @@ import {Manager} from "../managers/manager";
 
 export abstract class Renderer {
     static questionnaire: QuestionnaireManager;
-    static questionnaireElement: HTMLElement;
     abstract manager: Manager;
 
     static attachHTMLToElementWithId(elementId: string, html: string) {
@@ -12,11 +11,10 @@ export abstract class Renderer {
         element.innerHTML = html;
     }
 
-    static setupRenderer(questionnaire: QuestionnaireManager, questionnaireElement: HTMLElement) {
+    static setupRenderer(questionnaire: QuestionnaireManager) {
         Renderer.questionnaire = questionnaire;
-        Renderer.questionnaireElement = questionnaireElement;
     }
 
     abstract render(): void;
-    abstract attachEventListeners(): void;
+    protected abstract attachEventListeners(): void;
 }

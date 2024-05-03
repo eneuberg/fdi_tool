@@ -5,7 +5,7 @@ function renderQuestionnaire() {
     if (!questionnaireElement)
         throw new Error("QuestionnaireManager element not found");
 
-    questionnaireElement.innerHTML = EventManager.questionnaire.renderQuestionnaire();
+    //questionnaireElement.innerHTML = EventManager.questionnaire.render();
     const detailedCanvas = document.getElementById('detailedChart') as HTMLCanvasElement;
     const detailedContext = detailedCanvas.getContext('2d');
 

@@ -70,6 +70,5 @@ export class QuestionnaireManager extends Manager {
 
     render(): void {
         this.renderer.render();
-        this.currentSector?.render();
     }
 }

@@ -1,15 +1,19 @@
 import { SubsectorManager } from "./subsectorManager";
 import {Manager} from "./manager";
+import {SectorRenderer} from "../renderers/sectorRenderer";
 
 export class SectorManager extends Manager {
     name: string;
     subsectors: SubsectorManager[];
     currentSubsector: SubsectorManager | null;
+    renderer: SectorRenderer;
 
     constructor(name: string, subsectors?: SubsectorManager[]) {
+        super();
         this.name = name;
         this.subsectors = subsectors || [];
         this.currentSubsector = null;
+        this.renderer = new SectorRenderer(this);
     }
 
     selectSubsector(subsectorId: string): void {
@@ -25,46 +29,7 @@ export class SectorManager extends Manager {
         return !(this.subsectors.length === 1 && !this.subsectors[0].isRealSubsector);
     }
 
-    private renderSubsectorSelection(): string {
-        if (this.currentSubsector?.isRealSubsector === false) return '';
-        let subsectorOptions = '<option value="" selected disabled>Choose a SubsectorManager</option>';
-        this.subsectors.forEach(subsector => {
-            const selected = this.currentSubsector && this.currentSubsector.name === subsector.name ? ' selected' : '';
-            subsectorOptions += `<option value="${subsector.name}"${selected}>${subsector.name}</option>`;
-        });
-
-        const currentSubsectorName = this.currentSubsector ? this.currentSubsector.name : '';
-        const currentSubsectorExists = !!this.currentSubsector; // Hier wird der boolesche Wert erstellt
-
-        if (!currentSubsectorExists) {
-
-            return `
-                <select id="subsectorSelect" class="form-select mt-3" aria-label="Default select example">
-                    ${subsectorOptions}
-                </select>
-            `;
-        }
-        else {
-            return `
-                <div class="select-Container">
-                     <select id="subsectorSelect" class="form-select form-select-lg mt-2" aria-label="Default select example">
-                        ${subsectorOptions}
-                    </select>
-                </div>
-            `;
-        }
-    }
-
-    private attachEventListener() {
-
-    }
-
-    renderSector(): void {
-        const questionnaireContainer = document.getElementById('questionnaireContainer');
-        const subSectorSelectionHTML = this.renderSubsectorSelection();
-        if (!questionnaireContainer) throw new Error("QuestionnaireManager element not found");
-        questionnaireContainer.innerHTML = subSectorSelectionHTML;
-        this.attachEventListener();
-        this.currentSubsector?.renderSubsector();
+    render(): void {
+        this.renderer.render();
     }
 }
