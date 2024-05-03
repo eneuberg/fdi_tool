@@ -1,7 +1,7 @@
 import Chart from "chart.js/auto";
-import { EvaluationDimension} from "./subsector";
+import { EvaluationDimension} from "../managers/subsectorManager";
 
-export class Result {
+export class ResultRenderer {
     subsectorName: string;
     sectorName: string;
     evaluations: EvaluationDimension[];

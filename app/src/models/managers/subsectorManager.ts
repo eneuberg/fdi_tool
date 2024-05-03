@@ -1,19 +1,19 @@
-import { Indicator } from "./indicator";
-import { Dimension} from "./indicator";
+import { IndicatorManager } from "./indicatorManager";
+import { Dimension} from "./indicatorManager";
 
 export interface EvaluationDimension {
     dimension: Dimension;
     evaluationResult: boolean | null;
 }
 
-export class Subsector {
+export class SubsectorManager {
     name: string;
-    indicators: Indicator[];
-    currentIndicator: Indicator | null;
+    indicators: IndicatorManager[];
+    currentIndicator: IndicatorManager | null;
     currentIndicatorIndex: number;
     isRealSubsector: boolean;
 
-    constructor(name: string, indicators: Indicator[]) {
+    constructor(name: string, indicators: IndicatorManager[]) {
         this.name = name;
         this.indicators = indicators;
         this.currentIndicator = indicators[0];

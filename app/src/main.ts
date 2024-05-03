@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const questionnaire = initializeQuestionnaire(data);
     const questionnaireEl = document.getElementById('questionnaireContainer');
     if (!questionnaireEl)
-        throw new Error("Questionnaire element not found");
+        throw new Error("QuestionnaireManager element not found");
     questionnaire.renderQuestionnaire();
     EventManager.setup(questionnaire);
 });

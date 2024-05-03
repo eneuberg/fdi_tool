@@ -1,9 +1,9 @@
-import {Questionnaire} from "../models/managers/questionnaire";
+import {QuestionnaireManager} from "../models/managers/questionnaireManager";
 
 function renderQuestionnaire() {
     const questionnaireElement = document.getElementById('questionnaireContainer');
     if (!questionnaireElement)
-        throw new Error("Questionnaire element not found");
+        throw new Error("QuestionnaireManager element not found");
 
     questionnaireElement.innerHTML = EventManager.questionnaire.renderQuestionnaire();
     const detailedCanvas = document.getElementById('detailedChart') as HTMLCanvasElement;
@@ -18,16 +18,16 @@ function renderQuestionnaire() {
 }
 
 export class EventManager {
-    static questionnaire: Questionnaire;
+    static questionnaire: QuestionnaireManager;
 
-    static setup(questionnaire: Questionnaire) {
+    static setup(questionnaire: QuestionnaireManager) {
         EventManager.questionnaire = questionnaire;
         EventManager.addGlobalEventListener();
     }
 
     static addGlobalEventListener() {
         const questionnaireElement = document.getElementById('questionnaire');
-        if (!questionnaireElement) throw new Error("Questionnaire element not found");
+        if (!questionnaireElement) throw new Error("QuestionnaireManager element not found");
 
         // TODO: change event type; fired for <input>
         questionnaireElement.addEventListener('change', (event) => {

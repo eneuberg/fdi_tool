@@ -1,8 +1,8 @@
-import {Questionnaire} from "../managers/questionnaire";
+import {QuestionnaireManager} from "../managers/questionnaireManager";
 import {Manager} from "../managers/manager";
 
 export abstract class Renderer {
-    static questionnaire: Questionnaire;
+    static questionnaire: QuestionnaireManager;
     static questionnaireElement: HTMLElement;
     abstract manager: Manager;
 
@@ -12,11 +12,11 @@ export abstract class Renderer {
         element.innerHTML = html;
     }
 
-    static setupRenderer(questionnaire: Questionnaire, questionnaireElement: HTMLElement) {
+    static setupRenderer(questionnaire: QuestionnaireManager, questionnaireElement: HTMLElement) {
         Renderer.questionnaire = questionnaire;
         Renderer.questionnaireElement = questionnaireElement;
     }
 
-    abstract render(...objectsToRender: any[]): void;
+    abstract render(): void;
     abstract attachEventListeners(): void;
 }

@@ -1,11 +1,11 @@
 import {Renderer} from "./renderer";
-import {Questionnaire} from "../managers/questionnaire";
+import {QuestionnaireManager} from "../managers/questionnaireManager";
 
 export class questionnaireRenderer extends Renderer {
 
-    manager: Questionnaire;
+    manager: QuestionnaireManager;
 
-    constructor(manager: Questionnaire) {
+    constructor(manager: QuestionnaireManager) {
         super();
         this.manager = manager;
     }
@@ -13,7 +13,7 @@ export class questionnaireRenderer extends Renderer {
     attachEventListeners() {
         const sectorSelect = document.getElementById('sectorSelect') as HTMLSelectElement;
         if (!sectorSelect)
-            throw new Error("Sector select element not found");
+            throw new Error("SectorManager select element not found");
         sectorSelect.addEventListener('change', () => {
             Renderer.questionnaire.selectSector(sectorSelect.value);
             this.manager.render();

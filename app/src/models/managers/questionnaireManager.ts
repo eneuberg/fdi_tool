@@ -1,16 +1,16 @@
-import { Sector } from "./sector";
-import { Result } from "./result";
+import { SectorManager } from "./sectorManager";
+import { ResultRenderer } from "../renderers/resultRenderer";
 import {Manager} from "./manager";
 import {questionnaireRenderer} from "../renderers/questionnaireRenderer";
 
-export class Questionnaire extends Manager {
-    sectors: Sector[];
-    currentSector: Sector | null;
+export class QuestionnaireManager extends Manager {
+    sectors: SectorManager[];
+    currentSector: SectorManager | null;
     completed: boolean;
-    result: Result | null;
+    result: ResultRenderer | null;
     renderer: questionnaireRenderer;
 
-    constructor(sectors: Sector[]) {
+    constructor(sectors: SectorManager[]) {
         super();
         this.sectors = sectors;
         this.currentSector = null;
@@ -61,7 +61,7 @@ export class Questionnaire extends Manager {
     }
 
     private renderResults(): string {
-        const result = new Result(this.currentSector?.currentSubsector?.isRealSubsector ? this.currentSector?.currentSubsector?.name : '',
+        const result = new ResultRenderer(this.currentSector?.currentSubsector?.isRealSubsector ? this.currentSector?.currentSubsector?.name : '',
             this.currentSector?.name || '',
             this.currentSector?.currentSubsector?.evaluateIndicators() || []);
         this.result = result;
@@ -70,6 +70,6 @@ export class Questionnaire extends Manager {
 
     render(): void {
         this.renderer.render();
-        this.currentSector?.renderSector();
+        this.currentSector?.render();
     }
 }

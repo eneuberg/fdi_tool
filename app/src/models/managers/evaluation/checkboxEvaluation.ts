@@ -1,6 +1,6 @@
-import {Evaluation} from "./evaluation";
+import {EvaluationManager} from "./evaluationManager";
 
-export class CheckboxEvaluation extends Evaluation {
+export class CheckboxEvaluation extends EvaluationManager {
     constructor() {
         super();
     }

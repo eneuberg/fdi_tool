@@ -1,10 +1,10 @@
-import {Evaluation, EvaluationCriteria} from "./evaluation";
+import {EvaluationManager, EvaluationCriteria} from "./evaluationManager";
 import {CheckboxEvaluation} from "./checkboxEvaluation";
 import {MultiCheckboxEvaluation} from "./multiCheckboxEvaluation";
 import {RangeEvaluation} from "./rangeEvaluation";
 
 export class EvaluationFactory {
-    static createEvaluation(criteria: EvaluationCriteria): Evaluation {
+    static createEvaluation(criteria: EvaluationCriteria): EvaluationManager {
         switch (criteria.type) {
             case 'checkbox':
                 return new CheckboxEvaluation();

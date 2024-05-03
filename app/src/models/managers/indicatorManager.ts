@@ -1,13 +1,13 @@
-import {Evaluation, EvaluationCriteria} from "./evaluation/evaluation";
+import {EvaluationManager, EvaluationCriteria} from "./evaluation/evaluationManager";
 import {EvaluationFactory} from "./evaluation/evaluationFactory";
 import tooltipIcon from '../../resources/tooltip.svg';
 
 export type Dimension = "economic" | "social" | "environmental" | "governance";
 
-export class Indicator {
+export class IndicatorManager {
     text: string;
     comment: string;
-    evaluation: Evaluation;
+    evaluation: EvaluationManager;
     response: any;  // Stores the current response
     hasBeenAnswered: boolean;
     dimension: Dimension;

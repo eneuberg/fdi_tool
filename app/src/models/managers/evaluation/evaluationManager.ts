@@ -26,7 +26,7 @@ export interface RangeOptions {
 export type EvaluationCriteria = MultiCheckboxCriteria | RangeCriteria | CheckboxCriteria;
 
 
-export abstract class Evaluation {
+export abstract class EvaluationManager {
     abstract evaluate(response: any): boolean | null;
     abstract render(response: any): string;
 }

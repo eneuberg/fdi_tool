@@ -1,7 +1,7 @@
-import {Evaluation, RangeOptions} from "./evaluation";
-import {Range} from "./evaluation";
+import {EvaluationManager, RangeOptions} from "./evaluationManager";
+import {Range} from "./evaluationManager";
 
-export class RangeEvaluation extends Evaluation {
+export class RangeEvaluation extends EvaluationManager {
     ranges: Range[];
     rangeType: "percentage" | "absoluteCanBeNegative" | "absoluteOnlyPositive";
 

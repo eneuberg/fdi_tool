@@ -1,11 +1,12 @@
-import { Subsector } from "./subsector";
+import { SubsectorManager } from "./subsectorManager";
+import {Manager} from "./manager";
 
-export class Sector {
+export class SectorManager extends Manager {
     name: string;
-    subsectors: Subsector[];
-    currentSubsector: Subsector | null;
+    subsectors: SubsectorManager[];
+    currentSubsector: SubsectorManager | null;
 
-    constructor(name: string, subsectors?: Subsector[]) {
+    constructor(name: string, subsectors?: SubsectorManager[]) {
         this.name = name;
         this.subsectors = subsectors || [];
         this.currentSubsector = null;
@@ -26,7 +27,7 @@ export class Sector {
 
     private renderSubsectorSelection(): string {
         if (this.currentSubsector?.isRealSubsector === false) return '';
-        let subsectorOptions = '<option value="" selected disabled>Choose a Subsector</option>';
+        let subsectorOptions = '<option value="" selected disabled>Choose a SubsectorManager</option>';
         this.subsectors.forEach(subsector => {
             const selected = this.currentSubsector && this.currentSubsector.name === subsector.name ? ' selected' : '';
             subsectorOptions += `<option value="${subsector.name}"${selected}>${subsector.name}</option>`;
@@ -61,7 +62,7 @@ export class Sector {
     renderSector(): void {
         const questionnaireContainer = document.getElementById('questionnaireContainer');
         const subSectorSelectionHTML = this.renderSubsectorSelection();
-        if (!questionnaireContainer) throw new Error("Questionnaire element not found");
+        if (!questionnaireContainer) throw new Error("QuestionnaireManager element not found");
         questionnaireContainer.innerHTML = subSectorSelectionHTML;
         this.attachEventListener();
         this.currentSubsector?.renderSubsector();
