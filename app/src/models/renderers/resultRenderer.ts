@@ -1,33 +1,26 @@
 import Chart from "chart.js/auto";
 import { EvaluationDimension} from "../managers/subsectorManager";
 import {Renderer} from "./renderer";
+import {ResultManager} from "../managers/resultManager";
 
-export class ResultRenderer {
-    subsectorName: string;
-    sectorName: string;
-    evaluations: EvaluationDimension[];
+export class ResultRenderer extends Renderer {
+    manager: ResultManager
 
-    constructor(subsectorName: string, sectorName: string, evaluations: EvaluationDimension[]) {
-        this.subsectorName = subsectorName;
-        this.sectorName = sectorName;
-        this.evaluations = evaluations;
-        //this.manager =
+    constructor(resultManager: ResultManager) {
+        super();
+        this.manager = resultManager;
     }
 
     protected attachEventListeners() {
 
     }
 
-    renderCanvas(): void {
-        const sectorName = this.sectorName;
-        const subsectorName = this.subsectorName;
+    private renderCanvas(): void {
+        const currentSector = this.manager.questionnaireManager.currentSector;
+        const sectorName = currentSector?.name;
+        const subsectorName = currentSector?.currentSubsector?.name;
         let sectorNameElement = sectorName ? `<h3 class="text-center">Sector: ${sectorName}</h3>` : '';
         let subsectorNameElement = subsectorName ? `<h4 class="text-center">Subsector: ${subsectorName}</h4>` : '';
-
-        const evaluations = this.evaluations;
-        let opportunities = evaluations.filter(evaluation => evaluation.evaluationResult).length;
-        let risks = evaluations.length - opportunities;
-        const score = opportunities === 0 && risks === 0 ? 0 : risks ? (opportunities / risks) / (risks + opportunities) : 1;
 
         const resultHTML = `
             <div class="result text-center">
@@ -49,10 +42,9 @@ export class ResultRenderer {
 
         Renderer.attachHTMLToElementWithId('questionnaireContainer', resultHTML);
     }
-    render(): void {
-        this.renderCanvas();
 
-        const evaluations = this.evaluations;
+    private renderChart() {
+        const evaluations = this.manager.questionnaireManager.currentSector?.currentSubsector?.evaluateIndicators() || [];
         const dimensions = ['economic', 'social', 'environmental', 'governance'];
 
         const results = dimensions.map(dimension => {
@@ -128,7 +120,10 @@ export class ResultRenderer {
                 }
             }
         });
+    }
 
-
+    render(): void {
+        this.renderCanvas();
+        this.renderChart();
     }
 }

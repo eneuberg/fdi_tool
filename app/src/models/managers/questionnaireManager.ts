@@ -1,7 +1,7 @@
 import { SectorManager } from "./sectorManager";
-import { ResultRenderer } from "../renderers/resultRenderer";
 import {Manager} from "./manager";
 import {questionnaireRenderer} from "../renderers/questionnaireRenderer";
+import {ResultManager} from "./resultManager";
 
 export class QuestionnaireManager extends Manager {
     sectors: SectorManager[];
@@ -42,14 +42,11 @@ export class QuestionnaireManager extends Manager {
     }
 
     storeResponse(response: any): void {
-        console.log(response);
         this.currentSector?.currentSubsector?.currentIndicator?.storeResponse(response);
     }
 
     private renderResults(): void {
-        const result = new ResultRenderer(this.currentSector?.currentSubsector?.isRealSubsector ? this.currentSector?.currentSubsector?.name : '',
-            this.currentSector?.name || '',
-            this.currentSector?.currentSubsector?.evaluateIndicators() || []);
+        const result = new ResultManager(this);
         result.render()
     }
 
