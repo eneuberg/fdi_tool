@@ -6,16 +6,12 @@ import {questionnaireRenderer} from "../renderers/questionnaireRenderer";
 export class QuestionnaireManager extends Manager {
     sectors: SectorManager[];
     currentSector: SectorManager | null;
-    completed: boolean;
-    result: ResultRenderer | null;
     renderer: questionnaireRenderer;
 
     constructor(sectors: SectorManager[]) {
         super();
         this.sectors = sectors;
         this.currentSector = null;
-        this.completed = false;
-        this.result = null;
         this.renderer = new questionnaireRenderer(this);
     }
 
@@ -37,7 +33,7 @@ export class QuestionnaireManager extends Manager {
         if (!this.currentSector?.currentSubsector?.isCompleted())
             this.currentSector?.currentSubsector?.nextIndicator();
         else {
-            this.completed = true;
+            this.renderResults();
         }
     }
 
@@ -50,22 +46,11 @@ export class QuestionnaireManager extends Manager {
         this.currentSector?.currentSubsector?.currentIndicator?.storeResponse(response);
     }
 
-    renderQuestionnaireMustChange(): string {
-        //console.log(this.currentSector?.currentSubsector?.currentIndicator?.response);
-        if (this.completed) {
-            return this.renderResults();
-        }
-        else {
-            return '';//this.renderQuestionnaire();
-        }
-    }
-
-    private renderResults(): string {
+    private renderResults(): void {
         const result = new ResultRenderer(this.currentSector?.currentSubsector?.isRealSubsector ? this.currentSector?.currentSubsector?.name : '',
             this.currentSector?.name || '',
             this.currentSector?.currentSubsector?.evaluateIndicators() || []);
-        this.result = result;
-        return result.renderCanvas();
+        result.render()
     }
 
     render(): void {

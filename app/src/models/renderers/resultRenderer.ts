@@ -1,5 +1,6 @@
 import Chart from "chart.js/auto";
 import { EvaluationDimension} from "../managers/subsectorManager";
+import {Renderer} from "./renderer";
 
 export class ResultRenderer {
     subsectorName: string;
@@ -11,7 +12,7 @@ export class ResultRenderer {
         this.sectorName = sectorName;
         this.evaluations = evaluations;
     }
-    renderCanvas(): string {
+    renderCanvas(): void {
         const sectorName = this.sectorName;
         const subsectorName = this.subsectorName;
         let sectorNameElement = sectorName ? `<h3 class="text-center">Sector: ${sectorName}</h3>` : '';
@@ -22,7 +23,7 @@ export class ResultRenderer {
         let risks = evaluations.length - opportunities;
         const score = opportunities === 0 && risks === 0 ? 0 : risks ? (opportunities / risks) / (risks + opportunities) : 1;
 
-        return `
+        const resultHTML = `
             <div class="result text-center">
                 <h2 class=" font-weight-bold">Results</h2>
                 ${sectorNameElement}
@@ -39,8 +40,12 @@ export class ResultRenderer {
                  </div>
             </div>
         `;
+
+        Renderer.attachHTMLToElementWithId('questionnaireContainer', resultHTML);
     }
-    render(detailedCanvas: HTMLCanvasElement): void {
+    render(): void {
+        this.renderCanvas();
+
         const evaluations = this.evaluations;
         const dimensions = ['economic', 'social', 'environmental', 'governance'];
 
@@ -54,14 +59,13 @@ export class ResultRenderer {
             return { dimension, opportunities, risks, neutral, score };
         });
 
-// Aggregate totals across all dimensions
         const totalOpportunities = results.reduce((total, r) => total + r.opportunities, 0);
         const totalRisks = results.reduce((total, r) => total + r.risks, 0);
         const totalNeutral = results.reduce((total, r) => total + r.neutral, 0);
-// Calculate a weighted overall score using the formula or a simple average as a placeholder
-        const overallScore = results.reduce((total, r) => total + r.score, 0) / results.length;
 
-        new Chart(detailedCanvas, {
+        const overallScore = results.reduce((total, r) => total + r.score, 0) / results.length;
+        const canvas = document.getElementById('detailedChart') as HTMLCanvasElement;
+        new Chart(canvas, {
             type: 'bar',
             data: {
                 labels: [['Overall', overallScore.toFixed(2)]].concat(results.map(r => [r.dimension, r.score.toFixed(2)])),
