@@ -30,5 +30,6 @@ export class IndicatorRenderer extends Renderer {
 
         Renderer.attachHTMLToElementWithId('indicatorContainer', indicatorHTML);
         this.manager.evaluation.render();
+        Renderer.playAnimationOnElementWithId('indicatorContainer', 'fade-in')
     }
 }

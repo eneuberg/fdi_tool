@@ -11,6 +11,16 @@ export abstract class Renderer {
         element.innerHTML = html;
     }
 
+    static async playAnimationOnElementWithId(elementId: string, animation: string) {
+        const element = document.getElementById(elementId);
+        if (!element) throw new Error(`Element with id ${elementId} not found`);
+        element.classList.add(animation);
+        element.addEventListener('animationend', () => {
+            element.classList.remove(animation);
+            return;
+        });
+
+    }
     static setupRenderer(questionnaire: QuestionnaireManager) {
         Renderer.questionnaire = questionnaire;
     }

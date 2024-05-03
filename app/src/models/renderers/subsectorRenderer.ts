@@ -14,7 +14,6 @@ export class SubsectorRenderer extends Renderer {
         if (!form) throw new Error('Form not found');
 
         const handleNextSubmit = (event: Event) => {
-            event.preventDefault();
             const form = event.target as HTMLFormElement;
             const formData = new FormData(form);
 
@@ -48,16 +47,25 @@ export class SubsectorRenderer extends Renderer {
 
         const handlePreviousClick = () => {
             Renderer.questionnaire.previousIndicator();
-            this.updateProgressBar();
             this.manager.currentIndicator?.render();
+            this.updateProgressBar();
+            console.log('Previous button clicked')
         }
 
-        form.removeEventListener('submit', handleNextSubmit);
-        console.log('removed event listener')
-        form.addEventListener('submit', handleNextSubmit);
+        form.addEventListener('submit', (event: Event) => {
+            event.preventDefault();
+            Renderer.playAnimationOnElementWithId('indicatorContainer', 'fade-out')
+                .then(() => {
+                    handleNextSubmit(event);
+                });
+        });
 
-        previousButton.removeEventListener('click', handlePreviousClick);
-        previousButton.addEventListener('click', handlePreviousClick);
+        previousButton.addEventListener('click', () => {
+            Renderer.playAnimationOnElementWithId('indicatorContainer', 'fade-out')
+                .then(() => {
+                    handlePreviousClick();
+                });
+        });
     }
 
     render(): void {
