@@ -18,6 +18,8 @@ export class questionnaireRenderer extends Renderer {
         const handleChange = () => {
             Renderer.questionnaire.selectSector(sectorSelect.value);
             this.manager.currentSector?.render();
+            this.manager.currentSector?.currentSubsector?.render();
+            this.manager.currentSector?.currentSubsector?.currentIndicator?.render();
         }
 
         sectorSelect.removeEventListener('change', handleChange);

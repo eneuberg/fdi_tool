@@ -1,21 +1,29 @@
 import {EvaluationManager, RangeOptions} from "./evaluationManager";
 import {Range} from "./evaluationManager";
+import {RangeEvaluationRenderer} from "../../renderers/evaluation/rangeEvaluationRenderer";
 
 export class RangeEvaluationManager extends EvaluationManager {
     ranges: Range[];
     rangeType: "percentage" | "absoluteCanBeNegative" | "absoluteOnlyPositive";
+    response: number | null;
+    renderer: RangeEvaluationRenderer;
 
     constructor(rangeOptions: RangeOptions) {
         super();
         this.ranges = rangeOptions.ranges;
         this.rangeType = rangeOptions.rangeType;
+        this.response = null;
+        this.renderer = new RangeEvaluationRenderer(this);
     }
 
-    evaluate(response: number): boolean | null {
+    evaluate(): boolean | null {
+        if (this.response === null) {
+            throw new Error("No response stored for evaluation.");
+        }
         for (const range of this.ranges) {
             if (
-                (range.operator === 'more' && response > range.comparator) ||
-                (range.operator === 'less' && response < range.comparator)
+                (range.operator === 'more' && this.response > range.comparator) ||
+                (range.operator === 'less' && this.response < range.comparator)
             ) {
                 return range.returnValue;
             }
@@ -24,32 +32,8 @@ export class RangeEvaluationManager extends EvaluationManager {
     }
 
 
-    render(response = null) {
-        let min = "-Infinity";  // Default to no minimum if negative values are allowed
-        let max = "Infinity";   // Default to no maximum if positive values are not restricted
-        let placeholder = "Enter value";  // Generic placeholder
-
-        switch (this.rangeType) {
-            case "percentage":
-                min = "0";
-                max = "100";
-                placeholder = "Percentage (0-100)";
-                break;
-            case "absoluteCanBeNegative":
-                placeholder = "Number (negative or positive)";
-                break;
-            case "absoluteOnlyPositive":
-                min = "0";
-                placeholder = "Number (positive)";
-                break;
-        }
-
-        return `
-        <div class="input-container d-flex justify-content-center mb-4">
-            <div class="col-6">
-                <input class="number form-control " type="number" placeholder="${placeholder}" name="rangeInput" min="${min}" max="${max}" required ${response !== null ? `value="${response}"` : ''} />
-            </div>
-        </div>`;
+    render(): void {
+        this.renderer.render();
     }
 
 }

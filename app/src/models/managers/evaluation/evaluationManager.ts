@@ -1,3 +1,5 @@
+import {Manager} from "../manager";
+
 interface MultiCheckboxCriteria {
     type: 'multicheckbox';
     options: string[]; // Options that can be checked
@@ -26,7 +28,7 @@ export interface RangeOptions {
 export type EvaluationCriteria = MultiCheckboxCriteria | RangeCriteria | CheckboxCriteria;
 
 
-export abstract class EvaluationManager {
-    abstract evaluate(response: any): boolean | null;
-    abstract render(response: any): string;
+export abstract class EvaluationManager extends Manager {
+    abstract response: any;
+    abstract evaluate(): boolean | null;
 }

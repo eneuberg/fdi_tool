@@ -1,24 +1,29 @@
 import { IndicatorManager } from "./indicatorManager";
 import { Dimension} from "./indicatorManager";
+import {Manager} from "./manager";
+import {SubsectorRenderer} from "../renderers/subsectorRenderer";
 
 export interface EvaluationDimension {
     dimension: Dimension;
     evaluationResult: boolean | null;
 }
 
-export class SubsectorManager {
+export class SubsectorManager extends Manager {
     name: string;
     indicators: IndicatorManager[];
     currentIndicator: IndicatorManager | null;
     currentIndicatorIndex: number;
     isRealSubsector: boolean;
+    renderer: SubsectorRenderer;
 
     constructor(name: string, indicators: IndicatorManager[]) {
+        super();
         this.name = name;
         this.indicators = indicators;
         this.currentIndicator = indicators[0];
         this.currentIndicatorIndex = 0;
         this.isRealSubsector = !name.endsWith("_direct");
+        this.renderer = new SubsectorRenderer(this);
     }
 
     resetIndicators(): void {
@@ -53,33 +58,8 @@ export class SubsectorManager {
         }
     }
 
-    renderSubsector(): string {
-        const nameHTML = this.isRealSubsector ? `<h2> ${this.name}</h2>` : '';
-        const currentIndex = this.currentIndicator ? this.indicators.indexOf(this.currentIndicator) : 0;
-        const progressValue = currentIndex / (this.indicators.length - 1); // Adjusted formula
-        const progressBarHTML = ` <progress class="progressBar mt-4" value="${progressValue}" max="1"></progress>`;
-
-        return `
-      
-        <div class="row">
-          <div class="col-12">
-            <form class="indicatorForm" id="indicatorForm">
-                ${this.currentIndicator?.renderIndicator()}
-                  <div class="next-back-button row">
-                    <div class="col-12 col-md-6">
-                      <button id="previousButton" name="action" value="previous" type="submit" class="btn btn-secondary w-100 mb-3">Previous</button>
-                    </div>
-                    <div class="col-12 col-md-6">
-                      <button id="nextButton" name="action" value="next" type="submit" class="btn btn-primary w-100">Next</button>
-                    </div>
-                  </div>
-            </form>
-        </div>
-  ${progressBarHTML}
-</div>
-       
-   
-        `;
+    render(): void {
+        this.renderer.render();
     }
 
 }

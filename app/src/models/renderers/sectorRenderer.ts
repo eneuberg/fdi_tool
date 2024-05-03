@@ -45,12 +45,11 @@ export class SectorRenderer extends Renderer {
     }
 
     protected attachEventListeners(): void {
-        const subsectorSelect = document.getElementById('sectorSelect') as HTMLSelectElement;
-        if (!subsectorSelect)
-            throw new Error("Sector select element not found");
+        const subsectorSelect = document.getElementById('subsectorSelect') as HTMLSelectElement;
+        if (!subsectorSelect) return;
         const handleChange = () => {
             Renderer.questionnaire.selectSubsector(subsectorSelect.value);
-            this.manager.currentSubsector?.renderSubsector();
+            this.manager.currentSubsector?.render();
         }
 
         subsectorSelect.removeEventListener('change', handleChange);
