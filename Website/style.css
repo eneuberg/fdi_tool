@@ -17,7 +17,7 @@ body {
     background-color: transparent !important;
 }
 .parallax-bg {
-    background-image: url('assets/Background2.png');
+    background-image: url('../Website2/assets/images/Background2.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
@@ -27,7 +27,7 @@ body {
 }
 
 .parallax-bg2 {
-    background-image: url('assets/Background2.png');
+    background-image: url('../Website2/assets/images/Background2.png');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
