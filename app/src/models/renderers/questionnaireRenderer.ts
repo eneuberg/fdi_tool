@@ -47,10 +47,7 @@ export class questionnaireRenderer extends Renderer {
         `;
         }
 
-        const questionnaireElement = document.getElementById('questionnaireContainer');
-        if (!questionnaireElement)
-            throw new Error("Questionnaire element not found");
-        questionnaireElement.innerHTML = sectorSelectHTML;
+        Renderer.attachHTMLToElementWithId('sectorSelectContainer', sectorSelectHTML);
         this.attachEventListeners();
     }
 }
