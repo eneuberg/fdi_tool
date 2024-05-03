@@ -1,7 +1,7 @@
-import {Questionnaire} from "../models/questionnaire";
+import {Questionnaire} from "../models/managers/questionnaire";
 
 function renderQuestionnaire() {
-    const questionnaireElement = document.getElementById('questionnaire');
+    const questionnaireElement = document.getElementById('questionnaireContainer');
     if (!questionnaireElement)
         throw new Error("Questionnaire element not found");
 

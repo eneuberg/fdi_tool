@@ -1,17 +1,22 @@
 import { Sector } from "./sector";
 import { Result } from "./result";
+import {Manager} from "./manager";
+import {questionnaireRenderer} from "../renderers/questionnaireRenderer";
 
-export class Questionnaire {
+export class Questionnaire extends Manager {
     sectors: Sector[];
     currentSector: Sector | null;
     completed: boolean;
     result: Result | null;
+    renderer: questionnaireRenderer;
 
     constructor(sectors: Sector[]) {
+        super();
         this.sectors = sectors;
         this.currentSector = null;
         this.completed = false;
         this.result = null;
+        this.renderer = new questionnaireRenderer(this);
     }
 
     selectSector(sectorId: string): void {
@@ -45,13 +50,13 @@ export class Questionnaire {
         this.currentSector?.currentSubsector?.currentIndicator?.storeResponse(response);
     }
 
-    renderQuestionnaire(): string {
+    renderQuestionnaireMustChange(): string {
         //console.log(this.currentSector?.currentSubsector?.currentIndicator?.response);
         if (this.completed) {
             return this.renderResults();
         }
         else {
-            return this.renderIncompleteQuestionnaire();
+            return '';//this.renderQuestionnaire();
         }
     }
 
@@ -63,33 +68,8 @@ export class Questionnaire {
         return result.renderCanvas();
     }
 
-    private renderIncompleteQuestionnaire(): string {
-        //const chooseSectorChosen = !this.currentSector ? 'selected' : '';
-        let sectorOptions = '<option id="placeholder-chooseSector" value="" selected disabled>Choose a sector</option>';
-        this.sectors.forEach(sector => {
-            const selected = this.currentSector && this.currentSector.name === sector.name ? ' selected' : '';
-            sectorOptions += `<option value="${sector.name}"${selected}>${sector.name}</option>`;
-        });
-
-        const currentSectorName = this.currentSector ? this.currentSector.name : '';
-        const currentSectorExists = !!this.currentSector; // Hier wird der boolesche Wert erstellt
-
-        if (!currentSectorExists) {
-            return `
-            <select id="sectorSelect" class="form-select" aria-label="Default select example">
-                ${sectorOptions}
-            </select>
-            `;
-        } else {
-            return `
-            <div class="select-Container">
-                <!--<span class="sector-Name" >${currentSectorName}</span>-->
-                <select id="sectorSelect" class="form-select" aria-label="Default select example">
-                    ${sectorOptions}
-                </select>
-            </div>
-            ${this.currentSector ? this.currentSector.renderSector() : ''}
-        `;
-        }
+    render(): void {
+        this.renderer.render();
+        this.currentSector?.renderSector();
     }
 }

@@ -2,13 +2,12 @@ import {initializeQuestionnaire} from "./utils/dataLoader"; // Adjust path as ne
 import * as data from './data/data.json';
 import {EventManager} from "./services/eventManager";
 import 'bootstrap/dist/css/bootstrap.min.css';
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 
 document.addEventListener('DOMContentLoaded', () => {
     const questionnaire = initializeQuestionnaire(data);
-    const questionnaireEl = document.getElementById('questionnaire');
+    const questionnaireEl = document.getElementById('questionnaireContainer');
     if (!questionnaireEl)
         throw new Error("Questionnaire element not found");
-    questionnaireEl.innerHTML = questionnaire.renderQuestionnaire();
+    questionnaire.renderQuestionnaire();
     EventManager.setup(questionnaire);
 });

@@ -1,6 +1,6 @@
 import {Evaluation, EvaluationCriteria} from "./evaluation/evaluation";
 import {EvaluationFactory} from "./evaluation/evaluationFactory";
-import tooltipIcon from '../resources/tooltip.svg';
+import tooltipIcon from '../../resources/tooltip.svg';
 
 export type Dimension = "economic" | "social" | "environmental" | "governance";
 

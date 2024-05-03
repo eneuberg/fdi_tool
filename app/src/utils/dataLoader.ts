@@ -1,9 +1,9 @@
 
 import * as data from '../data/data.json';
-import {Questionnaire} from "../models/questionnaire";
-import {Indicator} from "../models/indicator";
-import {Subsector} from "../models/subsector";
-import {Sector} from "../models/sector";
+import {Questionnaire} from "../models/managers/questionnaire";
+import {Indicator} from "../models/managers/indicator";
+import {Subsector} from "../models/managers/subsector";
+import {Sector} from "../models/managers/sector";
 
 export function initializeQuestionnaire(jsonData: any): Questionnaire {
     const sectors = Object.keys(jsonData.sectors).map(sectorName => {

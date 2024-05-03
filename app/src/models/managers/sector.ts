@@ -38,29 +38,32 @@ export class Sector {
         if (!currentSubsectorExists) {
 
             return `
-            <select id="subsectorSelect" class="form-select mt-3" aria-label="Default select example">
-                ${subsectorOptions}
-            </select>
-        `;
-        }else{
-            return `
-            <div class="select-Container">
-                 <select id="subsectorSelect" class="form-select form-select-lg mt-2" aria-label="Default select example">
+                <select id="subsectorSelect" class="form-select mt-3" aria-label="Default select example">
                     ${subsectorOptions}
                 </select>
-             </div>
-        
-        `;
-            
-
+            `;
+        }
+        else {
+            return `
+                <div class="select-Container">
+                     <select id="subsectorSelect" class="form-select form-select-lg mt-2" aria-label="Default select example">
+                        ${subsectorOptions}
+                    </select>
+                </div>
+            `;
         }
     }
 
-    renderSector(): string {
-        return `
-            
-            ${this.renderSubsectorSelection()}
-            ${this.currentSubsector ? this.currentSubsector.renderSubsector() : ''}
-        `;
+    private attachEventListener() {
+
+    }
+
+    renderSector(): void {
+        const questionnaireContainer = document.getElementById('questionnaireContainer');
+        const subSectorSelectionHTML = this.renderSubsectorSelection();
+        if (!questionnaireContainer) throw new Error("Questionnaire element not found");
+        questionnaireContainer.innerHTML = subSectorSelectionHTML;
+        this.attachEventListener();
+        this.currentSubsector?.renderSubsector();
     }
 }
