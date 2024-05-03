@@ -1,0 +1,1216 @@
+{
+    "sectors": {
+        "Agriculture": {
+            "Agriculture_direct": {
+                "indicators": [
+                    {
+                        "text": "Enter the operating surplus divided by the land value as a percentage (%).",
+                        "comment": "Note: The measure assumes land values reflect production potential and not other externalities.         ",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "range",
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 8,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 15,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "text": "Complies with at least one of the following:",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "multicheckbox",
+                            "options": [
+                                "Access to or availed credit",
+                                "Access to or availed insurance",
+                                "Share of a single agricultural commodity is less than 66% in the total value of production of the holding"
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "Mining": {
+            "Mining_direct": {
+                "indicators": [
+                    {
+                        "text": "What percentage (%) of the generated profits is reinvested into further project development?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "range",
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 20,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 20,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "text": "What percentage (%) of generated profits reinvested into local research and development ?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "range",
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 5,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 5,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Are all of the technologies used recognized by sector standards to be environmentally sustainable?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Has the IPA legally agreed to take responsibility for proper site clean-up after closure?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            }
+        },
+        "Manufacturing": {
+            "Manufacturing_direct": {
+                "indicators": [
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "What is the percentage (%) of annual production growth indicated in the project's business plan ?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "range",
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 10,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 10,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "text": "What is the percentage (%)  of workers fully employed for at least 12 months ?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "range",
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 80,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 80,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "FDI project proposals contain credible commitments to work safety and a dedicated budget for protective gears.",
+                        "comment": "",
+                        "dimension": "governance",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            }
+        },
+        "Food": {
+            "Food_direct": {
+                "indicators": [
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the proposal give priority to healthy, nutritious and sustainable diets and products, especially concerning children and other vulnerable groups?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            }
+        },
+        "Oil Refinery and Chemicals": {
+            "Oil Refinery and Chemicals_direct": {
+                "indicators": [
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE have measures to reduce the flaring of associated gas, including capture and use for power generation, liquefaction for transport, or re-injection back into the reservoirs?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE proposal have Carbon Capture and Storage (CCS) measures in place?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the proposal address the risks and implications of climate change by using methods such as shadow prices on project carbon emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MNE participating in UN-supported national reduce emissions from deforestation and forest degradation (REDD+) programmes?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            }
+        },
+        "Electric Power": {
+            "Electric Power_direct": {
+                "indicators": [
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project have in place IEA recommended environmental safety standards and damage control mechanisms?",
+                        "comment": "",
+                        "dimension": "governance",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            }
+        },
+        "Financial Services": {
+            "Financial Services_direct": {
+                "indicators": [
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project perform sustainable credit risk assessment when lending money to its clients?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "What percentage (%) of the portfolio investments are allocated to green bonds?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "range",
+                            "rangeOptions": {
+                                "rangeType": "percentage",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 20,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 20,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE use Socially Responsible Investment (SRI) screening methods for their investment strategies?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            }
+        },
+        "Tourism and hospitality": {
+            "Tourism and hospitality_direct": {
+                "indicators": [
+                    {
+                        "text": "What is the expected number of tourists attracted per 1 million USD of investment?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "range",
+                            "rangeOptions": {
+                                "rangeType": "absoluteOnlyPositive",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 100,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 100,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "text": "Enter the estimated expenditure made by tourists for accommodation, food and any leisure activities during their stay in the foreign-invested tourism facility in ($USD) per week per tourist?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "range",
+                            "rangeOptions": {
+                                "rangeType": "absoluteOnlyPositive",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 1000,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 1000,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Enter the environmental damages caused per average tourist in a span of a year, measured in USD ($)?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "range",
+                            "rangeOptions": {
+                                "rangeType": "absoluteOnlyPositive",
+                                "ranges": [
+                                    {
+                                        "operator": "less",
+                                        "comparator": 100,
+                                        "returnValue": false
+                                    },
+                                    {
+                                        "operator": "more",
+                                        "comparator": 100,
+                                        "returnValue": true
+                                    }
+                                ]
+                            }
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            }
+        },
+        "Information and Communications Technology": {
+            "Information and Communications Technology_direct": {
+                "indicators": [
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does radio frequency exposure occur within the range of 3 kHz to 300 GHz?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE follow the Step (Solving the E-Waste Problem) initiative?)",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE have special programs to raise digital literacy?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE adhere to OECD Recommendation on Internet Policy Making Principles and have cybersecurity guidelines in place?",
+                        "comment": "",
+                        "dimension": "governance",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE have cybersecurity guidelines in place?",
+                        "comment": "",
+                        "dimension": "governance",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Has the MNE adopted the Child Online Protection Guidelines?",
+                        "comment": "",
+                        "dimension": "governance",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            }
+        },
+        "Healthcare": {
+            "Pharmaceuticals": {
+                "indicators": [
+                    {
+                        "text": "Does the project aim to neutralize risks of vaccine production in the local value chains?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the project aimed at expanding the local range of services available?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights?",
+                        "comment": "",
+                        "dimension": "governance",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            },
+            "Medical devices": {
+                "indicators": [
+                    {
+                        "text": "Does the project aim to neutralize risks of vaccine production in the local value chains?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the project aimed at expanding the local range of services available?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is there implementation of life cycle assessment (LCA) and circularity principles measuring multiple life cycles?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights?",
+                        "comment": "",
+                        "dimension": "governance",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            },
+            "Biotechnology": {
+                "indicators": [
+                    {
+                        "text": "Does the project take part in safety reporting in clinical trials?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the project aimed at expanding the local range of services available?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Has the project conducted extensive market research evaluating long-term product market value, regional drug regulations, competitors, etc.?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            },
+            "Healthcare services": {
+                "indicators": [
+                    {
+                        "text": "Is the project compatible with social objectives like universal access and affordability?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the project aimed at expanding the local range of services available?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "comment": "",
+                        "dimension": "economic",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project have in place strategies for reducing and properly managing hazardous waste and plastics?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "comment": "",
+                        "dimension": "environmental",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the companies business models orients towards female well-being externally?",
+                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    }
+                ]
+            }
+        }
+    }
+}
