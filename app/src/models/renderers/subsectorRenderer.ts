@@ -80,7 +80,11 @@ export class SubsectorRenderer extends Renderer {
                         </div>
                     </form>
                 </div>
-                <progress id="progressBar" class="progressBar mt-4" value="0" max="1"></progress>
+                <div class="progress mt-4">
+                    <div class="bar">
+                        <div class="progress-value"></div>
+                    </div>
+                </div>
             </div>
             `
         Renderer.attachHTMLToElementWithId('indicatorFormContainer', indicatorFormHTML);
@@ -89,9 +93,16 @@ export class SubsectorRenderer extends Renderer {
     }
 
     private updateProgressBar(): void {
-        const currentIndex = this.manager.currentIndicator ? this.manager.indicators.indexOf(this.manager.currentIndicator) : 0;
-        const progressValue = currentIndex / (this.manager.indicators.length - 1); // Adjusted formula
-        const progressBar = document.getElementById('progressBar') as HTMLProgressElement;
-        progressBar.value = progressValue;
+        const currentIndex = this.manager.currentIndicator
+            ? this.manager.indicators.indexOf(this.manager.currentIndicator)
+            : 0;
+        const totalIndicators = this.manager.indicators.length - 1;
+        const progressValue = (currentIndex / totalIndicators) * 100; // Calculate percentage
+
+        const progressBar = document.querySelector('.progress .bar') as HTMLElement;
+        if (progressBar) {
+            progressBar.style.setProperty('--progress', `${progressValue}%`); // Update CSS variable
+        }
     }
+
 }
