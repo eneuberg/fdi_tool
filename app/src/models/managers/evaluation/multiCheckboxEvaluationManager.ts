@@ -1,6 +1,6 @@
 import {EvaluationManager} from "./evaluationManager";
 
-export class MultiCheckboxEvaluation extends EvaluationManager {
+export class MultiCheckboxEvaluationManager extends EvaluationManager {
     options: string[];
 
     constructor(options: string[]) {
