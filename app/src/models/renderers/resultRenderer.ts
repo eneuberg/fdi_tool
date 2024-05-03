@@ -18,7 +18,7 @@ export class ResultRenderer extends Renderer {
     private renderCanvas(): void {
         const currentSector = this.manager.questionnaireManager.currentSector;
         const sectorName = currentSector?.name;
-        const subsectorName = currentSector?.currentSubsector?.name;
+        const subsectorName = currentSector?.currentSubsector?.isRealSubsector ? currentSector?.currentSubsector?.name : '';
         let sectorNameElement = sectorName ? `<h3 class="text-center">Sector: ${sectorName}</h3>` : '';
         let subsectorNameElement = subsectorName ? `<h4 class="text-center">Subsector: ${subsectorName}</h4>` : '';
 
@@ -29,6 +29,9 @@ export class ResultRenderer extends Renderer {
                 ${subsectorNameElement}
                 <div class="container mt-10 mb-2">
                     <div class="row">
+                        <div class="col-12">
+                            <canvas id="summaryChart" class="chart"></canvas>
+                        </div>
                         <div class="col-12"> <!-- Adjusted to 6 columns for medium devices -->
                             <canvas id="detailedChart" class="chart"></canvas>
                         </div>
@@ -43,7 +46,7 @@ export class ResultRenderer extends Renderer {
         Renderer.attachHTMLToElementWithId('questionnaireContainer', resultHTML);
     }
 
-    private renderChart() {
+    private renderCharts() {
         const evaluations = this.manager.questionnaireManager.currentSector?.currentSubsector?.evaluateIndicators() || [];
         const dimensions = ['economic', 'social', 'environmental', 'governance'];
 
@@ -61,40 +64,37 @@ export class ResultRenderer extends Renderer {
         const totalRisks = results.reduce((total, r) => total + r.risks, 0);
         const totalNeutral = results.reduce((total, r) => total + r.neutral, 0);
 
-        const overallScore = results.reduce((total, r) => total + r.score, 0) / results.length;
-        const canvas = document.getElementById('detailedChart') as HTMLCanvasElement;
-        new Chart(canvas, {
+        this.renderSummaryChart(totalOpportunities, totalRisks, totalNeutral);
+        this.renderDetailedChart(results);
+    }
+
+    private renderSummaryChart(totalOpportunities: number, totalRisks: number, totalNeutral: number) {
+        const summaryCanvas = document.getElementById('summaryChart') as HTMLCanvasElement;
+        new Chart(summaryCanvas, {
             type: 'bar',
             data: {
-                labels: [['Overall', overallScore.toFixed(2)]].concat(results.map(r => [r.dimension, r.score.toFixed(2)])),
+                labels: ['Summary'],
                 datasets: [
                     {
                         label: 'Opportunities',
-                        data: [totalOpportunities].concat(results.map(r => r.opportunities)),
+                        data: [totalOpportunities],
                         backgroundColor: 'green',
                     },
                     {
                         label: 'Risks',
-                        data: [totalRisks].concat(results.map(r => r.risks)),
+                        data: [totalRisks],
                         backgroundColor: 'red',
                     },
                     {
                         label: 'Neutral',
-                        data: [totalNeutral].concat(results.map(r => r.neutral)),
+                        data: [totalNeutral],
                         backgroundColor: 'grey',
                     }
                 ]
             },
             options: {
                 scales: {
-                    x: {
-                        stacked: true,
-                        ticks: {
-                            autoSkip: false,  // Turn off auto-skip
-                            maxRotation: 50,  // Optional: Adjust label rotation if needed
-                            minRotation: 50,   // Optional: Adjust label rotation if needed
-                        }
-                    },
+                    x: { stacked: true },
                     y: { stacked: true }
                 },
                 plugins: {
@@ -103,19 +103,49 @@ export class ResultRenderer extends Renderer {
                     },
                     tooltip: {
                         mode: 'index',
-                        intersect: false,
-                        callbacks: {
-                            label: function(context) {
-                                let label = context.dataset.label || '';
-                                if (label) {
-                                    label += ': ';
-                                }
-                                if (context.parsed.y !== null) {
-                                    label += context.parsed.y;
-                                }
-                                return label;
-                            }
-                        }
+                        intersect: false
+                    }
+                }
+            }
+        });
+    }
+
+    private renderDetailedChart(results: any[]) {
+        const canvas = document.getElementById('detailedChart') as HTMLCanvasElement;
+        new Chart(canvas, {
+            type: 'bar',
+            data: {
+                labels: results.map(r => r.dimension),
+                datasets: [
+                    {
+                        label: 'Opportunities',
+                        data: results.map(r => r.opportunities),
+                        backgroundColor: 'green',
+                    },
+                    {
+                        label: 'Risks',
+                        data: results.map(r => r.risks),
+                        backgroundColor: 'red',
+                    },
+                    {
+                        label: 'Neutral',
+                        data: results.map(r => r.neutral),
+                        backgroundColor: 'grey',
+                    }
+                ]
+            },
+            options: {
+                scales: {
+                    x: { stacked: true },
+                    y: { stacked: true }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        mode: 'index',
+                        intersect: false
                     }
                 }
             }
@@ -124,6 +154,6 @@ export class ResultRenderer extends Renderer {
 
     render(): void {
         this.renderCanvas();
-        this.renderChart();
+        this.renderCharts();
     }
 }
