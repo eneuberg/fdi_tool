@@ -39,6 +39,7 @@ export class SubsectorRenderer extends Renderer {
                 }
             }
             Renderer.questionnaire.nextIndicator();
+            this.updateProgressBar();
             this.manager.currentIndicator?.render();
         }
 
@@ -47,6 +48,7 @@ export class SubsectorRenderer extends Renderer {
 
         const handlePreviousClick = () => {
             Renderer.questionnaire.previousIndicator();
+            this.updateProgressBar();
             this.manager.currentIndicator?.render();
         }
 
@@ -62,7 +64,6 @@ export class SubsectorRenderer extends Renderer {
         const nameHTML = this.manager.isRealSubsector ? `<h2> ${this.manager.name}</h2>` : '';
         const currentIndex = this.manager.currentIndicator ? this.manager.indicators.indexOf(this.manager.currentIndicator) : 0;
         const progressValue = currentIndex / (this.manager.indicators.length - 1); // Adjusted formula
-        const progressBarHTML = ` <progress class="progressBar mt-4" value="${progressValue}" max="1"></progress>`;
 
         const indicatorFormHTML = `
             <div class="row">
@@ -79,11 +80,18 @@ export class SubsectorRenderer extends Renderer {
                         </div>
                     </form>
                 </div>
-                ${progressBarHTML}
+                <progress id="progressBar" class="progressBar mt-4" value="0" max="1"></progress>
             </div>
             `
         Renderer.attachHTMLToElementWithId('indicatorFormContainer', indicatorFormHTML);
         this.manager.currentIndicator?.render();
         this.attachEventListeners();
+    }
+
+    private updateProgressBar(): void {
+        const currentIndex = this.manager.currentIndicator ? this.manager.indicators.indexOf(this.manager.currentIndicator) : 0;
+        const progressValue = currentIndex / (this.manager.indicators.length - 1); // Adjusted formula
+        const progressBar = document.getElementById('progressBar') as HTMLProgressElement;
+        progressBar.value = progressValue;
     }
 }

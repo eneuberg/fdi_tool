@@ -10,7 +10,7 @@
 }
 
 /* Progress bar with transition */
-.progress-bar {
+#progress-bar {
     animation: fadeInAnimation 0.5s ease-in-out;
     width: 0%;
     height: 20px;
