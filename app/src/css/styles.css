@@ -35,14 +35,3 @@
   z-index: -1;
   overflow: hidden;
 }
-
-.chart {
-    width: 100%; /* Full width of the container */
-    height: 600px; /* Default height, you can change this based on your needs */
-}
-
-@media (min-width: 768px) { /* Adjust the height on larger screens */
-   .chart {
-        height: 800px;
-    }
-}
