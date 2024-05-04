@@ -12,10 +12,15 @@
     z-index: 1050; /* Ensure it's above other content */
     width: 50vw;
 }
+
 .comment {
     display: block;  /* Ensures the span moves as a whole unit */
-    white-space: nowrap;    /* Prevents the span from breaking into multiple lines */
 }
+
+.comment img {
+    cursor: pointer;
+}
+
 .comment img:hover + .commentText {
     visibility: visible;
     opacity: 1;
