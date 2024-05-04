@@ -19,31 +19,33 @@ export class ResultRenderer extends Renderer {
         const currentSector = this.manager.questionnaireManager.currentSector;
         const sectorName = currentSector?.name;
         const subsectorName = currentSector?.currentSubsector?.isRealSubsector ? currentSector?.currentSubsector?.name : '';
-        let sectorNameElement = sectorName ? `<h3 class="text-center">Sector: ${sectorName}</h3>` : '';
-        let subsectorNameElement = subsectorName ? `<h4 class="text-center">Subsector: ${subsectorName}</h4>` : '';
+        let sectorNameElement = sectorName ? `<h5 class="fw-lighter text-center">Sector: ${sectorName}</h5>` : '';
+        let subsectorNameElement = subsectorName ? `<h5 class="fw-lighter text-center">Subsector: ${subsectorName}</h5>` : '';
 
         const resultHTML = `
-            <div class="result text-center">
-                <h2 class=" font-weight-bold">Results</h2>
-                ${sectorNameElement}
-                ${subsectorNameElement}
-                <div class="container mt-10 mb-2">
-                    <div class="row">
-                        <div class="col-12"> <!-- Adjusted to 6 columns for medium devices -->
-                            <canvas class="mt-5" id="detailedChart" class="chart"></canvas>
+            <div class="result text-center p-5">
+                <div class="mb-3">  
+                    <h2 class="fw-bold">Results</h2>
+                    ${sectorNameElement}
+                    ${subsectorNameElement}
+                </div>
+                <div class="container border-dark border-1 border-top border-bottom mx-auto">
+                    <div class="row col-xl-7 col-lg-8 col-md-10 col-12 mx-auto">
+                        <div class="col-12 m-3 mx-auto"> <!-- Adjusted to 6 columns for medium devices -->
+                            <canvas id="detailedChart" class="chart"></canvas>
                         </div>
-                        <div class="mx-auto col-8 row">
-                            <canvas class="mt-5" id="summaryChart" class="chart"></canvas>
+                        <div class="col-8 m-3 mx-auto">
+                            <canvas id="summaryChart" class="chart"></canvas>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center"> <!-- Bootstrap class to center the link -->
-                    <a href="index.html" class="back-to-home mt-3">Restart</a>
+                    <a href="index.html" class="back-to-home mt-4">Restart</a>
                  </div>
             </div>
         `;
 
-        Renderer.attachHTMLToElementWithId('questionnaireContainer', resultHTML);
+        Renderer.attachHTMLToElementWithId('mainContainer', resultHTML);
     }
 
     private renderCharts() {
@@ -73,7 +75,7 @@ export class ResultRenderer extends Renderer {
         new Chart(summaryCanvas, {
             type: 'bar',
             data: {
-                labels: ['Summary'],
+                labels: [''],
                 datasets: [
                     {
                         label: 'Opportunities',
@@ -93,17 +95,25 @@ export class ResultRenderer extends Renderer {
                 ]
             },
             options: {
+                responsive: true,
                 scales: {
                     x: { stacked: true },
                     y: {
                         stacked: true,
                         title: {
                             display: true,
-                            text: '# Indicators'
+                            text: 'n Indicators'
+                        },
+                        ticks: {
+                            stepSize: 1
                         }
                     }
                 },
                 plugins: {
+                    title: {
+                        display: true,
+                        text: 'Summary: Risk & Opportunity Profile'
+                    },
                     legend: {
                         display: false
                     },
@@ -141,17 +151,25 @@ export class ResultRenderer extends Renderer {
                 ]
             },
             options: {
+                responsive: true,
                 scales: {
                     x: { stacked: true },
                     y: {
                         stacked: true,
                         title: {
                             display: true,
-                            text: '# Indicators'
+                            text: 'n Indicators'
+                        },
+                        ticks: {
+                            stepSize: 1
                         }
                     }
                 },
                 plugins: {
+                    title: {
+                        display: true,
+                        text: 'Opportunities & Risks Across Key Performance Areas'
+                    },
                     legend: {
                         display: false
                     },
