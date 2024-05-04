@@ -10,4 +10,6 @@ Author
 
     Chris Smith
     August 4, 2017
+### scrolling fade effect
+https://pqina.nl/blog/fade-out-overflow-using-css-mask-image/
 
