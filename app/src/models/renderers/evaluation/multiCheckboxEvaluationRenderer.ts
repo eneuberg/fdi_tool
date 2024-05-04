@@ -45,7 +45,7 @@ export class MultiCheckboxEvaluationRenderer extends Renderer   {
 
         // Return the combined HTML string
         const evaluationHTML = `
-            <div class="masked-overflow">
+            <div class="masked-overflow mb-2">
                 ${optionsHtml}
             </div>
             <div class="input-container d-flex justify-content-center mb-4" >
