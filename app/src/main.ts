@@ -1,5 +1,5 @@
 import {initializeQuestionnaire} from "./utils/dataLoader"; // Adjust path as necessary
-import * as data from './data/dataTest.json';
+import * as data from './data/data.json';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Renderer} from "./models/renderers/renderer";
 
