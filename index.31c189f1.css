@@ -1,0 +1,2 @@
+.seeMore{font-size:.85rem}.commentText{visibility:hidden;opacity:0;z-index:1050;width:50vw;transition:opacity .5s,visibility .5s;position:fixed;left:50%;transform:translate(-50%)}.comment{display:block}.comment img{cursor:pointer}.comment img:hover+.commentText{visibility:visible;opacity:1}@media (width<=992px){.commentText{width:50vw}}@media (width<=768px){.commentText{width:75vw}}@media (width<=576px){.commentText{width:90vw}}
+/*# sourceMappingURL=index.31c189f1.css.map */
