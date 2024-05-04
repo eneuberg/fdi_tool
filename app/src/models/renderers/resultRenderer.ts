@@ -29,16 +29,16 @@ export class ResultRenderer extends Renderer {
                 ${subsectorNameElement}
                 <div class="container mt-10 mb-2">
                     <div class="row">
-                        <div class="col-12">
-                            <canvas class="pd-xxl-3" id="summaryChart" class="chart"></canvas>
-                        </div>
                         <div class="col-12"> <!-- Adjusted to 6 columns for medium devices -->
-                            <canvas class="pd-xxl-3" id="detailedChart" class="chart"></canvas>
+                            <canvas class="mt-5" id="detailedChart" class="chart"></canvas>
+                        </div>
+                        <div class="mx-auto col-8 row">
+                            <canvas class="mt-5" id="summaryChart" class="chart"></canvas>
                         </div>
                     </div>
                 </div>
                 <div class="d-flex justify-content-center"> <!-- Bootstrap class to center the link -->
-                    <a href="index.html" class="back-to-home">Restart</a>
+                    <a href="index.html" class="back-to-home mt-3">Restart</a>
                  </div>
             </div>
         `;
