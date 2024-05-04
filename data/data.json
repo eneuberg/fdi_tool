@@ -4,8 +4,8 @@
             "Agriculture_direct": {
                 "indicators": [
                     {
-                        "text": "Enter the operating surplus divided by the land value as a percentage (%).",
-                        "comment": "Note: The measure assumes land values reflect production potential and not other externalities.         ",
+                        "text": "What is the ratio of the project's operating surplus to the value of the land, expressed as a percentage (%)? Note: an estimate will suffice.",
+                        "comment": "To calculate this indicator:\n1.\tDetermine the project's operating surplus, which is the revenue generated from the project minus the operating expenses, excluding land costs.\n2.\tIdentify the value of the land used for the project.\n3.\tDivide the operating surplus by the land value.\n4.\tMultiply the result by 100 to express the ratio as a percentage.\nFor example, if the project's annual operating surplus is $50,000 and the value of the land used is $1,000,000, the indicator would be:\n($50,000 \u00f7 $1,000,000) \u00d7 100 = 5%         ",
                         "dimension": "economic",
                         "evaluation": {
                             "type": "range",
@@ -27,20 +27,18 @@
                         }
                     },
                     {
-                        "text": "Complies with at least one of the following:",
+                        "text": "Does the project satisfy at least one of the following criteria:",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
                             "type": "multicheckbox",
                             "options": [
-                                "Access to or availed credit",
-                                "Access to or availed insurance",
-                                "Share of a single agricultural commodity is less than 66% in the total value of production of the holding"
+                                "1. Provides access to credit or the project itself avails credit facilities. 2. Offers access to insurance or the project itself avails insurance coverage. 3. Ensures that no single agricultural commodity accounts for more than 66% of the total production value of the holding."
                             ]
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -48,7 +46,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -56,7 +54,7 @@
                         }
                     },
                     {
-                        "text": "Is an FDI project likely to cause one of the following ?",
+                        "text": "Is it likely that the investment project will cause any one of the following?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -70,8 +68,8 @@
                         }
                     },
                     {
-                        "text": "Enter the annual groundwater abstraction for agriculture by MNE subtracted by annual groundwater recharge from rainfalll",
-                        "comment": "=Groundwater balance (m3) (if negative ballance add \"-\")",
+                        "text": "Calculate the difference between the annual groundwater abstraction for agriculture by the investing company and the annual groundwater recharge from rainfall.",
+                        "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
                             "type": "range",
@@ -93,7 +91,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company or investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -101,23 +99,23 @@
                         }
                     },
                     {
-                        "text": "Complies with at least three of the following :",
+                        "text": "Does the proposed project comply with at least three of the following sustainable agriculture practices:",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
                             "type": "multicheckbox",
                             "options": [
                                 "Leaves at least 10% of the holding area for natural or diverse vegetation.",
-                                "Farm produces agricultural products that are organically certified, or its products are undergoing the certification process.",
-                                "Farm does not use medically important antimicrobials as growth promoters.",
-                                "At least two of the following contribute to farm production: 1) temporary crops, 2) pasture, 3) permanent crops, 4) trees on farm, 5) livestock or animal products, and 6) aquaculture.",
+                                "Produces agricultural products that are organically certified, or its products are undergoing the certification process.",
+                                "Does not use medically important antimicrobials as growth promoters.",
+                                "At least two of the following contribute to production: 1) temporary crops, 2) pasture, 3) permanent crops, 4) trees on farm, 5) livestock or animal products, and 6) aquaculture.",
                                 "Practices crop or crop/pasture rotation involving at least 2 crops or crops and pastures on at least 80% of the farm cultivated area (excluding permanent crops and permanent pastures) over a period of 3 years. In case of a 2-crop rotation, the 2 crops must be from different plant genus, e.g., a grass plus a legume, or a grass plus a tuber etc.",
                                 "Livestock includes locally adapted breeds."
                             ]
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -125,7 +123,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -133,7 +131,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -141,16 +139,16 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "text": ". Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or iniatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Does the MNE have a history of adhering to the International Code of Conduct on Pesticide Management?",
-                        "comment": "",
+                        "text": "Does the investing company have a track record of consistently following and complying with the guidelines and standards set by the International Code of Conduct on Pesticide Management? (this requires research into the company, more details provided in the information note)",
+                        "comment": "The International Code of Conduct on Pesticide Management is a voluntary framework developed by the Food and Agriculture Organization (FAO) of the United Nations and the World Health Organization (WHO). It provides guidelines and best practices for the management of pesticides throughout their life cycle, from production to disposal. ",
                         "dimension": "governance",
                         "evaluation": {
                             "type": "checkbox"
@@ -163,7 +161,7 @@
             "Mining_direct": {
                 "indicators": [
                     {
-                        "text": "What percentage (%) of the generated profits is reinvested into further project development?",
+                        "text": "What percentage (%) of the estimated profits of the project are propsoed to be reinvested into further project development?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -186,7 +184,7 @@
                         }
                     },
                     {
-                        "text": "What percentage (%) of generated profits reinvested into local research and development ?",
+                        "text": "What percentage (%) of estimated profits of the project are propsoed to be reinvested into local research and development?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -209,7 +207,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -217,7 +215,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -225,7 +223,7 @@
                         }
                     },
                     {
-                        "text": "Are all of the technologies used recognized by sector standards to be environmentally sustainable?",
+                        "text": "Do all of the technologies proposed to be used meet relevant international standards to ensure operations are conducted efficiently and environmentally sustainable?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -233,7 +231,7 @@
                         }
                     },
                     {
-                        "text": "Has the IPA legally agreed to take responsibility for proper site clean-up after closure?",
+                        "text": "Has the investor taken legal responsibility/precautions for proper site clean-up after closure of operations?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -241,7 +239,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -249,7 +247,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -257,7 +255,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -265,7 +263,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -273,8 +271,8 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -287,7 +285,7 @@
             "Manufacturing_direct": {
                 "indicators": [
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -295,7 +293,7 @@
                         }
                     },
                     {
-                        "text": "What is the percentage (%) of annual production growth indicated in the project's business plan ?",
+                        "text": "What is the expected percentage (%) of annual production growth indicated in the project's business plan?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -318,7 +316,7 @@
                         }
                     },
                     {
-                        "text": "What is the percentage (%)  of workers fully employed for at least 12 months ?",
+                        "text": "What is the expected share (%) of workers employed full time for a period of at least 12 months?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -341,7 +339,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -349,7 +347,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -357,7 +355,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -365,7 +363,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -373,15 +371,7 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
-                        "dimension": "social",
-                        "evaluation": {
-                            "type": "checkbox"
-                        }
-                    },
-                    {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -389,7 +379,15 @@
                         }
                     },
                     {
-                        "text": "FDI project proposals contain credible commitments to work safety and a dedicated budget for protective gears.",
+                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project proposal contain credible commitments to work safety and a dedicated budget for protective gear?",
                         "comment": "",
                         "dimension": "governance",
                         "evaluation": {
@@ -403,7 +401,7 @@
             "Food_direct": {
                 "indicators": [
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -411,7 +409,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -419,7 +417,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -427,7 +425,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and address its gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -435,7 +433,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -443,7 +441,7 @@
                         }
                     },
                     {
-                        "text": "Does the proposal give priority to healthy, nutritious and sustainable diets and products, especially concerning children and other vulnerable groups?",
+                        "text": "Does the proposed project prioritize and promote healthy, nutritious and sustainable food products, especially in relation to children and other vulnerable groups?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -451,7 +449,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -459,8 +457,8 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -473,7 +471,7 @@
             "Oil Refinery and Chemicals_direct": {
                 "indicators": [
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the oil and refinery project prioritize procurement of goods, services, and labor from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -481,7 +479,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Will the proposed project contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain in the oil and refinery sector?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -489,7 +487,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE have measures to reduce the flaring of associated gas, including capture and use for power generation, liquefaction for transport, or re-injection back into the reservoirs?",
+                        "text": "Is the investing company planning to use measures to reduce the flaring of associated gas, including capture and use for power generation, liquefaction for transport, or re-injection back into the reservoirs?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -497,7 +495,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE proposal have Carbon Capture and Storage (CCS) measures in place?",
+                        "text": "Is the investing company planning have Carbon Capture and Storage (CCS) measures in place in the project?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -505,7 +503,7 @@
                         }
                     },
                     {
-                        "text": "Does the proposal address the risks and implications of climate change by using methods such as shadow prices on project carbon emissions?",
+                        "text": "Does the investment proposal address or does the investing company plan to address the risks and implications of climate change by using methods such as shadow prices on project carbon emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -513,7 +511,7 @@
                         }
                     },
                     {
-                        "text": "Is the MNE participating in UN-supported national reduce emissions from deforestation and forest degradation (REDD+) programmes?",
+                        "text": "Is the investing company currently participating in any UN-supported national reduce emissions from deforestation and forest degradation (REDD+) programmes? (this will require researching the company)",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -521,7 +519,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company making notable advances towards adapting renewable energy or achieving net zero emissions? (this will require researching the company)",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -529,7 +527,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -537,7 +535,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -545,7 +543,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -553,8 +551,8 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or initiatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -567,7 +565,7 @@
             "Electric Power_direct": {
                 "indicators": [
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -575,7 +573,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -583,7 +581,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company or investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -591,7 +589,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -599,15 +597,7 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
-                        "dimension": "social",
-                        "evaluation": {
-                            "type": "checkbox"
-                        }
-                    },
-                    {
-                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or initiatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -615,7 +605,15 @@
                         }
                     },
                     {
-                        "text": "Does the project have in place IEA recommended environmental safety standards and damage control mechanisms?",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the project have in place International Energy Agency recommended environmental safety standards and damage control mechanisms?",
                         "comment": "",
                         "dimension": "governance",
                         "evaluation": {
@@ -629,7 +627,7 @@
             "Financial Services_direct": {
                 "indicators": [
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize supplementary services and goods procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -645,7 +643,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -676,7 +674,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company or investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -684,7 +682,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -692,7 +690,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE use Socially Responsible Investment (SRI) screening methods for their investment strategies?",
+                        "text": "Does the investing company use Socially Responsible Investment (SRI) screening methods for their investment strategies?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -700,7 +698,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -708,7 +706,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
                         "dimension": "social",
                         "evaluation": {
@@ -716,8 +714,8 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or initiatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -753,7 +751,7 @@
                         }
                     },
                     {
-                        "text": "Enter the estimated expenditure made by tourists for accommodation, food and any leisure activities during their stay in the foreign-invested tourism facility in ($USD) per week per tourist?",
+                        "text": "Enter the estimated expenditure made by tourists for accommodation, food and any leisure activities during their stay in the foreign-invested tourism facility in ($USD) per week per tourist? This can be estimated by considering other comparable projects already operating in the host country",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -776,7 +774,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize supplementary services and goods procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -784,7 +782,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -792,7 +790,7 @@
                         }
                     },
                     {
-                        "text": "Enter the environmental damages caused per average tourist in a span of a year, measured in USD ($)?",
+                        "text": "Enter the expected environmental damages caused by tourists visiting the proposed project in the span of a year, measured in USD ($)? This may be estimated by considering clean-up projects of the premises or surroundings, for instance",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -815,7 +813,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company or investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -823,7 +821,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -831,7 +829,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -839,15 +837,15 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or initiatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
                         "dimension": "social",
                         "evaluation": {
@@ -861,7 +859,7 @@
             "Information and Communications Technology_direct": {
                 "indicators": [
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize supplementary services and goods procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -869,7 +867,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -877,7 +875,7 @@
                         }
                     },
                     {
-                        "text": "Does radio frequency exposure occur within the range of 3 kHz to 300 GHz?",
+                        "text": "Is radio frequency exposure within the range of 3 kHz to 300 GHz proposed or expected to occur?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -885,7 +883,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE follow the Step (Solving the E-Waste Problem) initiative?)",
+                        "text": "Does the investing company follow the Step (Solving the E-Waste Problem) initiative? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -893,7 +891,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company or investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -901,7 +899,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE have special programs to raise digital literacy?",
+                        "text": "Does the investing company have special programs to raise digital literacy and is proposing to or likely to launch them as part of the proposed project?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -909,15 +907,7 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
-                        "dimension": "social",
-                        "evaluation": {
-                            "type": "checkbox"
-                        }
-                    },
-                    {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or initiatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -925,7 +915,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -933,7 +923,15 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap?",
+                        "comment": "",
+                        "dimension": "social",
+                        "evaluation": {
+                            "type": "checkbox"
+                        }
+                    },
+                    {
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -941,7 +939,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE adhere to OECD Recommendation on Internet Policy Making Principles and have cybersecurity guidelines in place?",
+                        "text": "Does the investing company adhere to the OECD Recommendation on Internet Policy Making Principles? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "governance",
                         "evaluation": {
@@ -949,7 +947,7 @@
                         }
                     },
                     {
-                        "text": "Does the MNE have cybersecurity guidelines in place?",
+                        "text": "Does the investing company have cybersecurity guidelines in place?",
                         "comment": "",
                         "dimension": "governance",
                         "evaluation": {
@@ -957,7 +955,7 @@
                         }
                     },
                     {
-                        "text": "Has the MNE adopted the Child Online Protection Guidelines?",
+                        "text": "Has the investing company adopted the Child Online Protection Guidelines?",
                         "comment": "",
                         "dimension": "governance",
                         "evaluation": {
@@ -987,7 +985,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -995,7 +993,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1003,7 +1001,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1043,8 +1041,8 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -1079,7 +1077,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1087,7 +1085,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1103,7 +1101,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1111,7 +1109,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1127,7 +1125,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -1135,8 +1133,8 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -1179,7 +1177,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1187,7 +1185,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1195,7 +1193,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1211,7 +1209,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1227,7 +1225,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -1235,8 +1233,8 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "(publicizes CRS reports; products and services targeting women; external partnerships or charity)",
+                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -1263,7 +1261,7 @@
                         }
                     },
                     {
-                        "text": "Does the project procure from the local base economy where possible and feasible?",
+                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1271,7 +1269,7 @@
                         }
                     },
                     {
-                        "text": "Does the MSME contribute to local labor force upskilling to ensure local employment opportunities across the value chain?",
+                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1287,7 +1285,7 @@
                         }
                     },
                     {
-                        "text": "Is the MSME making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1303,15 +1301,15 @@
                         }
                     },
                     {
-                        "text": "Does the companies business models orients towards female well-being externally?",
-                        "comment": "publicizes CRS reports; products and services targeting women; external partnerships or charity",
+                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "comment": "",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -1319,7 +1317,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
