@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/pralaxScrolling.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/fadeAnimation.css">
+    <link rel="stylesheet" href="css/resizeAnimation.css">
+    <link rel="stylesheet" href="css/backgrounds/bubblesBackground.css">
+    <link rel="stylesheet" href="css/basics.css">
+
 
 
 </head>
@@ -49,7 +54,7 @@
                     <a class="nav-link" href="#learn">Explanation</a>
                 </li>
             </ul>
-            <a href="#" class="theToolBtn btn-brand link-dark mb-2 mb-md-0 me-md-2">USE THE TOOL</a>
+            <a href="#" class="btn mb-2 mb-md-0 me-md-2">USE THE TOOL</a>
         </div>
     </div>
 </nav>
@@ -57,11 +62,22 @@
 <!-- Hero Section -->
 <section id="hero" class="min-vh-100 d-flex justify-content-center align-items-center position-relative">
     <div class="container">
-        <div class="background-image" style="background-image: url('assets/images/background/sky-34536_1920.png');"></div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 backgroundContainer">
+                    <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+                        <path class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+                        <path class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+                        <path class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+                        <path class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
         <div class="row justify-content-center">
             <div class="col-12 text-center">
-                <h1 data-aos="fade-left" class="text-uppercase text-light fw-semibold display-2">The Foreign Direct Investment Tool</h1>
-                <h2 data-aos="fade-up" class="text-light mt-3 mb-4">Your tool to evaluate the sustainable development contributions of incoming FDI projects</h2>
+                <h1 data-aos="fade-left" class="titel text-uppercase text-light fw-semibold display-2">The Foreign Direct Investment Tool</h1>
+                <h2 data-aos="fade-up" class="titel2 text-light mt-3 mb-4">Your tool to evaluate the sustainable development contributions of incoming FDI projects</h2>
                 <div data-aos="fade-up" class="d-flex flex-column flex-md-row justify-content-md-center">
                     <a href="#about" class="btn  ms-md-2">More Information</a>
                 </div>
@@ -72,14 +88,14 @@
 
 
 <!-- About Section -->
-<section id="about" class="section-padding my-1 my-xxl-1">
+<section id="about" class="section-padding ">
     <div class="container">
         <div class="row">
             <div data-aos="fade-down" data-aos-delay="50" class= "col-12 text-center">
                 <div class="section-titel">
-                    <h1 class="display-4 fw-semibold mb-4">The Tool</h1>
+                    <h2 class="display-4 fw-semibold mb-4">The Tool</h2>
                     <div class="line"></div>
-                    <p class="fs-5 lh-base">
+                    <p class="darkText fs-5 lh-base">
                         This online tool provides policymakers and investment promotion agencies (IPAs) with a means of
                         assessing and quantifying incoming FDI projects and their sustainable development contributions
                         using a set of indicators along economic, social, governance and environmental dimensions
@@ -99,7 +115,7 @@
                         <img src="assets/images/developmentGoals/E_PRINT_13.jpg"
                              data-aos="zoom-in" class="devGoal me-4 me-xxl-5 mb-3 mb-xxl-0" alt="Icon 6">
                     </div>
-                    <p class="fs-5 lh-base">
+                    <p class="darkText fs-5 lh-base">
                         This tool introduces a range of sector-based indicators which help highlight the risks and
                         opportunities of projects and provide the user with an overall score to assess a project. The
                         evaluation highlights potential shortcomings of projects along the four four abovementioned
@@ -126,11 +142,12 @@
 </section>
 
 <!-- Sectores-->
-<section id="learn" data-aos="fade-down" data-aos-delay="50" class="section-padding border-top">
-    <div class="container">
+<section id="learn" class="section-padding border-top">
+    <div data-aos="fade-down" data-aos-delay="50" class="container">
         <div class="row">
             <div class="col-12 text-center mb-4">
-                <div class="section-titel"><h1 class="display-4 fw-semibold">How to use the Tool</h1></div>
+                <div class="section-titel">
+                    <h2 class="display-4 fw-semibold">How to use the Tool</h2></div>
                 <img data-aos="fade-down" data-aos-delay="60" class="mb-3" src="assets/images/down-arrow.png" width="100px" alt="">
             </div>
         </div>
@@ -141,13 +158,12 @@
                 <select id="sectorSelect" class="form-select mb-3" disabled aria-label="Default select example">
                     <option selected>Select a sector</option>
                 </select>
-
-                <p> Simply select the sector associated with the inward
+                <p class="darkText"> Simply select the sector associated with the inward
                     FDI project you are looking to evaluate. </p>
             </div>
         </div>
 
-        <h3 class="fs-5 lh-base text-center mt-5 mb-5 "> You will then be guided through a range of questions relating
+        <h3 class="fs-5 lh-base text-center mt-5 mb-5 lightText"> You will then be guided through a range of questions relating
             to
             indicators in the economic, social, governance and environmental dimensions.</h3>
 
@@ -155,7 +171,7 @@
             <div class="col-lg-4 col-sm-6 text-center theme-shadow p-lg-5 p-4 mx-3 mb-5">
                 <img class="mb-3" src="assets/images/number-2.png" width="100px" alt="">
                 <input class="form-control mb-3" type="number" placeholder="Range form 0 - 1" disabled>
-                <p> Some questions require a numerical value as percentage </p>
+                <p class="darkText"> Some questions require a numerical value as percentage </p>
             </div>
             <div class="col-lg-4 col-sm-6 text-center theme-shadow p-lg-5 p-4 mx-3 mb-5">
                 <div>
@@ -163,40 +179,33 @@
                 </div>
                 <label><input class="form-check-input mb-4" type="radio" name="singleCheckbox" value="no"> No</label>
                 <label><input class="form-check-input mb-4" type="radio" name="singleCheckbox" value="yes"> Yes</label>
-                <p> Some questions require yes or no </p>
+                <p class="darkText"> Some questions require yes or no </p>
             </div>
         </div>
 
-        <h3 class="fs-5 lh-base text-center mt-5 mb-5 "> After completing all questions, the user will be given three
+        <h3 class="fs-5 lh-base text-center mt-5 mb-5 lightText"> After completing all questions, the user will be given three
             results.</h3>
 
-        <div data-aos="zoom-in" class="row justify-content-center mb-5  ">
-            <div class="col-lg-4 col-sm-6 text-center theme-shadow p-lg-5 p-4 mx-3 mb-5">
-                <img class="mb-3" src="assets/images/achievement.png" width="100px" alt="">
-                <p> A total score. If the total score is >X … if it is
-                    <X …></X>
-                </p>
+        <div data-aos="zoom-in" class="row darkText justify-content-center mb-5">
+            <div class="col-lg-3 col-sm-6 text-center theme-shadow p-4 mx-3 mb-5">
+                <img class="mb-3" src="assets/images/achievement.png" width="80px" alt="">
+                <p>A total score. If the total score is >X … if it is <X …></X></p>
             </div>
-            <div class="col-lg-4 col-sm-6 text-center theme-shadow p-lg-5 p-4 mx-3 mb-5">
-                <img class="mb-3" src="assets/images/rating.png" width="100px" alt="">
-                <p> A figure comparing the risks and opportunities
-                    associated with the proposed project. </p>
+            <div class="col-lg-3 col-sm-6 text-center theme-shadow p-4 mx-3 mb-5">
+                <img class="mb-3" src="assets/images/rating.png" width="80px" alt="">
+                <p>A figure comparing the risks and opportunities associated with the proposed project.</p>
             </div>
-            <div class="col-lg-4 col-sm-6 text-center theme-shadow p-lg-5 p-4 mx-3 mb-5">
-                <img class="mb-3" src="assets/images/dimensions.png" width="100px" alt="">
-                <p> A score for each dimension (economic, social,
-                    governance, environmental), highlighting which dimensions may be a stumbling bloc,
-                    i.e. lagging in their contribution to sustainable development and need further attention by the
-                    investor
-                    proposing the project. </p>
+            <div class="col-lg-3 col-sm-6 text-center theme-shadow p-4 mx-3 mb-5">
+                <img class="mb-3" src="assets/images/dimensions.png" width="80px" alt="">
+                <p>A score for each dimension (economic, social, governance, environmental), highlighting which dimensions may be a stumbling bloc, i.e. lagging in their contribution to sustainable development and need further attention by the investor proposing the project.</p>
             </div>
         </div>
     </div>
 </section>
 
 <!-- Backround -->
-<section data-aos="fade-right" data-aos-delay="50" id="background" class="section-padding border-top">
-    <div class="container">
+<section id="background" class="section-padding border-top">
+    <div data-aos-delay="50" class="container">
         <div class="row">
             <div class="col-12">
                 <h1 data-aos="fade-right" class="fw-semibold">Background</h1>
@@ -227,8 +236,8 @@
 </section>
 
 <!-- FDI Work -->
-<section data-aos="fade-left" data-aos-delay="50" id="fdiWork" class="section-padding border-top">
-    <div class="container">
+<section  id="fdiWork" class="section-padding border-top">
+    <div data-aos="fade-left" data-aos-delay="50" class="container">
         <div class="row justify-content-end">
             <!-- Hier wird 'justify-content-end' verwendet, um den Inhalt rechts auszurichten -->
             <div class="col-12">
