@@ -42,6 +42,7 @@ export class SectorRenderer extends Renderer {
         let subsectorSelectHTML = this.manager.currentSubsector?.isRealSubsector === false ? '' : this.buildSubsectorSelection();
         Renderer.attachHTMLToElementWithId('subsectorSelectContainer', subsectorSelectHTML);
         this.attachEventListeners();
+        if (subsectorSelectHTML != '') Renderer.playAnimationOnElementWithId('subsectorSelectContainer', 'fade-in');
     }
 
     protected attachEventListeners(): void {

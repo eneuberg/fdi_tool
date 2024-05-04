@@ -11,6 +11,7 @@ export class questionnaireRenderer extends Renderer {
     }
 
     protected attachEventListeners() {
+        this.attachResizeObserver();
         const sectorSelect = document.getElementById('sectorSelect') as HTMLSelectElement;
         if (!sectorSelect)
             throw new Error("Sector select element not found");
@@ -55,5 +56,34 @@ export class questionnaireRenderer extends Renderer {
 
         Renderer.attachHTMLToElementWithId('sectorSelectContainer', sectorSelectHTML);
         this.attachEventListeners();
+        Renderer.playAnimationOnElementWithId('questionnaireContainer', 'fade-in');
+    }
+
+    private attachResizeObserver() {
+        const container: HTMLElement | null = document.getElementById('mainContainer');
+
+        const animateOnResize = (): void => {
+            if (container) {
+                container.classList.add('containerResizeAnimate');
+
+                const onAnimationEnd = (): void => {
+                    container.classList.remove('containerResizeAnimate');
+                };
+
+                container.addEventListener('animationend', onAnimationEnd, { once: true });
+            }
+        };
+
+        if (container) {
+            const resizeObserver: ResizeObserver = new ResizeObserver((entries: ResizeObserverEntry[]) => {
+                for (let entry of entries) {
+                    if (entry.target === container) {
+                        animateOnResize();
+                    }
+                }
+            });
+
+            resizeObserver.observe(container);
+        }
     }
 }

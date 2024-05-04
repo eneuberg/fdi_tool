@@ -18,6 +18,7 @@ export class MultiCheckboxEvaluationRenderer extends Renderer   {
             `<p class="option-item text-start ps-4 mt-3"> - ${option}</p>`
         ).join('');
 
+
         const yesChecked = this.manager.response === true ? 'checked' : '';
         const noChecked = this.manager.response === false ? 'checked' : '';
 
@@ -30,5 +31,15 @@ export class MultiCheckboxEvaluationRenderer extends Renderer   {
         const evaluationHTML = `${optionsHtml}<div class="input-container d-flex justify-content-center mb-4" >${checkboxesHtml} </div>`;
 
         Renderer.attachHTMLToElementWithId('evaluationContainer', evaluationHTML);
+
+        const items = document.querySelectorAll('.option-item');
+        items.forEach(item => {
+            // Adjust this value if necessary to better fit your content size
+            const buffer = 5; // Pixels to provide a little extra room
+
+            if (item.scrollHeight > item.clientHeight + buffer) {
+                item.classList.add('fadable');
+            }
+        });
     }
 }

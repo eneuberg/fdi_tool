@@ -7,42 +7,12 @@
 
 .containerBig{
     background-color: rgba(255, 255, 255, 0.68);
-    border: none;
+    border-radius: 10px;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 
-.video-background {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
+.backgroundContainer {
     z-index: -1;
-}
-
-
-
-
-.full-screen-image {
-  position: fixed;
-  object-fit: cover;
-  object-position: right;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.chart {
-    width: 100%; /* Full width of the container */
-    height: 600px; /* Default height, you can change this based on your needs */
-}
-
-@media (min-width: 768px) { /* Adjust the height on larger screens */
-   .chart {
-        height: 800px;
-    }
 }

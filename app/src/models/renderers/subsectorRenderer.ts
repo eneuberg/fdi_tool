@@ -15,45 +15,51 @@ export class SubsectorRenderer extends Renderer {
 
         const handleNextSubmit = (event: Event) => {
             event.preventDefault();
-            const form = event.target as HTMLFormElement;
-            const formData = new FormData(form);
+            Renderer.playAnimationOnElementWithId('indicatorContainer', 'fade-out')
+                .then(() => {
+                    const form = event.target as HTMLFormElement;
+                    const formData = new FormData(form);
 
-            const firstChild = form.querySelector('input') as HTMLInputElement;
-            switch (firstChild.name) {
-                case 'multiCheckbox' : {
-                    const checkboxData = formData.get('multiCheckbox');
-                    let booleanData = checkboxData === 'yes' ? true : checkboxData === 'no' ? false : null;
-                    Renderer.questionnaire.storeResponse(booleanData);
-                    break;
-                }
-                case 'singleCheckbox': {
-                    const checkboxData = formData.get('singleCheckbox');
-                    let booleanData = checkboxData === 'yes' ? true : checkboxData === 'no' ? false : null;
-                    Renderer.questionnaire.storeResponse(booleanData);
-                    break;
-                }
-                case 'rangeInput': {
-                    const rangeData = formData.get('rangeInput');
-                    Renderer.questionnaire.storeResponse(rangeData);
-                    break;
-                }
-            }
-            Renderer.questionnaire.nextIndicator();
-            this.updateProgressBar();
-            this.manager.currentIndicator?.render();
+                    const firstChild = form.querySelector('input') as HTMLInputElement;
+                    switch (firstChild.name) {
+                        case 'multiCheckbox' : {
+                            const checkboxData = formData.get('multiCheckbox');
+                            let booleanData = checkboxData === 'yes' ? true : checkboxData === 'no' ? false : null;
+                            Renderer.questionnaire.storeResponse(booleanData);
+                            break;
+                        }
+                        case 'singleCheckbox': {
+                            const checkboxData = formData.get('singleCheckbox');
+                            let booleanData = checkboxData === 'yes' ? true : checkboxData === 'no' ? false : null;
+                            Renderer.questionnaire.storeResponse(booleanData);
+                            break;
+                        }
+                        case 'rangeInput': {
+                            const rangeData = formData.get('rangeInput');
+                            Renderer.questionnaire.storeResponse(rangeData);
+                            break;
+                        }
+                    }
+                    Renderer.questionnaire.nextIndicator();
+                    this.updateProgressBar();
+                    this.manager.currentIndicator?.render();
+                });
         }
 
         const previousButton = document.getElementById('previousButton');
         if (!previousButton) throw new Error('Previous button not found');
 
         const handlePreviousClick = () => {
-            Renderer.questionnaire.previousIndicator();
-            this.updateProgressBar();
-            this.manager.currentIndicator?.render();
+            Renderer.playAnimationOnElementWithId('indicatorContainer', 'fade-out')
+                .then(() => {
+                    Renderer.questionnaire.previousIndicator();
+                    this.manager.currentIndicator?.render();
+                    this.updateProgressBar();
+                    console.log('Previous button clicked')
+                });
         }
 
         form.removeEventListener('submit', handleNextSubmit);
-        console.log('removed event listener')
         form.addEventListener('submit', handleNextSubmit);
 
         previousButton.removeEventListener('click', handlePreviousClick);
@@ -90,6 +96,7 @@ export class SubsectorRenderer extends Renderer {
         Renderer.attachHTMLToElementWithId('indicatorFormContainer', indicatorFormHTML);
         this.manager.currentIndicator?.render();
         this.attachEventListeners();
+        Renderer.playAnimationOnElementWithId('indicatorFormContainer', 'fade-in');
     }
 
     private updateProgressBar(): void {

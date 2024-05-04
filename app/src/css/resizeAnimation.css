@@ -1,0 +1,16 @@
+@keyframes resizeAnimation {
+    0% {
+        transform: scaleY(1);
+    }
+    50% {
+        transform: scaleY(1.01);
+    }
+    100% {
+        transform: scaleY(1);
+    }
+}
+
+.containerResizeAnimate {
+    animation: resizeAnimation 0.5s ease;
+    transform-origin: top;  /* Set the origin of transformation to the top */
+}

@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FDI Tool</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/sectorSelction.css">
-    <link rel="stylesheet" href="css/button.css">
-    <link rel="stylesheet" href="css/sector.css">
-    <link rel="stylesheet" href="css/evaluation.css">
-    <link rel="stylesheet" href="css/browser-fixes.css">
-    <link rel="stylesheet" href="css/progressbar.css">
-    <link rel="stylesheet" href="css/comment.css">
-    <link rel="stylesheet" href="css/barchart.css">
+    <head>
+        <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FDI Tool</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/selection.css">
+        <link rel="stylesheet" href="css/button.css">
+        <link rel="stylesheet" href="css/indicatorText.css">
+        <link rel="stylesheet" href="css/evaluation.css">
+        <link rel="stylesheet" href="css/browser-fixes.css">
+        <link rel="stylesheet" href="css/progressbar.css">
+        <link rel="stylesheet" href="css/comment.css">
+        <link rel="stylesheet" href="css/fadeAnimation.css">
+        <link rel="stylesheet" href="css/resizeAnimation.css">
+        <link rel="stylesheet" href="css/backgrounds/bubblesBackground.css">
+        <link rel="stylesheet" href="css/multiEvaluation.css">
 
-    <script type="module" src="main.ts"></script>
-    <base href=".">
-</head>
+        <script type="module" src="main.ts"></script>
+        <base href=".">
+    </head>
 
-<div class="video-background">
-    <video autoplay loop muted playsinline defaultmuted preload="auto">
-        <source src="resources/abstract.mp4" type="video/mp4">
-    </video>
-</div>
-
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: hsla(0, 0%, 100%, 0)">
-    <div class="container">
-        <a class="navbar-brand" href="#">
-            <img src="resources/LogoWhite.png" alt="Logo" width="130" height="40" class="d-inline-block align-top">
-        </a>
-
-       <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link text-white" href="#">TBD</a>
-                </li>
-            </ul>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 backgroundContainer">
+                    <!--<div class="bg"></div>
+                    <div class="bg bg2"></div>
+                    <div class="bg bg3"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>
+                    <div class="wave"></div>-->
+                    <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+                        <path fill="#93B7BE" class="out-top" d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+                        <path fill="#B4CFFA" class="in-top" d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+                        <path fill="#D4F5F5" class="out-bottom" d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+                        <path fill="#B4CFFA" class="in-bottom" d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+                    </svg>
+                </div>
+            </div>
         </div>
-        -->
-    </div>
-</nav>
 
-<div class="container containerBig rounded shadow p-5 mt-5 ">
-    <div class="container col-12 col-md-10 col-lg-8 col-xl-6 row-cols-auto questionContainer" id="questionnaireContainer">
-        <div id="sectorSelectContainer"></div>
-        <div id="subsectorSelectContainer"></div>
-        <div id="indicatorFormContainer"></div>
-    </div>
-</div>
+        <nav class="navbar navbar-expand-lg navbar-light" style="background-color: hsla(0, 0%, 100%, 0)">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="resources/LogoWhite.png" alt="Logo" width="130" height="40" class="d-inline-block align-top">
+                </a>
+            </div>
+        </nav>
 
+        <div class="container containerBig shadow mt-5 mb-5 mx-auto col-12 col-md-10 col-lg-8 col-xl-8" id="mainContainer">
+            <div class="container questionContainer p-5 col-md-12 col-xxl-8" id="questionnaireContainer">
+                <div id="sectorSelectContainer"></div>
+                <div id="subsectorSelectContainer"></div>
+                <div id="indicatorFormContainer"></div>
+            </div>
+        </div>
 
+    </body>
 </html>
