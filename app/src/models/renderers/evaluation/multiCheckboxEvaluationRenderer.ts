@@ -10,6 +10,22 @@ export class MultiCheckboxEvaluationRenderer extends Renderer   {
     }
 
     protected attachEventListeners() {
+        const maskedOverflow = document.querySelector('.masked-overflow') as HTMLElement;
+
+        function checkOverflow() {
+            if (!maskedOverflow) return;
+
+            const hasOverflow = maskedOverflow.scrollHeight > maskedOverflow.clientHeight;
+
+            if (hasOverflow) {
+                maskedOverflow.classList.remove('no-overflow');
+            } else {
+                maskedOverflow.classList.add('no-overflow');
+            }
+        }
+
+        checkOverflow();
+        window.addEventListener('resize', checkOverflow);
     }
 
     render(): void {
@@ -28,18 +44,15 @@ export class MultiCheckboxEvaluationRenderer extends Renderer   {
     `;
 
         // Return the combined HTML string
-        const evaluationHTML = `${optionsHtml}<div class="input-container d-flex justify-content-center mb-4" >${checkboxesHtml} </div>`;
+        const evaluationHTML = `
+            <div class="masked-overflow">
+                ${optionsHtml}
+            </div>
+            <div class="input-container d-flex justify-content-center mb-4" >
+                ${checkboxesHtml} 
+            </div>`;
 
         Renderer.attachHTMLToElementWithId('evaluationContainer', evaluationHTML);
-
-        const items = document.querySelectorAll('.option-item');
-        items.forEach(item => {
-            // Adjust this value if necessary to better fit your content size
-            const buffer = 5; // Pixels to provide a little extra room
-
-            if (item.scrollHeight > item.clientHeight + buffer) {
-                item.classList.add('fadable');
-            }
-        });
+        this.attachEventListeners();
     }
 }
