@@ -1,0 +1,9 @@
+.detailedChart {
+  position: relative;
+  min-height: 12em;
+}
+
+.summaryChart {
+  position: relative;
+  min-height: 10em;
+}
