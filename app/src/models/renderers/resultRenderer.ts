@@ -12,7 +12,13 @@ export class ResultRenderer extends Renderer {
     }
 
     protected attachEventListeners() {
-
+        window.addEventListener('resize', () => {
+            const detailedChart = document.getElementById('detailedChart') as HTMLCanvasElement;
+            const summaryChart = document.getElementById('summaryChart') as HTMLCanvasElement;
+            if (detailedChart && summaryChart) {
+                detailedChart.height = summaryChart.height = 300;
+            }
+        });
     }
 
     private renderCanvas(): void {
@@ -31,10 +37,10 @@ export class ResultRenderer extends Renderer {
                 </div>
                 <div class="container border-dark border-1 border-top border-bottom mx-auto">
                     <div class="row col-xl-7 col-lg-8 col-md-10 col-12 mx-auto">
-                        <div class="col-12 m-3 mx-auto"> <!-- Adjusted to 6 columns for medium devices -->
+                        <div class="detailedChart col-12 m-3 mx-auto"> <!-- Adjusted to 6 columns for medium devices -->
                             <canvas id="detailedChart" class="chart"></canvas>
                         </div>
-                        <div class="col-8 m-3 mx-auto">
+                        <div class="summaryChart col-8 m-3 mx-auto">
                             <canvas id="summaryChart" class="chart"></canvas>
                         </div>
                     </div>
@@ -95,6 +101,7 @@ export class ResultRenderer extends Renderer {
                 ]
             },
             options: {
+                maintainAspectRatio: false,
                 responsive: true,
                 scales: {
                     x: { stacked: true },
@@ -151,6 +158,7 @@ export class ResultRenderer extends Renderer {
                 ]
             },
             options: {
+                maintainAspectRatio: false,
                 responsive: true,
                 scales: {
                     x: { stacked: true },
