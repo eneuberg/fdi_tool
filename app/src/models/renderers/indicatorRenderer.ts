@@ -30,7 +30,6 @@ export class IndicatorRenderer extends Renderer {
     render(): void {
         const commentHtml = this.manager.comment ? `
             <span class="comment">  
-                <span class="seeMore align-content-center fw-lighter">See more: </span>
                 <img class="align-sub infoIcon" src="${tooltipIcon}" alt="(?)">
                 <span class="commentText bg-dark text-white fw-lighter fs-6 p-3 text-center">${this.manager.comment}</span>
             </span>
@@ -39,7 +38,7 @@ export class IndicatorRenderer extends Renderer {
         const indicatorHTML = `
             <div class="indicator flex-column align-items-center" id="indicator">
                 <p id="question" class="text-start fw-bold ps-3 mt-3">
-                    <span class="me-3">
+                    <span class="me-1">
                         ${this.manager.text} 
                     </span>
                 ${commentHtml}
