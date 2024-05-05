@@ -31,7 +31,7 @@ export class IndicatorRenderer extends Renderer {
         const commentHtml = this.manager.comment ? `
             <span class="comment">  
                 <span class="seeMore align-content-center fw-lighter">See more: </span>
-                <img class="align-sub" src="${tooltipIcon}" alt="(?)" width="22" height="22">
+                <img class="align-sub infoIcon" src="${tooltipIcon}" alt="(?)">
                 <span class="commentText bg-dark text-white fw-lighter fs-6 p-3 text-center">${this.manager.comment}</span>
             </span>
                 ` : '';

@@ -7,10 +7,20 @@
 
 .containerBig{
     background-color: rgba(255, 255, 255, 0.68);
-    border-radius: 10px;
+    border-radius: 20px;
 }
 
 
 .backgroundContainer {
     z-index: -1;
+}
+
+html {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    html {
+        font-size: 1vw;
+    }
 }
