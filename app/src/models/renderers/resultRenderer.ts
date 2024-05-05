@@ -29,7 +29,7 @@ export class ResultRenderer extends Renderer {
         let subsectorNameElement = subsectorName ? `<h5 class="fw-lighter text-center">Subsector: ${subsectorName}</h5>` : '';
 
         const resultHTML = `
-            <div class="result text-center p-5">
+            <div class="result text-center py-5 px-2 px-md-3 px-lg-5">
                 <div class="mb-3">  
                     <h2 class="fw-bold">Results</h2>
                     ${sectorNameElement}
@@ -40,7 +40,7 @@ export class ResultRenderer extends Renderer {
                         <div class="detailedChart col-12 m-3 mx-auto"> <!-- Adjusted to 6 columns for medium devices -->
                             <canvas id="detailedChart" class="chart"></canvas>
                         </div>
-                        <div class="summaryChart col-8 m-3 mx-auto">
+                        <div class="summaryChart col-9 col-lg-7 m-3 mx-auto">
                             <canvas id="summaryChart" class="chart"></canvas>
                         </div>
                     </div>

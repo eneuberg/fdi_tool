@@ -31,7 +31,7 @@ export class MultiCheckboxEvaluationRenderer extends Renderer   {
     render(): void {
         // Map each option into a <p> element.
         const optionsHtml = this.manager.options.map(option =>
-            `<p class="option-item text-start ps-4 mt-3"> - ${option}</p>`
+            `<li class="option-item text-start ps-4 mt-3">  ${option}</li>`
         ).join('');
 
 
@@ -46,7 +46,9 @@ export class MultiCheckboxEvaluationRenderer extends Renderer   {
         // Return the combined HTML string
         const evaluationHTML = `
             <div class="masked-overflow mb-2">
-                ${optionsHtml}
+                <ul style="list-style-type: decimal;">
+                    ${optionsHtml}
+                </ul>
             </div>
             <div class="input-container d-flex justify-content-center mb-4" >
                 ${checkboxesHtml} 

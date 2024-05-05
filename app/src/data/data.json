@@ -33,7 +33,9 @@
                         "evaluation": {
                             "type": "multicheckbox",
                             "options": [
-                                "1. Provides access to credit or the project itself avails credit facilities. 2. Offers access to insurance or the project itself avails insurance coverage. 3. Ensures that no single agricultural commodity accounts for more than 66% of the total production value of the holding."
+                                "Provides access to credit or the project itself avails credit facilities.",
+                                "Offers access to insurance or the project itself avails insurance coverage.",
+                                "Ensures that no single agricultural commodity accounts for more than 66% of the total production value of the holding."
                             ]
                         }
                     },
@@ -91,7 +93,7 @@
                         }
                     },
                     {
-                        "text": "Is the investing company or investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
+                        "text": "Is the investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -132,14 +134,14 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": ". Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or iniatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or iniatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -247,7 +249,7 @@
                         }
                     },
                     {
-                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -264,7 +266,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -364,7 +366,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -379,7 +381,7 @@
                         }
                     },
                     {
-                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -434,7 +436,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -449,7 +451,7 @@
                         }
                     },
                     {
-                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -544,7 +546,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -674,7 +676,7 @@
                         }
                     },
                     {
-                        "text": "Is the investing company or investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
+                        "text": "Is the investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -707,7 +709,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -813,7 +815,7 @@
                         }
                     },
                     {
-                        "text": "Is the investing company or investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
+                        "text": "Is the investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -846,7 +848,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " (Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear) ",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -891,7 +893,7 @@
                         }
                     },
                     {
-                        "text": "Is the investing company or investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
+                        "text": "Is the investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1017,7 +1019,7 @@
                         }
                     },
                     {
-                        "text": "Does the project offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1033,7 +1035,7 @@
                         }
                     },
                     {
-                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and gender equality?",
+                        "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
                         "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
                         "dimension": "social",
                         "evaluation": {
@@ -1109,7 +1111,7 @@
                         }
                     },
                     {
-                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1126,7 +1128,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -1209,7 +1211,7 @@
                         }
                     },
                     {
-                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1226,7 +1228,7 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -1310,14 +1312,14 @@
                     },
                     {
                         "text": "Does the company have internal mechanisms and legislation in place to ensure flexible working and advance gender equality (see information note for more)?",
-                        "comment": " Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear",
+                        "comment": "Offers flexible working arrangements or safe transportation to working facilities, male/female night shift ratio is balanced, offers or supports daycare/childcare, addresses sexual harrassment, gender appropriate workgear  ",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
                         }
                     },
                     {
-                        "text": "Does the project company offer paid maternity and paternity leave to its workers?",
+                        "text": "Does the project offer paid maternity and/or paternity leave to its workers?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {

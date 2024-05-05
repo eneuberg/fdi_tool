@@ -32,11 +32,14 @@ export class RangeEvaluationRenderer extends Renderer {
         }
 
         const evaluationHTML = `
-        <div class="input-container d-flex justify-content-center mb-4">
-            <div class="col-6">
-                <input class="number form-control " type="number" placeholder="${placeholder}" name="rangeInput" min="${min}" max="${max}" required ${this.manager.response !== null ? `value="${this.manager.response}"` : ''} />
+        <div class="row">
+            <div class="input-container d-flex justify-content-center mb-4">
+                <div class="col-6">
+                    <input class="number form-control " type="number" placeholder="${placeholder}" name="rangeInput" min="${min}" max="${max}" required ${this.manager.response !== null ? `value="${this.manager.response}"` : ''} />
+                </div>
             </div>
-        </div>`;
+        </div>
+                `;
 
         Renderer.attachHTMLToElementWithId('evaluationContainer', evaluationHTML);
     }

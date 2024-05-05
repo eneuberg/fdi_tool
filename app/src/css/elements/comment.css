@@ -2,6 +2,11 @@
     font-size: 0.85rem;
 }
 
+.infoIcon {
+    height: 50%;
+    width: 50%;
+}
+
 .commentText {
     position: fixed;
     left: 50%; /* Center horizontally */
@@ -14,7 +19,7 @@
 }
 
 .comment {
-    display: block;  /* Ensures the span moves as a whole unit */
+    display: inline-block;  /* Ensures the span moves as a whole unit */
 }
 
 .comment img {
