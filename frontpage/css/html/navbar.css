@@ -1,0 +1,25 @@
+/* Navbar */
+.navbar {
+    background-color: white; /* Hintergrundfarbe der Navbar */
+    height: 80px; /* Höhe der Navbar */
+    margin: 20px; /* Außenabstand der Navbar */
+    border-radius: 40px; /* Abrundung der Ecken */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Schatten */
+    font-size: 20px;
+}
+
+.navbar-brand {
+    font-size: 24px; /* Schriftgröße der Navbar-Marke */
+    font-weight: 500; /* Schriftgewicht der Navbar-Marke */
+    color: var(--c-dark); /* Textfarbe der Navbar-Marke */
+    transition: color 0.3s; /* Übergangseffekt für die Farbänderung */
+}
+
+.navbar-brand:hover {
+    color: var(--c-brand); /* Farbe beim Überfahren mit der Maus */
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+

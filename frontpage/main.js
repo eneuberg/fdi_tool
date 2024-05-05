@@ -19,3 +19,23 @@ AOS.init({
 });
 
 
+document.addEventListener("scroll", function() {
+    var sections = document.querySelectorAll("section");
+    var scrollPosition = window.scrollY + 200;
+
+    sections.forEach(function(currentSection) {
+        var sectionTop = currentSection.offsetTop;
+        var sectionHeight = currentSection.offsetHeight;
+        if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+            var id = currentSection.getAttribute("id");
+            var correspondingLink = document.querySelector("a[href='#" + id + "']");
+            var links = document.querySelectorAll("nav a");
+            links.forEach(function(link) {
+                link.style.fontWeight = "normal";
+            });
+            correspondingLink.style.fontWeight = "bold";
+        }
+    });
+});
+
+
