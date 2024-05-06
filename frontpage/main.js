@@ -1,3 +1,5 @@
+
+/* global AOS */
 AOS.init();
 
 // You can also pass an optional settings object
@@ -18,7 +20,7 @@ AOS.init({
 
 });
 
-
+/* scrollable navbar*/
 document.addEventListener("scroll", function() {
     var sections = document.querySelectorAll("section");
     var scrollPosition = window.scrollY + 200;
@@ -37,5 +39,47 @@ document.addEventListener("scroll", function() {
         }
     });
 });
+
+/*share Website*/
+document.addEventListener("DOMContentLoaded", function() {
+    var facebookShareBtn = document.getElementById('facebookShareBtn');
+    if (facebookShareBtn) {
+        facebookShareBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            var url = encodeURIComponent(window.location.href);
+            window.open('https://www.facebook.com/sharer/sharer.php?u=' + url, 'facebook-share-dialog', 'width=626,height=436');
+        });
+    }
+
+    var googleShareBtn = document.getElementById('googleShareBtn');
+    if (googleShareBtn) {
+        googleShareBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            var url = encodeURIComponent(window.location.href);
+            window.open('https://plus.google.com/share?url=' + url, 'google-share-dialog', 'width=626,height=436');
+        });
+    }
+
+    var twitterShareBtn = document.getElementById('twitterShareBtn');
+    if (twitterShareBtn) {
+        twitterShareBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            var url = encodeURIComponent(window.location.href);
+            var text = encodeURIComponent("Check out this website!");
+            window.open('https://twitter.com/intent/tweet?url=' + url + '&text=' + text, 'twitter-share-dialog', 'width=626,height=436');
+        });
+    }
+
+    var envelopeShareBtn = document.getElementById('envelopeShareBtn');
+    if (envelopeShareBtn) {
+        envelopeShareBtn.addEventListener('click', function(event) {
+            event.preventDefault();
+            var subject = encodeURIComponent("Check out this website!");
+            var body = encodeURIComponent(window.location.href);
+            window.location.href = 'mailto:?subject=' + subject + '&body=' + body;
+        });
+    }
+});
+
 
 

@@ -1,44 +1,22 @@
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
-    font-weight: 900;
-    color: var(--c-dark);
-
-}
-
-p {
-    font-size: 20px;
-
-}
-
-a {
-    text-decoration: none;
-    color: var(--c-brand);
-    transition: var(--transition);
-}
-
-a:hover {
-    color: var(--c-light);
-}
-
-#hero h1{
-    color: var(--c-dark);
-}
-
-#hero h2{
-    background-image: linear-gradient(to top right, var(--c-dark), var(--c-dark));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-#learn h2 {
-    background-image: linear-gradient(to top right, var(--c-brand), var(--c-brand2));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.darkText{
+.darkText {
     color: var(--c-dark);
 }
 
 .lightText{
+    color: var(--c-colorMian);
+}
+.coloredText{
     color: var(--c-brand);
 }
+
+.link {
+    color: var(--c-brand-light); /* Farbe des Links */
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--c-brand); /* Farbänderung bei Hover */
+}
+
+
+
