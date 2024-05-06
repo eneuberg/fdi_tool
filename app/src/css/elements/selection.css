@@ -28,4 +28,6 @@
 }
 
 
-
+.form-select{
+    border-radius: 60px !important;
+}

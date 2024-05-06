@@ -4,17 +4,14 @@
     width: 100%; /* Full width to fit container */
     height: 30px; /* Adjust height as needed */
     margin: 20px auto; /* Centering the progress bar */
-    border: 1px solid #fff;
-    padding: 3px;
-    box-shadow: 0 0 10px #aaa;
-    background: #333;
+    background-color: transparent !important;
 }
 
 .progress .bar {
     width: var(--progress);
     height: 100%;
-    background: linear-gradient(#17252A,#2B7A78);
-    box-shadow: 0 0 10px 0 lightslategrey;
+    background: linear-gradient(to right, var(--c-light), var(--c-brand-light));
+    border-radius: 20px;
     animation:
             shine 4s ease-in infinite,
             end 1s ease-out 1;

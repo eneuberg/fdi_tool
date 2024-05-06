@@ -46,7 +46,7 @@ export class ResultRenderer extends Renderer {
                     </div>
                 </div>
                 <div class="d-flex justify-content-center"> <!-- Bootstrap class to center the link -->
-                    <a href="index.html" class="back-to-home mt-4">Restart</a>
+                    <a href="index.html" class="btnH text-uppercase fs-5 mt-4">Restart</a>
                  </div>
             </div>
         `;

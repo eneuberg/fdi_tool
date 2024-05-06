@@ -17,8 +17,8 @@ export class CheckboxEvaluationRenderer extends Renderer {
         const noChecked = this.manager.response === false ? 'checked' : '';
 
         const checkboxesHtml = `
-        <label><input class="checkbox form-check-input mx-1" type="radio" name="singleCheckbox" value="no" ${noChecked} required> No</label>
-        <label><input class="checkbox form-check-input mx-1" type="radio" name="singleCheckbox" value="yes" ${yesChecked} required> Yes</label>
+        <label><input class="checkbox form-check-input mx-1 " type="radio" name="singleCheckbox" value="no" ${noChecked} required> No</label>
+        <label><input class="checkbox form-check-input mx-1 " type="radio" name="singleCheckbox" value="yes" ${yesChecked} required> Yes</label>
         `;
 
         // Return the combined HTML string

@@ -40,7 +40,7 @@ export class questionnaireRenderer extends Renderer {
         let sectorSelectHTML: string;
         if (!currentSectorExists) {
             sectorSelectHTML = `
-            <select id="sectorSelect" class="form-select fs-5" aria-label="Default select example">
+            <select id="sectorSelect" class="form-select fs-5 " aria-label="Default select example">
                 ${sectorOptions}
             </select>
             `;
