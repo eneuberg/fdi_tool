@@ -1,5 +1,5 @@
 body {
-    background: #BBE2F7 !important;
+    background-image: linear-gradient(to right, var(--c-light), var(--c-dark)) !important;
 }
 svg {
     position: fixed;
@@ -18,18 +18,27 @@ svg {
     }
 }
 .out-top {
+    fill: var(--c-light);
     animation: rotate 60s linear infinite;
     transform-origin: 13px 25px;
+
 }
+
 .in-top {
+    fill: var(--c-brand-light);
     animation: rotate 30s linear infinite;
     transform-origin: 13px 25px;
 }
+
 .out-bottom {
+    fill: var(--c-brand-light);
     animation: rotate 75s linear infinite;
     transform-origin: 84px 93px;
 }
+
 .in-bottom {
+    fill: var(--c-light);
     animation: rotate 45s linear infinite;
     transform-origin: 84px 93px;
+
 }

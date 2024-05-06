@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["index.6f29900c.css","src/css/elements/evaluationCheck.css"],"sourcesContent":["label {\n  margin-left: 15px;\n  margin-right: 15px;\n}\n/*# sourceMappingURL=index.6f29900c.css.map */\n","label\n{\n    margin-right: 15px; /* Adds space to the right of each label */\n    margin-left: 15px;\n}\n"],"names":[],"version":3,"file":"index.6f29900c.css.map"}

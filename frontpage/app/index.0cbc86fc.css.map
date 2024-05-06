@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["index.0cbc86fc.css","src/css/elements/indicator.css"],"sourcesContent":["#question {\n  color: #272727;\n  font-weight: 500;\n  line-height: 1.5;\n}\n/*# sourceMappingURL=index.0cbc86fc.css.map */\n","#question {\n  color: #272727;\n  line-height: 1.5;\n  font-weight: 500;\n}\n"],"names":[],"version":3,"file":"index.0cbc86fc.css.map"}
