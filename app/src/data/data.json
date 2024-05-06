@@ -209,7 +209,7 @@
                         }
                     },
                     {
-                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -217,7 +217,7 @@
                         }
                     },
                     {
-                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -257,7 +257,7 @@
                         }
                     },
                     {
-                        "text": "Does the investing company measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -273,7 +273,7 @@
                         }
                     },
                     {
-                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or iniatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -287,7 +287,7 @@
             "Manufacturing_direct": {
                 "indicators": [
                     {
-                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -341,7 +341,7 @@
                         }
                     },
                     {
-                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -357,7 +357,7 @@
                         }
                     },
                     {
-                        "text": "Does the investing company measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -403,7 +403,7 @@
             "Food_direct": {
                 "indicators": [
                     {
-                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -411,7 +411,7 @@
                         }
                     },
                     {
-                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -427,7 +427,7 @@
                         }
                     },
                     {
-                        "text": "Does the investing company measure, publish and address its gender pay gap?",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -987,7 +987,7 @@
                         }
                     },
                     {
-                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -995,7 +995,7 @@
                         }
                     },
                     {
-                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1043,7 +1043,7 @@
                         }
                     },
                     {
-                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or initiatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1079,7 +1079,7 @@
                         }
                     },
                     {
-                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1087,7 +1087,7 @@
                         }
                     },
                     {
-                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1135,7 +1135,7 @@
                         }
                     },
                     {
-                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or initiatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1179,7 +1179,7 @@
                         }
                     },
                     {
-                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1187,7 +1187,7 @@
                         }
                     },
                     {
-                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1235,7 +1235,7 @@
                         }
                     },
                     {
-                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or initiatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
@@ -1263,7 +1263,7 @@
                         }
                     },
                     {
-                        "text": "Does the project propose to procure from the local base economy where possible and feasible?",
+                        "text": "Does the investment project prioritize procurement from the local economy whenever it is practical and viable?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1271,7 +1271,7 @@
                         }
                     },
                     {
-                        "text": "Does the investment project contribute to local labor force upskilling to improve local employment opportunities higher up the value chain?",
+                        "text": "Will the investment project actively contribute to the development and enhancement of skills within the local labor force, ensuring that local workers have access to employment opportunities throughout the project's value chain?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1303,7 +1303,7 @@
                         }
                     },
                     {
-                        "text": "Does the company\u2018s business model orient towards female well-being externally by publishing CRS reports, offering products and services targeting women or promoting and engaging in external partnerships or charities for female wellbeing?",
+                        "text": "Does the company's business model actively promote and support the well-being of women outside of the organization through initiatives such as publishing Corporate Social Responsibility (CSR) reports or initiatives, offering products and services designed for women, or engaging in external partnerships or charitable activities focused on women's empowerment?",
                         "comment": "",
                         "dimension": "social",
                         "evaluation": {
