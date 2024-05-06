@@ -1,8 +1,4 @@
-* {
 
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-
-}
 
 
 .containerBig{
@@ -37,3 +33,13 @@ html {
         font-size: 1vw;
     }
 }
+
+@media only screen and (max-width: 768px) {
+    HTML, body {
+        width: 100%;
+        overflow-x: hidden;
+    }}
+
+html, body {
+    width: 100%;
+    overflow-x: hidden;}

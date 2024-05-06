@@ -22,7 +22,7 @@ export class SectorRenderer extends Renderer {
         if (!currentSubsectorExists) {
 
             return `
-                <select id="subsectorSelect" class="form-select mt-3" aria-label="Default select example">
+                <select id="subsectorSelect" class="form-select mt-3 fs-5" aria-label="Default select example">
                     ${subsectorOptions}
                 </select>
             `;
@@ -30,7 +30,7 @@ export class SectorRenderer extends Renderer {
         else {
             return `
                 <div class="select-Container">
-                     <select id="subsectorSelect" class="form-select form-select-lg mt-2" aria-label="Default select example">
+                     <select id="subsectorSelect" class="form-select form-select-lg mt-2 fs-5" aria-label="Default select example">
                         ${subsectorOptions}
                     </select>
                 </div>

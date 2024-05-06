@@ -1,72 +1,39 @@
-.container button {
-   
-    width: 50%;
-    height: 45px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 50px;
-    outline: none;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: rgb(0, 0, 0);
-    font-weight: 200;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-}
-.container .navbar-nav {
 
-    width: 20%;
-    height: 45px;
-    background-color: rgb(50, 108, 128);
-    border: 50px;
-    outline: none;
-    border-radius: 80px;
-    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
-    cursor: pointer;
-    font-size: 16px;
-    color: black;
-    font-weight: 200;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    
-}
-.navbar-nav:hover {
-    background-color: rgba(255, 255, 255, 0.28);
+
+
+
+
+.btn {
+    background-image: linear-gradient(to top right, var(--c-brand), var(--c-brand2));
+    border-radius: 60px !important;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
+    color: var(--c-dark);
+    border: none !important;
 }
 
-
-
-  .back-to-home {
-    width: 30%;
-    height: 45px;
-    background-color: rgba(255, 255, 255, 0.3);
-    border: 50px;
-    outline: none;
-    border-radius: 80px;
-    box-shadow: 0 0 10px rgb(0, 0, 0, 0.1);
-    cursor: pointer;
-    font-size: 16px;
-    color: black;
-    font-weight: 200;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-
-    text-decoration: none; /* Entfernt die Unterstreichung */
+.btn:hover {
+    background-image: none;
+    background-color: var(--c-light) !important;
+    box-shadow: var(--box-shadow);
 }
 
-.back-to-home:hover {
-    background-color: rgba(255, 255, 255, 0.5);
-    color: #333;
+.btnH {
+    background-image: linear-gradient(to top right, var(--c-brand), var(--c-brand2));
+    border-radius: 60px !important;
+    text-decoration: none;
+    transition: var(--transition);
+    box-shadow: var(--box-shadow);
+    color: var(--c-dark);
+    border: none !important;
+    padding: 9px 30px;
+    font-weight: 600;
 }
 
-button, form button {
-    height: 80% !important;
-    font-size: 80% !important;
+.btnH:hover {
+    background-image: none;
+    background-color: var(--c-light) !important;
+    box-shadow: var(--box-shadow);
 }
+

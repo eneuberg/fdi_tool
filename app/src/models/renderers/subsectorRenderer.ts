@@ -78,10 +78,10 @@ export class SubsectorRenderer extends Renderer {
                         <div id="indicatorContainer"></div>
                         <div class="next-back-button row">
                             <div class="col-12 col-md-6">
-                                <button id="previousButton" type="button" class="btn btn-secondary w-100">Previous</button>
+                                <button id="previousButton" type="button" class="btn w-100 mb-2 fs-5">Previous</button>
                             </div>
                             <div class="col-12 col-md-6">
-                                <button id="nextButton" type="submit" class="btn btn-primary w-100">Next</button>
+                                <button id="nextButton" type="submit" class="btn w-100 mb-2 fs-5">Next</button>
                             </div>
                         </div>
                     </form>

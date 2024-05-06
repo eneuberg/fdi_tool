@@ -37,7 +37,7 @@ export class IndicatorRenderer extends Renderer {
 
         const indicatorHTML = `
             <div class="indicator flex-column align-items-center" id="indicator">
-                <p id="question" class="text-start fw-bold ps-3 mt-3">
+                <p id="question" class="text-start fw-bold ps-3 mt-3 fs-5">
                     <span class="me-1">
                         ${this.manager.text} 
                     </span>
