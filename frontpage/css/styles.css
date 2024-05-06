@@ -1,5 +1,5 @@
-@import url(../fonds/clash-display.css);
-@import url(../fonds/excon.css);
+@import url(fonds/clash-display.css);
+@import url(fonds/excon.css);
 
 /* General Styles */
 :root {
@@ -10,7 +10,7 @@
     --c-brand2: #ffdd3c;
     --c-body: #a3a3b6;
     --c-transparentMain: rgb(222, 242, 241);
-    --c-colorMian: #FEFFFF;
+    --c-colorMian: #defffa;
     --font-base: "ClashDisplay", sans-serif;
     --box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.08);
     --transition: all 0.5s ease;

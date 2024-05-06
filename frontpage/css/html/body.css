@@ -40,6 +40,13 @@
 
 
 }
+
+.roundBox {
+    border-radius: 30px;
+    box-shadow: black;
+}
+
+
 #sectorSelect {
     background: var(--c-colorMian);
     border: 2px solid rgba(0, 0, 0, 0.2);

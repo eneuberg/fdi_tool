@@ -29,9 +29,15 @@ svg {
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
+         opacity: 1;
+    }
+    50% {
+
+         opacity: 0.3;
     }
     100% {
         transform: rotate(360deg);
+        opacity: 1;
     }
 }
 
@@ -39,26 +45,24 @@ svg {
     fill: var(--c-light);
     animation: rotate 60s linear infinite;
     transform-origin: 13px 25px;
-    z-index: 1; /* Bubble hinter dem Text */
 }
 
 .in-top {
     fill: var(--c-brand-light);
     animation: rotate 30s linear infinite;
-    transform-origin: 13px 25px;
-    z-index: 2; /* Bubble hinter dem Text */
+    transform-origin: 14px 25px;
 }
 
 .out-bottom {
     fill: var(--c-brand-light);
     animation: rotate 75s linear infinite;
-    transform-origin: 84px 93px;
-    z-index: 2; /* Bubble hinter dem Text */
+    transform-origin: 85px 93px;
+
 }
 
 .in-bottom {
     fill: var(--c-light);
     animation: rotate 45s linear infinite;
     transform-origin: 84px 93px;
-    z-index: 2; /* Bubble hinter dem Text */
+
 }
