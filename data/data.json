@@ -971,7 +971,7 @@
             "Pharmaceuticals": {
                 "indicators": [
                     {
-                        "text": "Does the project aim to neutralize risks of vaccine production in the local value chains?",
+                        "text": "The project aims to/is it likely to neutralise risks of vaccine production in local value chains?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -979,7 +979,7 @@
                         }
                     },
                     {
-                        "text": "Is the project aimed at expanding the local range of services available?",
+                        "text": "The proposed project aims to/is likely to expand the range of pharmaceuticals goods and services available locally?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1003,7 +1003,7 @@
                         }
                     },
                     {
-                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1011,7 +1011,7 @@
                         }
                     },
                     {
-                        "text": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts?",
+                        "text": "The proposed project has environmental quality norms in place and follows specific guidance documents to reduce environmental impacts?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1027,8 +1027,8 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
-                        "comment": "",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap? (see information note for more)",
+                        "comment": "Note:  If identified, MSME introduces measures to address gender imbalances in the workforce, especially in managerial positions. I.e. through training programmes",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -1051,7 +1051,7 @@
                         }
                     },
                     {
-                        "text": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights?",
+                        "text": "The investing company has a track record of consistently following and complying with the ILO standards and national legislation to ensure\nthe protection of the minimum standards for labour rights ?",
                         "comment": "",
                         "dimension": "governance",
                         "evaluation": {
@@ -1063,7 +1063,7 @@
             "Medical devices": {
                 "indicators": [
                     {
-                        "text": "Does the project aim to neutralize risks of vaccine production in the local value chains?",
+                        "text": "The proposed project aims to neutralize risks in local value chains ?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1071,7 +1071,7 @@
                         }
                     },
                     {
-                        "text": "Is the project aimed at expanding the local range of services available?",
+                        "text": "The proposed project aims to/is likely to expand the range of medical devices and related services available locally ?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1095,7 +1095,7 @@
                         }
                     },
                     {
-                        "text": "Is there implementation of life cycle assessment (LCA) and circularity principles measuring multiple life cycles?",
+                        "text": "The proposed project aims to/is likely to implement life cycle assessments (LCA) and circularity principles measuring multiple life cycles ?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1103,7 +1103,7 @@
                         }
                     },
                     {
-                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1119,8 +1119,8 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
-                        "comment": "",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap? (see information note for more)",
+                        "comment": "Note:  If identified, MSME introduces measures to address gender imbalances in the workforce, especially in managerial positions. I.e. through training programmes",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -1143,7 +1143,7 @@
                         }
                     },
                     {
-                        "text": "Does the project comply with ILO standards and national legislation to ensure the protection of the minimum standards for labor rights?",
+                        "text": "The investing company has a track record of consistently following and complying with the ILO standards and national legislation to ensure\nthe protection of the minimum standards for labour rights ?",
                         "comment": "",
                         "dimension": "governance",
                         "evaluation": {
@@ -1155,7 +1155,7 @@
             "Biotechnology": {
                 "indicators": [
                     {
-                        "text": "Does the project take part in safety reporting in clinical trials?",
+                        "text": "The proposed project takes part in safety reporting when conducting clinical trials ?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1163,7 +1163,7 @@
                         }
                     },
                     {
-                        "text": "Is the project aimed at expanding the local range of services available?",
+                        "text": "The proposed project aims to/is likely to expand the range of biotechnological goods or services available locally ?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1171,7 +1171,7 @@
                         }
                     },
                     {
-                        "text": "Has the project conducted extensive market research evaluating long-term product market value, regional drug regulations, competitors, etc.?",
+                        "text": "The proposed project has done extensive market research evaluating long-term product market value, regional drug regulations, competitors, etc.?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1195,7 +1195,7 @@
                         }
                     },
                     {
-                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1203,7 +1203,7 @@
                         }
                     },
                     {
-                        "text": "Does the project have in place environmental quality norms and follow specific guidance documents to reduce environmental impacts?",
+                        "text": "The proposed project has environmental quality norms in place and follows specific guidance documents to reduce environmental impacts?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1219,8 +1219,8 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
-                        "comment": "",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap? (see information note for more)",
+                        "comment": "Note:  If identified, MSME introduces measures to address gender imbalances in the workforce, especially in managerial positions. I.e. through training programmes",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
@@ -1247,7 +1247,7 @@
             "Healthcare services": {
                 "indicators": [
                     {
-                        "text": "Is the project compatible with social objectives like universal access and affordability?",
+                        "text": "The proposed project is compatible with social objectives like the universal access and affordability of healthcare services?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1255,7 +1255,7 @@
                         }
                     },
                     {
-                        "text": "Is the project aimed at expanding the local range of services available?",
+                        "text": "The proposed project aims to/is likely to expand the range of healthcare services available locally ?",
                         "comment": "",
                         "dimension": "economic",
                         "evaluation": {
@@ -1279,7 +1279,7 @@
                         }
                     },
                     {
-                        "text": "Does the project have in place strategies for reducing and properly managing hazardous waste and plastics?",
+                        "text": "The project has in place strategies for reducing and properly managing hazardous waste and plastics?",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1287,7 +1287,7 @@
                         }
                     },
                     {
-                        "text": "Is the investment project proposing or is it likely to be making notable advances towards adapting renewable energy or achieving net zero emissions?",
+                        "text": "Is the investing company making any notable advances towards adapting renewable energy or achieving net zero emissions? To answer this question you must look into the current operating practices of the company or planned practices for a new investment project.",
                         "comment": "",
                         "dimension": "environmental",
                         "evaluation": {
@@ -1295,8 +1295,8 @@
                         }
                     },
                     {
-                        "text": "Does the MNE measure, publish and address its gender pay gap? If identified, does the MSME introduce measures to address gender imbalances in the workforce, especially in managerial positions, such as training programs?",
-                        "comment": "",
+                        "text": "Does the investing company measure, publish and/or address the gender pay gap? (see information note for more)",
+                        "comment": "Note:  If identified, MSME introduces measures to address gender imbalances in the workforce, especially in managerial positions. I.e. through training programmes",
                         "dimension": "social",
                         "evaluation": {
                             "type": "checkbox"
