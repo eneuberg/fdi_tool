@@ -1,8 +1,7 @@
-
 /* remove text selection from buttons */
 input[type="radio"],
 input[type="checkbox"],
-label, canvas, button, input, .input-container, .next-back-button {
+label, canvas, button, .input-container, .next-back-button {
     -webkit-user-select: none; /* Chrome, Safari, Opera */
     -moz-user-select: none;    /* Firefox */
     -ms-user-select: none;     /* Internet Explorer */
