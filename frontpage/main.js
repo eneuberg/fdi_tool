@@ -23,7 +23,7 @@ AOS.init({
 /* scrollable navbar*/
 document.addEventListener("scroll", function() {
     var sections = document.querySelectorAll("section");
-    var scrollPosition = window.scrollY + 200;
+    var scrollPosition = window.scrollY;
 
     sections.forEach(function(currentSection) {
         var sectionTop = currentSection.offsetTop;
