@@ -1,2 +1,0 @@
-@keyframes resizeAnimation{0%{transform:scaleY(1)}50%{transform:scaleY(1.01)}to{transform:scaleY(1)}}.containerResizeAnimate{transform-origin:top;animation:.5s resizeAnimation}
-/*# sourceMappingURL=index.a517f1ac.css.map */

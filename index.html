@@ -1,1 +1,350 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0"><title>FDI Tool</title><link rel="stylesheet" href="index.820e0901.css"><link rel="stylesheet" href="index.3c9c4069.css"><link rel="stylesheet" href="index.b2f334db.css"><link rel="stylesheet" href="index.b4d9610e.css"><link rel="stylesheet" href="index.1318b5ae.css"><link rel="stylesheet" href="index.3809c950.css"><link rel="stylesheet" href="index.392cbe02.css"><link rel="stylesheet" href="index.31c189f1.css"><link rel="stylesheet" href="index.0d0f0262.css"><link rel="stylesheet" href="index.a517f1ac.css"><link rel="stylesheet" href="index.7e2f52dd.css"><link rel="stylesheet" href="index.1eb91dae.css"><link rel="stylesheet" href="index.4c1e32e2.css"><link rel="stylesheet" href="index.8ab44892.css"><script type="module" src="index.runtime.fd965586.js"></script><script type="module" src="index.8643ab61.js"></script><base href="."></head><body> <div class="container-fluid"> <div class="row"> <div class="backgroundContainer col-12">  <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80"><path fill="#93B7BE" class="out-top" d="M37-5C25.1-14.7 5.7-19.1-9.2-10-28.5 1.8-32.7 31.1-19.8 49c15.5 21.5 52.6 22 67.2 2.3C59.4 35 53.7 8.5 37-5Z"/><path fill="#B4CFFA" class="in-top" d="M20.6 4.1C11.6 1.5-1.9 2.5-8 11.2-16.3 23.1-8.2 45.6 7.4 50S42.1 38.9 41 24.5C40.2 14.1 29.4 6.6 20.6 4.1Z"/><path fill="#D4F5F5" class="out-bottom" d="M105.9 48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4 12.8-37.7 51.9-19.1 74.1s63.9 15.3 76-5.6c7.6-13.3 1.8-31.1-2.3-43.8-3.5-10.8-6.4-19.8-15.2-25.5Z"/><path fill="#B4CFFA" class="in-bottom" d="M102 67.1c-9.6-6.1-22-3.1-29.5 2-15.4 10.7-19.6 37.5-7.6 47.8s35.9 3.9 44.5-12.5c6.1-11.8 4.5-29.8-7.4-37.3Z"/></svg> </div> </div> </div> <nav class="navbar navbar-expand-lg navbar-light" style="background-color:#fff0"> <div class="container"> <a class="navbar-brand" href="#"> <img src="LogoWhite.c0c08dfa.png" alt="Logo" width="130" height="40" class="align-top d-inline-block"> </a> </div> </nav> <div class="col-12 col-lg-8 col-md-10 col-xl-8 container containerBig mb-5 mt-5 mx-auto shadow" id="mainContainer"> <div class="col-md-12 col-xxl-8 container p-5 questionContainer" id="questionnaireContainer"> <div id="sectorSelectContainer"></div> <div id="subsectorSelectContainer"></div> <div id="indicatorFormContainer"></div> </div> </div> </body></html>
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>FDI Tool</title>
+    <link rel="icon" type="png" href="assets/images/tabImage.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.6.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+    <link rel="stylesheet" href="css/backgrounds/fadeAnimation.css">
+    <link rel="stylesheet" href="css/backgrounds/resizeAnimation.css">
+    <link rel="stylesheet" href="css/backgrounds/bubblesBackground.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/html/body.css">
+    <link rel="stylesheet" href="css/html/footer.css">
+    <link rel="stylesheet" href="css/html/text.css">
+    <link rel="stylesheet" href="css/html/navbar.css">
+    <link rel="stylesheet" href="css/html/button.css">
+
+
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar">
+
+
+<!-- Navbar -->
+<nav data-aos="fade-down" class="navbar navbar-expand-lg  fixed-top">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="https://unescap.org/" target="_blank">
+            <img src="assets/images/escapLogo.png" width="150px" alt="">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#hero">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#learn">Explanation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="#background">Background</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#fdiWork">ESCAP's FDI Work</a>
+                </li>
+            </ul>
+            <a href="app/app.html" target="_blank" class="tool btn mb-2 mb-md-0 me-md-2">USE THE TOOL</a>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="hero" class="min-vh-100 d-flex justify-content-center align-items-center position-relative">
+    <div class="container">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 backgroundContainer">
+                    <svg preserveAspectRatio="xMidYMid slice" viewBox="10 10 80 80">
+                        <path class="out-top"
+                              d="M37-5C25.1-14.7,5.7-19.1-9.2-10-28.5,1.8-32.7,31.1-19.8,49c15.5,21.5,52.6,22,67.2,2.3C59.4,35,53.7,8.5,37-5Z"/>
+                        <path class="in-top"
+                              d="M20.6,4.1C11.6,1.5-1.9,2.5-8,11.2-16.3,23.1-8.2,45.6,7.4,50S42.1,38.9,41,24.5C40.2,14.1,29.4,6.6,20.6,4.1Z"/>
+                        <path class="out-bottom"
+                              d="M105.9,48.6c-12.4-8.2-29.3-4.8-39.4.8-23.4,12.8-37.7,51.9-19.1,74.1s63.9,15.3,76-5.6c7.6-13.3,1.8-31.1-2.3-43.8C117.6,63.3,114.7,54.3,105.9,48.6Z"/>
+                        <path class="in-bottom"
+                              d="M102,67.1c-9.6-6.1-22-3.1-29.5,2-15.4,10.7-19.6,37.5-7.6,47.8s35.9,3.9,44.5-12.5C115.5,92.6,113.9,74.6,102,67.1Z"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-12 text-center">
+                <h1 data-aos="fade-left" class="text-uppercase fw-semibold display-1 fdiT">Foreign Direct Investment
+                    Tool</h1>
+                <h2 data-aos="fade-up" class="mt-3 mb-4 display-5 fw-semibold darkText">Your tool to evaluate the
+                    sustainable development contributions of incoming FDI projects</h2>
+                <div data-aos="fade-up" class="d-flex flex-column flex-md-row justify-content-md-center">
+                    <a href="#about" class="btn ms-md-2">More Information</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- About Section -->
+<section id="about" class="section-padding ">
+    <div class="container">
+        <div class="row">
+            <div data-aos="fade-down" data-aos-delay="50" class="col-12 text-center">
+                <div class="section-titel">
+                    <h2 class="display-3 fw-semibold darkText">The Tool</h2>
+                    <div class="line"></div>
+                    <p class="darkText fs-5">
+                        This online tool provides policymakers and investment promotion agencies (IPAs) with a means of
+                        assessing and quantifying incoming FDI projects and their sustainable development contributions
+                        using a set of indicators along economic, social, governance and environmental dimensions
+                        addressing several of the United Nations Sustainable Development Goals, such as:
+                    </p>
+                    <div class="d-flex flex-wrap justify-content-center mb-3">
+                        <img src="assets/images/developmentGoals/E_WEB_03.png"
+                             data-aos="zoom-in" class="devGoal me-4 me-xxl-5 mb-3 mb-xxl-0" alt="Icon 1">
+                        <img src="assets/images/developmentGoals/E_WEB_05.png"
+                             data-aos="zoom-in" class="devGoal me-4 me-xxl-5 mb-3 mb-xxl-0" alt="Icon 2">
+                        <img src="assets/images/developmentGoals/E_WEB_07.png"
+                             data-aos="zoom-in" class="devGoal me-4 me-xxl-5 mb-3 mb-xxl-0" alt="Icon 3">
+                        <img src="assets/images/developmentGoals/E_WEB_08.png"
+                             data-aos="zoom-in" class="devGoal me-4 me-xxl-5 mb-3 mb-xxl-0" alt="Icon 4">
+                        <img src="assets/images/developmentGoals/E_WEB_09.png"
+                             data-aos="zoom-in" class="devGoal me-4 me-xxl-5 mb-3 mb-xxl-0" alt="Icon 5">
+                        <img src="assets/images/developmentGoals/E_WEB_13.png"
+                             data-aos="zoom-in" class="devGoal me-4 me-xxl-5 mb-3 mb-xxl-0" alt="Icon 6">
+                    </div>
+                    <p class="darkText fs-5">
+                        This tool introduces a range of sector-based indicators which help highlight the risks and
+                        opportunities of projects and provide the user with an overall score to assess a project. The
+                        evaluation highlights potential shortcomings of projects along the four four abovementioned
+                        dimensions to meet a country's development strategies and needs.
+                        <br><br>
+                        In addition to these sector-based indicators, the second edition of the tool, to be launched
+                        later this summer, will feature general indicators and will allow the user to change the weight
+                        of individual indictors in the overall evaluation to match the user's developmental priorities.
+                        <br><br>
+                        To find out more please consult
+                        <a class="link"
+                           href="https://www.unescap.org/kp/2021/developing-comprehensive-general-and-sector-based-indicators-assessing-contribution-foreign"
+                           target="_blank"> the working paper developing the first set of indicators</a>
+                        or
+                        <a class="link"
+                           href="https://www.unescap.org/kp/2021/developing-comprehensive-general-and-sector-based-indicators-assessing-contribution-foreign"
+                           target="_blank"> enroll in ESCAP's e-learning course </a>
+                        providing an introductory overview of the indicators.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sectores-->
+<section id="learn" class="section-padding border-top">
+    <div class="container" data-aos="fade-down" data-aos-delay="50">
+        <div class="row">
+            <div class="col-12 text-center mb-4">
+                <div class="section-titel">
+                    <h2 class="display-3 fw-semibold lightText">How to use the Tool</h2></div>
+                <img class="mb-3" src="assets/images/down-arrow.png" data-aos="fade-down" data-aos-delay="60"
+                     width="100px" alt="">
+            </div>
+        </div>
+
+        <div class="row  justify-content-center mb-5" data-aos="zoom-in">
+            <div class="roundBox col-lg-4 col-sm-6 text-center theme-shadow p-lg-5 p-4 ">
+                <img class="mb-3" src="assets/images/number-1.png" width="100px" alt="">
+                <select id="sectorSelect" class="form-select mb-3" disabled aria-label="Default select example">
+                    <option selected>Select a sector</option>
+                </select>
+                <p class="darkText fs-6"> Simply select the sector associated with the inward
+                    FDI project you are looking to evaluate. </p>
+            </div>
+        </div>
+
+        <h3 class="fs-2 text-center mt-5 mb-5 coloredText"> You will then be guided through a range of questions
+            relating
+            to
+            indicators in the economic, social, governance and environmental dimensions.</h3>
+
+        <div data-aos="zoom-in" class="row justify-content-center mb-5">
+            <div class="roundBox col-lg-4 col-sm-6 text-center theme-shadow p-lg-5 p-4 mx-3 mb-5">
+                <img class="mb-3" src="assets/images/number-2.png" width="100px" alt="">
+                <input class="form-control mb-3" type="number" placeholder="Range form 0 - 1" disabled>
+                <p class="darkText fs-6"> Some questions require a numerical value as percentage </p>
+            </div>
+            <div class="roundBox col-lg-4 col-sm-6 text-center theme-shadow p-lg-5 p-4 mx-3 mb-5">
+                <div>
+                    <img class="mb-3" src="assets/images/number-3.png" width="100px" alt="">
+                </div>
+                <label><input class="form-check-input mb-4" type="radio" name="singleCheckbox" value="no"> No</label>
+                <label><input class="form-check-input mb-4" type="radio" name="singleCheckbox" value="yes"> Yes</label>
+                <p class="darkText fs-6"> Some questions require yes or no </p>
+            </div>
+        </div>
+
+        <h3 class="fs-2 text-center mt-5 mb-5 coloredText"> After completing all questions, the user will be given three
+            results.</h3>
+
+        <div data-aos="zoom-in" class="row darkText justify-content-center mb-5">
+            <div class="roundBox col-lg-3 col-sm-6 text-center theme-shadow p-4 mx-3 mb-5">
+                <img class="mb-3" src="assets/images/achievement.png" width="80px" alt="">
+                <p class="darkText fs-6">A total score of the project based on the answers given.
+                </p>
+            </div>
+            <div class="roundBox col-lg-3 col-sm-6 text-center theme-shadow p-4 mx-3 mb-5">
+                <img class="mb-3" src="assets/images/rating.png" width="80px" alt="">
+                <p class="darkText fs-6">A figure comparing the risks and opportunities associated with the proposed
+                    project.</p>
+            </div>
+            <div class="roundBox col-lg-3 col-sm-6 text-center theme-shadow p-4 mx-3 mb-5">
+                <img class="mb-3" src="assets/images/dimensions.png" width="80px" alt="">
+                <p class="darkText fs-6">A score for each dimension (economic, social, governance, environmental).</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Backround -->
+<section id="background" class="section-padding border-top">
+    <div data-aos-delay="50" class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1 data-aos="fade-right" class="display-5 fw-semibold darkText">Background</h1>
+                <div class="lineLeft"></div>
+                <p class="darkText fs-5 text-start">
+                    Foreign Direct Investment (FDI) can contribute to the sustainable
+                    development of home and host countries through creating jobs,
+                    generating economic growth and development,
+                    helping to alleviate poverty eradication, improving access to
+                    energy, infrastructure, health and environment.
+                    While FDI can generate significant positive development results,
+                    this outcome is not always the primary objective of the private
+                    multinational enterprises (MNEs) that control the vast majority
+                    of FDI flows. These enterprises seek strategic
+                    investments that will increase their global competitiveness and
+                    profitability.
+                    <br><br>
+                    Governments should therefore prioritize attracting investment
+                    projects from MNEs that maximizes the positive and minimizes the
+                    negative developmental impacts of the investment. However, to
+                    attract and approve sustainable FDI projects, countries must have
+                    tools to evaluate the sustainability inward FDI projects and the extent to which they are
+                    aligned with the sustainable development priorities of that country.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- FDI Work -->
+<section id="fdiWork" class="section-padding border-top">
+    <div data-aos="fade-left" data-aos-delay="50" class="container">
+        <div class="row justify-content-end">
+            <!-- Hier wird 'justify-content-end' verwendet, um den Inhalt rechts auszurichten -->
+            <div class="col-12">
+                <h1 data-aos="fade-left" class="display-5 fw-semibold lightTextText text-end">About ESCAP’s FDI
+                    Work</h1>
+                <!-- Hier wird 'text-end' verwendet, um die Überschrift rechts auszurichten -->
+                <div class="lineRight"></div>
+                <p class="light Text fs-5 text-end">
+                    <!-- Hier wird 'text-end' verwendet, um den Text rechts auszurichten -->
+                    The United Nations Economic and Social Commission for Asia and the Pacific (ESCAP) is
+                    providing practical technical assistance, capacity-building and policy advice to its member States.
+                    ESCAP is supporting member State IPAs on how to attract FDI for sustainable development in the
+                    short-term
+                    within their current business climate. This approach helps to ensure that countries are not only
+                    attracting
+                    more of the “right kind“ of FDI in the short term, but that they can continue to work on making the
+                    necessary
+                    changes to the overarching investment climate and policies in the medium- and long-term to boost
+                    even more FDI in
+                    sustainable development in the future. For this matter, ESCAP has been working with several of its
+                    member States
+                    to design and implement FDI attraction action plans to boost investment in the next 2-5 years in
+                    climate action,
+                    healthcare, digital transformation and gender equality. In addition, ESCAP is providing tailored
+                    capacity-building
+                    to all of its member States focused on promoting, attracting and facilitating FDI in as well as for
+                    sustainable
+                    development
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-content text-white py-4">
+    <div class="container">
+        <div class="row justify-content-center align-items-center">
+            <div class="col-auto">
+                <a href="https://unescap.org/about/privacy" target="_blank"
+                   class="text-white text-decoration-none me-3 fs-6">Privacy Notice</a>
+                <a href="https://unescap.org/about/terms-of-use" target="_blank"
+                   class="text-white text-decoration-none me-3 fs-6">Terms of Use</a>
+                <a href="https://unescap.org/about/fraud-alert" target="_blank"
+                   class="text-white text-decoration-none me-3 fs-6">Fraud Alert</a>
+                <a href="https://www.un.org/" target="_blank" class="text-white text-decoration-none me-3 fs-6">UN Web
+                    Site</a>
+                <a href="https://unescap.org/" target="_blank" class="text-white text-decoration-none fs-6">ESCAP Web
+                    Site</a>
+            </div>
+            <div class="col-auto">
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="#" id="twitterShareBtn" class="text-white fs-6"><i
+                            class="bi bi-twitter"></i></a></li>
+                    <li class="list-inline-item"><a href="#" id="facebookShareBtn" class="text-white fs-6"><i
+                            class="bi bi-facebook"></i></a></li>
+                    <li class="list-inline-item"><a href="#" id="envelopeShareBtn" class="text-white fs-6"><i
+                            class="bi bi-envelope-fill"></i></a></li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<footer class="footer-credits text-white py-4">
+    <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="row justify-content-center text-center">
+            <div class="col-auto">
+                <p class="mb-0">
+                    Copyright © United Nations ESCAP
+                    <span>
+            | Developed by
+            <a href="https://www.linkedin.com/in/tamara-hanka-5aa55b199/" target="_blank" class="link text-white">Tamara Hanka</a>,
+            <a href="#" target="_blank" class="link text-white">Erik Neuberger</a>,
+            <a href="https://www.linkedin.com/in/david-schulz-6ba991286/" target="_blank" class="link text-white">David Schulz</a>,
+            <a href="#" target="_blank" class="link text-white">Armaan Ghotra</a> und
+            <a href="https://www.linkedin.com/in/florian-krawinkel-320952175/" target="_blank" class="link text-white">Florian Krawinkel</a>
+          </span>
+                </p>
+                <div class="row justify-content-center text-center">
+                    <div>
+                        <div> Icons made by <a class="link" href="https://www.flaticon.com/authors/pixel-perfect"
+                                               title="Pixel perfect">
+                            Pixel perfect </a> from <a class="link" href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com'</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
+
+

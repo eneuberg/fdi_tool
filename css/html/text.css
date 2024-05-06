@@ -1,0 +1,25 @@
+.darkText {
+    color: var(--c-dark);
+}
+
+.lightText{
+    color: var(--c-colorMian);
+}
+.coloredText{
+    color: var(--c-brand);
+}
+
+.link {
+    color: var(--c-brand-light); /* Farbe des Links */
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--c-brand); /* Farbänderung bei Hover */
+}
+
+.fdiT{
+   color: white;
+}
+
+

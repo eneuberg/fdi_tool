@@ -1,0 +1,2 @@
+.progress{--progress:0%;width:100%;height:30px;margin:20px auto;background-color:#0000!important}.progress .bar{width:var(--progress);background:linear-gradient(to right,var(--c-light),var(--c-brand-light));border-radius:20px;height:100%;transition:width 3s;animation:4s ease-in infinite shine,1s ease-out end}:root{--progress:0%}
+/*# sourceMappingURL=index.6f487ad6.css.map */
