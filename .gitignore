@@ -1,5 +1,5 @@
 .idea
 **/node_modules/
 **/.parcel-cache/
-app/dist/*.map
+page/app/dist/*.map
 **/dist/

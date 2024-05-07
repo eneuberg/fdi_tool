@@ -1,2 +1,0 @@
-body{background:#bbe2f7!important}svg{width:100%;height:100vh;position:fixed;top:0;left:0}@keyframes rotate{0%{transform:rotate(0)}to{transform:rotate(360deg)}}.out-top{transform-origin:13px 25px;animation:60s linear infinite rotate}.in-top{transform-origin:13px 25px;animation:30s linear infinite rotate}.out-bottom{transform-origin:84px 93px;animation:75s linear infinite rotate}.in-bottom{transform-origin:84px 93px;animation:45s linear infinite rotate}
-/*# sourceMappingURL=index.7e2f52dd.css.map */
