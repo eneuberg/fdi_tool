@@ -1,5 +1,4 @@
 import Chart from "chart.js/auto";
-import { EvaluationDimension} from "../managers/subsectorManager";
 import {Renderer} from "./renderer";
 import {ResultManager} from "../managers/resultManager";
 
@@ -9,6 +8,19 @@ export class ResultRenderer extends Renderer {
     constructor(resultManager: ResultManager) {
         super();
         this.manager = resultManager;
+    }
+
+    private calculateValue(opportunities: number, risks: number) {
+        if (opportunities === 0 && risks === 0) {
+            return 0;
+        }
+
+        if (risks === undefined || risks === null || risks === 0) {
+            return 1;
+        }
+
+        const sum = opportunities + risks;
+        return (opportunities / risks) / sum;
     }
 
     protected attachEventListeners() {
@@ -63,39 +75,71 @@ export class ResultRenderer extends Renderer {
             const opportunities = filtered.filter(e => e.evaluationResult === true).length;
             const risks = filtered.filter(e => e.evaluationResult === false).length;
             const neutral = filtered.filter(e => e.evaluationResult === null).length;
-            const score = opportunities === 0 && risks === 0 ? 0 : risks ? (opportunities / risks) / (risks + opportunities) : 1;
+            const total = opportunities + risks + neutral;
+
+            // Calculate percentages
+            const opportunitiesPercent = total > 0 ? (opportunities / total) * 100 : 0;
+            const risksPercent = total > 0 ? (risks / total) * 100 : 0;
+            const neutralPercent = total > 0 ? (neutral / total) * 100 : 0;
+
             dimension = dimension.charAt(0).toUpperCase() + dimension.slice(1);
-            return { dimension, opportunities, risks, neutral, score };
+            return {
+                dimension,
+                opportunities: opportunitiesPercent,
+                risks: risksPercent,
+                neutral: neutralPercent,
+                absolute: {
+                    opportunities,
+                    risks,
+                    neutral
+                }
+            };
         });
 
-        const totalOpportunities = results.reduce((total, r) => total + r.opportunities, 0);
-        const totalRisks = results.reduce((total, r) => total + r.risks, 0);
-        const totalNeutral = results.reduce((total, r) => total + r.neutral, 0);
+        // Aggregate totals and calculate overall percentages for summary chart
+        const totalOpportunities = results.reduce((total, r) => total + r.absolute.opportunities, 0);
+        const totalRisks = results.reduce((total, r) => total + r.absolute.risks, 0);
+        const totalNeutral = results.reduce((total, r) => total + r.absolute.neutral, 0);
 
-        this.renderSummaryChart(totalOpportunities, totalRisks, totalNeutral);
+        const total = totalOpportunities + totalRisks + totalNeutral;
+
+        const summaryData = {
+            totalOpportunities: totalOpportunities,
+            totalRisks: totalRisks,
+            totalNeutral: totalNeutral,
+            percentages: {
+                opportunitiesPercent: (totalOpportunities / total) * 100,
+                risksPercent: (totalRisks / total) * 100,
+                neutralPercent: (totalNeutral / total) * 100
+            }
+        };
+
+// Now passing the structured data to the summary chart function
+        this.renderSummaryChart(summaryData);
         this.renderDetailedChart(results);
     }
 
-    private renderSummaryChart(totalOpportunities: number, totalRisks: number, totalNeutral: number) {
+    private renderSummaryChart(summaryData: any) {
+        const score = this.calculateValue(summaryData.totalOpportunities, summaryData.totalRisks);
         const summaryCanvas = document.getElementById('summaryChart') as HTMLCanvasElement;
         new Chart(summaryCanvas, {
             type: 'bar',
             data: {
-                labels: [''],
+                labels: ['Overall Score: ' + score.toFixed(2)],
                 datasets: [
                     {
                         label: 'Opportunities',
-                        data: [totalOpportunities],
+                        data: [summaryData.percentages.opportunitiesPercent],
                         backgroundColor: 'green',
                     },
                     {
                         label: 'Risks',
-                        data: [totalRisks],
+                        data: [summaryData.percentages.risksPercent],
                         backgroundColor: 'red',
                     },
                     {
                         label: 'Neutral',
-                        data: [totalNeutral],
+                        data: [summaryData.percentages.neutralPercent],
                         backgroundColor: 'grey',
                     }
                 ]
@@ -107,12 +151,15 @@ export class ResultRenderer extends Renderer {
                     x: { stacked: true },
                     y: {
                         stacked: true,
+                        max: 100, // Sets the maximum scale value to 100
                         title: {
                             display: true,
-                            text: 'n Indicators'
+                            text: 'Percentage'
                         },
                         ticks: {
-                            stepSize: 1
+                            callback: function(value) {
+                                return value + "%"; // Append a percentage sign to the y-axis ticks
+                            }
                         }
                     }
                 },
@@ -126,7 +173,29 @@ export class ResultRenderer extends Renderer {
                     },
                     tooltip: {
                         mode: 'index',
-                        intersect: false
+                        intersect: false,
+                        callbacks: {
+                            label: function(context) {
+                                const datasetLabel = context.dataset.label || "Unknown";
+                                // Type assertion to ensure 'value' is treated as a number
+                                const value = context.raw as number; // Safe assumption since it's known to be numeric
+
+                                let absoluteValue = 0;
+                                switch (datasetLabel) {
+                                    case 'Opportunities':
+                                        absoluteValue = summaryData.totalOpportunities;
+                                        break;
+                                    case 'Risks':
+                                        absoluteValue = summaryData.totalRisks;
+                                        break;
+                                    case 'Neutral':
+                                        absoluteValue = summaryData.totalNeutral;
+                                        break;
+                                }
+
+                                return `${datasetLabel}: ${value.toFixed(2)}% (Absolute: ${absoluteValue})`;
+                            }
+                        }
                     }
                 }
             }
@@ -134,11 +203,16 @@ export class ResultRenderer extends Renderer {
     }
 
     private renderDetailedChart(results: any[]) {
+        const labelsWithScores = results.map(r => {
+            const score = this.calculateValue(r.absolute.opportunities, r.absolute.risks);
+            return [r.dimension, `Score: ${score.toFixed(2)}`]; // Array with dimension and score
+        });
+
         const canvas = document.getElementById('detailedChart') as HTMLCanvasElement;
         new Chart(canvas, {
             type: 'bar',
             data: {
-                labels: results.map(r => r.dimension),
+                labels: labelsWithScores,
                 datasets: [
                     {
                         label: 'Opportunities',
@@ -164,12 +238,15 @@ export class ResultRenderer extends Renderer {
                     x: { stacked: true },
                     y: {
                         stacked: true,
+                        max: 100, // Sets the maximum scale value to 100
                         title: {
                             display: true,
-                            text: 'n Indicators'
+                            text: 'Percentage'
                         },
                         ticks: {
-                            stepSize: 1
+                            callback: function(value) {
+                                return value + "%"; // Append a percentage sign to the y-axis ticks
+                            }
                         }
                     }
                 },
@@ -183,7 +260,18 @@ export class ResultRenderer extends Renderer {
                     },
                     tooltip: {
                         mode: 'index',
-                        intersect: false
+                        intersect: false,
+                        callbacks: {
+                            label: function(context) {
+                                const datasetLabel = context.dataset.label || "Unknown";  // Default label if undefined
+                                const dataIndex = context.dataIndex;
+                                const value = context.raw;
+
+                                const absoluteValue = results[dataIndex].absolute[datasetLabel.toLowerCase()] || 0; // Default to 0 if not found
+
+                                return `${datasetLabel}: ${value}% (Absolute: ${absoluteValue})`;
+                            }
+                        }
                     }
                 }
             }
