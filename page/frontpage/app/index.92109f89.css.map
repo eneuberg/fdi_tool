@@ -1,0 +1,1 @@
+{"mappings":"ACAA","sources":["index.92109f89.css","src/css/elements/evaluationNumber.css"],"sourcesContent":[".number {\n  text-align: center;\n  border-radius: 60px !important;\n}\n/*# sourceMappingURL=index.92109f89.css.map */\n",".number {\r\n\r\n  border-radius: 60px !important;\r\n  text-align: center;\r\n}"],"names":[],"version":3,"file":"index.92109f89.css.map"}
